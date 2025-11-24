@@ -1,0 +1,10 @@
+﻿fileFormatVersion: 2
+guid: 0968c894b2cd49fbb5dacdb1b4b5f4bb
+timeCreated: 1593277002
+AssetOrigin:
+  serializedVersion: 1
+  productId: 147990
+  packageName: Dynamic Water Physics 2
+  packageVersion: 14.0.0
+  assetPath: Assets/Plugins/NWH/Common/Scripts/AssetInfo/AssetInfo.cs
+  uploadId: 819958

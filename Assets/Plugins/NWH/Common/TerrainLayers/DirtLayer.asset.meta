@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f1c9cdfb6d2476b418e23367d2a9c57d
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 8574412962073106934
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 147990
+  packageName: Dynamic Water Physics 2
+  packageVersion: 14.0.0
+  assetPath: Assets/Plugins/NWH/Common/TerrainLayers/DirtLayer.asset
+  uploadId: 819958

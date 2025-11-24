@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: b62db6d1d0f34998a0670f135b412290
+timeCreated: 1673741030
+AssetOrigin:
+  serializedVersion: 1
+  productId: 235104
+  packageName: Infohazard Core Utility Library
+  packageVersion: 1.4.2
+  assetPath: Assets/Plugins/Infohazard/Infohazard.Core/Editor/Pooling/SpawnRefDrawer.cs
+  uploadId: 780025

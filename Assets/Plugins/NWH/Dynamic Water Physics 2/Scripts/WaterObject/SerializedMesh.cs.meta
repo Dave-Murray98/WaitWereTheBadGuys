@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: dc00acaede32ab3419ea82210d3abb43
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 147990
+  packageName: Dynamic Water Physics 2
+  packageVersion: 14.0.0
+  assetPath: Assets/Plugins/NWH/Dynamic Water Physics 2/Scripts/WaterObject/SerializedMesh.cs
+  uploadId: 819958

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: f58f19e0333a25c4781f5097d72b8def
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 141674
+  packageName: Crest Water 4 URP (Ocean, Rivers & Lakes)
+  packageVersion: 4.22.1
+  assetPath: Assets/Crest/Crest/Scripts/LodData/LodDataMgrAnimWaves.cs
+  uploadId: 749267

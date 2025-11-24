@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: ff9021ef061e4fc6af5d38fecc23b7f5
+timeCreated: 1688163635
+AssetOrigin:
+  serializedVersion: 1
+  productId: 235104
+  packageName: Infohazard Core Utility Library
+  packageVersion: 1.4.2
+  assetPath: Assets/Plugins/Infohazard/Infohazard.Core/Editor/Utility/CoreDrawers.cs
+  uploadId: 780025

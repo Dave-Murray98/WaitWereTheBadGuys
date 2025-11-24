@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 33968881da0b22e44bc7d19bf2db5b7e
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 147990
+  packageName: Dynamic Water Physics 2
+  packageVersion: 14.0.0
+  assetPath: Assets/Plugins/NWH/Dynamic Water Physics 2/Scripts/WaterObject/WaterObjectMaterial/Materials/Oil.asset
+  uploadId: 819958

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: e0fe08d33235b884c9b6f34935fdf2a6
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 147990
+  packageName: Dynamic Water Physics 2
+  packageVersion: 14.0.0
+  assetPath: Assets/Plugins/NWH/Dynamic Water Physics 2/Scripts/Utility/GeometryUtils.cs
+  uploadId: 819958

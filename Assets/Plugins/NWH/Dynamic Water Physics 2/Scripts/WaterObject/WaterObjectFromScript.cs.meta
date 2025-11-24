@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 6635e16fc8df26d42ac0ca2af54e0d0e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 147990
+  packageName: Dynamic Water Physics 2
+  packageVersion: 14.0.0
+  assetPath: Assets/Plugins/NWH/Dynamic Water Physics 2/Scripts/WaterObject/WaterObjectFromScript.cs
+  uploadId: 819958

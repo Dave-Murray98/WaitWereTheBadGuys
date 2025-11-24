@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f119dee50e10486419f9a6b0133099dc
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 147990
+  packageName: Dynamic Water Physics 2
+  packageVersion: 14.0.0
+  assetPath: Assets/Plugins/NWH/Dynamic Water Physics 2/Scripts/WaterObject/WaterObjectMaterial/Materials/Glass.asset
+  uploadId: 819958

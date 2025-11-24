@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 842e386aa5264b788629883b358b3e53
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 235104
+  packageName: Infohazard Core Utility Library
+  packageVersion: 1.4.2
+  assetPath: Assets/Plugins/Infohazard/Infohazard.Core/Runtime/DataStructures/ListQueue.cs
+  uploadId: 780025

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: df6c654030311b344ba9f51e5021065a
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 147990
+  packageName: Dynamic Water Physics 2
+  packageVersion: 14.0.0
+  assetPath: Assets/Plugins/NWH/Common/Materials/GridMaterialOrange.mat
+  uploadId: 819958

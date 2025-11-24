@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 3501297a283a45e793aa4538eb005baf
+timeCreated: 1710652846
+AssetOrigin:
+  serializedVersion: 1
+  productId: 235638
+  packageName: 'HyperNav: 3D Pathfinding and Navigation'
+  packageVersion: 2.3.0
+  assetPath: Assets/Plugins/Infohazard/Infohazard.HyperNav/Runtime/Jobs/Baking/Volume/VolumeTriangleMeshToIndicesJob.cs
+  uploadId: 803424

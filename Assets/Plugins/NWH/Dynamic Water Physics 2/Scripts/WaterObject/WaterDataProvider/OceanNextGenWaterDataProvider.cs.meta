@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 6ee7c4e38a39e234782d8d47da615e9d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 147990
+  packageName: Dynamic Water Physics 2
+  packageVersion: 2.22
+  assetPath: Assets/Plugins/NWH/Dynamic Water Physics 2/Scripts/WaterObject/WaterDataProvider/OceanNextGenWaterDataProvider.cs
+  uploadId: 690874

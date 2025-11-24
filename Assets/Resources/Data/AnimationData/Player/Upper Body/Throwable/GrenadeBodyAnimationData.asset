@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f3574f259f0d204481bdf848bfe3661, type: 3}
+  m_Name: GrenadeBodyAnimationData
+  m_EditorClassIdentifier: 
+  itemType: 4
+  displayName: Grenade
+  groundAnimations:
+    idle: {fileID: 7400000, guid: 785187bb92436324aade1ed1eab83a26, type: 2}
+    walk: {fileID: 7400000, guid: 2518120696e7596478439bdc5b150d44, type: 2}
+    runForward: {fileID: 7400000, guid: 9d66d7c00a8c1fc4e87b322595a23757, type: 2}
+  waterAnimations:
+    swimIdle: {fileID: 7400000, guid: 2f085e015968b014eae61c4af64435d6, type: 2}
+    swimForward: {fileID: 7400000, guid: 8cd1a54047141fb49a3aff32b096eef0, type: 2}
+    swimBackward: {fileID: 7400000, guid: 5899f3162f825df499ec0c6b8a322134, type: 2}
+    swimLeft: {fileID: 7400000, guid: e20028c953fda5d4ba0e259d5dad14be, type: 2}
+    swimRight: {fileID: 7400000, guid: 9e68a37976a3526499df8c945167371c, type: 2}
+    swimFastForward: {fileID: 7400000, guid: d0bec6721b762d7429d62642b3a7d4de, type: 2}
+  actionAnimations:
+    primaryAction: {fileID: 7400000, guid: 438b4304778ad7a47a2308a0e0a05510, type: 2}
+    heldPrimaryActionStart: {fileID: 0}
+    heldPrimaryActionLoop: {fileID: 0}
+    heldPrimaryActionEnd: {fileID: 0}
+    cancelHeldPrimaryAction: {fileID: 0}
+    secondaryAction: {fileID: 0}
+    heldSecondaryActionStart: {fileID: 7400000, guid: 0c263c1f434529a49905978dca6f7975, type: 2}
+    heldSecondaryActionLoop: {fileID: 7400000, guid: a0eb911d61a8f1a4394dfcc02bc4cc8b, type: 2}
+    heldSecondaryActionEnd: {fileID: 7400000, guid: 79752daef36282a44828dcc3ede34cf9, type: 2}
+    cancelHeldSecondaryAction: {fileID: 0}
+    reloadAction: {fileID: 0}
+    meleeAction: {fileID: 7400000, guid: 438b4304778ad7a47a2308a0e0a05510, type: 2}
+    meleeActionStart: {fileID: 7400000, guid: 7e0ecfb946cc37d408face415eb72a09, type: 2}
+    meleeActionEndLight: {fileID: 7400000, guid: 84c3349e2818ca943ad3406202f7bd5d, type: 2}
+    meleeActionEndHeavy: {fileID: 7400000, guid: 8642f9d87d12275488fdb4fb46a2963b, type: 2}
+    meleeActionCancel: {fileID: 7400000, guid: 645911ff0b5b7b24792c10ad1c8de78d, type: 2}
+    meleeActionLoop: {fileID: 7400000, guid: 9567f80425d5f7240992ed6f7364c2e8, type: 2}
+  enableDebugLogs: 0

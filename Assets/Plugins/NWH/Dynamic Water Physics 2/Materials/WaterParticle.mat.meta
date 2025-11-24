@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 876454078bba3bc499e7ccd2fa51c39a
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 147990
+  packageName: Dynamic Water Physics 2
+  packageVersion: 14.0.0
+  assetPath: Assets/Plugins/NWH/Dynamic Water Physics 2/Materials/WaterParticle.mat
+  uploadId: 819958

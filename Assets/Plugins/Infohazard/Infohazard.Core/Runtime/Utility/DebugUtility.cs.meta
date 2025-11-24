@@ -1,0 +1,10 @@
+﻿fileFormatVersion: 2
+guid: e5b641f604294a009feb09ccdf4cc66e
+timeCreated: 1659589414
+AssetOrigin:
+  serializedVersion: 1
+  productId: 235104
+  packageName: Infohazard Core Utility Library
+  packageVersion: 1.4.2
+  assetPath: Assets/Plugins/Infohazard/Infohazard.Core/Runtime/Utility/DebugUtility.cs
+  uploadId: 780025

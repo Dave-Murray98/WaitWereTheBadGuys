@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 14d3acc7fc030404fb6358859c5cd9a0
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 141674
+  packageName: Crest Water 4 URP (Ocean, Rivers & Lakes)
+  packageVersion: 4.22.1
+  assetPath: Assets/Crest/Crest/Shaders/FullScreenTriangle.hlsl
+  uploadId: 749267

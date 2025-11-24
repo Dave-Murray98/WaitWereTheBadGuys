@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5899a8682689ad84ca3dc75a9e7b0510
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 232936
+  packageName: Swim Mocap Animation
+  packageVersion: 1.0
+  assetPath: Assets/YummyGames/Swim_Animation/Art/Animations/INPLACE/Idle/IP_idle_01.anim
+  uploadId: 526209

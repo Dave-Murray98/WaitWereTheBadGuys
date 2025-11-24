@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 58df501833947694c8984973071c1b3e
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 141674
+  packageName: Crest Water 4 URP (Ocean, Rivers & Lakes)
+  packageVersion: 4.22.1
+  assetPath: Assets/Crest/Crest/Shaders/OceanInputs/FlowFixedDirection.shader
+  uploadId: 749267

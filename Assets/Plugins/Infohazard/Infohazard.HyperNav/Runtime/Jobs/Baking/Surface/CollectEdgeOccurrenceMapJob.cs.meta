@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 1c3281d0c67943e98c9b77460a8c74d8
+timeCreated: 1725758908
+AssetOrigin:
+  serializedVersion: 1
+  productId: 235638
+  packageName: 'HyperNav: 3D Pathfinding and Navigation'
+  packageVersion: 2.3.0
+  assetPath: Assets/Plugins/Infohazard/Infohazard.HyperNav/Runtime/Jobs/Baking/Surface/CollectEdgeOccurrenceMapJob.cs
+  uploadId: 803424

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 97b293688a6d65641853dea8bdf789a8
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 147990
+  packageName: Dynamic Water Physics 2
+  packageVersion: 14.0.0
+  assetPath: Assets/Plugins/NWH/Dynamic Water Physics 2/Scripts/WaterObject/WaterObjectMaterial/Materials/Wooden
+    Crate - Empty.asset
+  uploadId: 819958

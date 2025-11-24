@@ -1,0 +1,10 @@
+﻿fileFormatVersion: 2
+guid: b2fefeb2837a4d9b8a048fd5e3ef15ec
+timeCreated: 1593353781
+AssetOrigin:
+  serializedVersion: 1
+  productId: 147990
+  packageName: Dynamic Water Physics 2
+  packageVersion: 14.0.0
+  assetPath: Assets/Plugins/NWH/Common/Scripts/Demo/RigidbodyFPSControllerEditor.cs
+  uploadId: 819958

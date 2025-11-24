@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 49684dcb79bc0bf4a9f0a4a7af973ae2
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 141674
+  packageName: Crest Water 4 URP (Ocean, Rivers & Lakes)
+  packageVersion: 4.22.1
+  assetPath: Assets/Crest/Crest/Shaders/ShadergraphFramework/CrestNodeApplyFresnel.hlsl
+  uploadId: 749267

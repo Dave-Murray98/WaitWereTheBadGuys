@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: cfad533f4c23e4346a6eb03e931a7e5a
+timeCreated: 1525535533
+licenseType: Store
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 141674
+  packageName: Crest Water 4 URP (Ocean, Rivers & Lakes)
+  packageVersion: 4.22.1
+  assetPath: Assets/Crest/Crest/Scripts/LodData/RegisterSeaFloorDepthInput.cs
+  uploadId: 749267

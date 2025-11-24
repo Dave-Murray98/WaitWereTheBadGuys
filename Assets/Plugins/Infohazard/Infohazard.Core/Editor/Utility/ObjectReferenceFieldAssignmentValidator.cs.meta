@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: e56014a2f66045689a6965ae191819ed
+timeCreated: 1688163320
+AssetOrigin:
+  serializedVersion: 1
+  productId: 235104
+  packageName: Infohazard Core Utility Library
+  packageVersion: 1.4.2
+  assetPath: Assets/Plugins/Infohazard/Infohazard.Core/Editor/Utility/ObjectReferenceFieldAssignmentValidator.cs
+  uploadId: 780025

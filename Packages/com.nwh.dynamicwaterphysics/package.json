@@ -1,0 +1,70 @@
+{
+    "name": "com.nwh.dynamicwaterphysics",
+    "version": "2.3.0",
+    "displayName": "NWH Dynamic Water Physics 2",
+    "description": "Water interaction simulator that uses mesh data to simulate both buoyancy and hydrodynamics.",
+    "unity": "6000.0",
+    "unityRelease": "40f1",
+    "author": {
+        "name": "NWH Coding",
+        "email": "nwhcoding@gmail.com",
+        "url": "https://nwhcoding.com"
+    },
+    "documentationUrl": "https://dynamicwaterphysics.com/",
+    "changelogUrl": "https://dynamicwaterphysics.com/doku.php/Changelog",
+    "licensesUrl": "https://unity.com/legal/as-terms",
+    "dependencies": {
+        "com.unity.burst": "1.8.23",
+        "com.unity.cinemachine": "3.1.4",
+        "com.unity.inputsystem": "1.11.2",
+        "com.unity.render-pipelines.universal": "17.0.3",
+        "com.nwh.common" : "14.0.0"
+    },
+    "samples": [
+        {
+            "displayName": "Base Sample",
+            "description": "REQUIRED FOR OTHER SAMPLES! Contains main demo scene and assets.",
+            "path": "Samples~/BaseSample"
+        },
+        {
+            "displayName": "Multiplayer Mirror Sample",
+            "description": "Contains Mirror demo. Requires Base Sample!",
+            "path": "Samples~/MultiplayerMirrorSample"
+        },
+        {
+            "displayName": "Multiplayer PUN2 Sample",
+            "description": "Contains PUN2 demo. Requires Base Sample!",
+            "path": "Samples~/MultiplayerPUN2Sample"
+        },
+        {
+            "displayName": "Crest Integration",
+            "description": "Scripts for Crest integration.",
+            "path": "Samples~/CrestIntegration"
+        },
+        {
+            "displayName": "KWS Integration",
+            "description": "Scripts for KWS integration.",
+            "path": "Samples~/KWSIntegration"
+        },
+        {
+            "displayName": "Lux Water Integration",
+            "description": "Scripts for Lux Water integration.",
+            "path": "Samples~/LuxWaterIntegration"
+        },
+        {
+            "displayName": "R.A.M Integration",
+            "description": "Scripts for R.A.M. integration.",
+            "path": "Samples~/RAMIntegration"
+        },
+        {
+            "displayName": "Stylized Water 3 Integration",
+            "description": "Scripts for Stylized Water 3 integration.",
+            "path": "Samples~/StylizedWater3Integration"
+        },
+        {
+            "displayName": "Unity HDRP Water Integration",
+            "description": "Scripts for Unity HDRP Water integration.",
+            "path": "Samples~/UnityHDRPWaterIntegration"
+        }
+    ]
+}

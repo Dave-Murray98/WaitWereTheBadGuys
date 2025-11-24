@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: f5c5e938cf8f63b4c9916440c7e4d034
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 141674
+  packageName: Crest Water 4 URP (Ocean, Rivers & Lakes)
+  packageVersion: 4.22.1
+  assetPath: Assets/Crest/Crest/Shaders/OceanInputs/Resources/FlowSplineGeometry.shader
+  uploadId: 749267

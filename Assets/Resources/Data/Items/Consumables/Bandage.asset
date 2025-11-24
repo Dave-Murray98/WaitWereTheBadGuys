@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3943def95315f084d917e2efd64303a2, type: 3}
+  m_Name: Bandage
+  m_EditorClassIdentifier: 
+  itemName: Bandage
+  description: Heals
+  itemType: 1
+  shapeType: 1
+  itemSprite: {fileID: 21300000, guid: 8f96fde14cfe2a1478e0451ec746fe3d, type: 3}
+  spriteScaleX: 2
+  spriteScaleY: 2
+  spritePositionOffset: {x: 0, y: -1}
+  cellColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  equippedItemPrefab: {fileID: 1770571109050598, guid: 2691d5739f886b1499d6c28aba83a955, type: 3}
+  equippedPositionOffset: {x: 0, y: 0, z: 0}
+  equippedRotationOffset: {x: 0, y: 0, z: 0}
+  equippedScaleOverride: {x: 30, y: 30, z: 30}
+  visualPrefab: {fileID: 1770571109050598, guid: 26ebce2f78526014da0d1b69d835b6e9, type: 3}
+  visualPrefabScale: {x: 0, y: 0, z: 0}
+  groundHeightOffset: 0.1
+  usePhysicsOnDrop: 1
+  objectMass: 5
+  shouldFloat: 0
+  interactionColliderSize: {x: 0, y: 0, z: 0}
+  stackSize: 1
+  isRotatable: 1
+  canUseOnGround: 1
+  canUseInWater: 1
+  canUseInVehicle: 0
+  degradationType: 0
+  maxDurability: 100
+  degradationRate: 1
+  degradationInterval: 1
+  playerBodyAnimationDatabase: {fileID: 0}
+  playerItemAnimationDatabase: {fileID: 0}
+  weaponSwayMultiplier: 1
+  consumableData:
+    healthRestore: 20
+    hungerRestore: 0
+    thirstRestore: 0
+    consumeTime: 2
+    multiUse: 0
+    maxUses: 1
+  rangedWeaponData:
+    damage: 10
+    range: 5
+    fireRate: 1
+    requiredAmmoType: {fileID: 0}
+    maxAmmo: 30
+    currentAmmo: 0
+    adsFOV: 45
+    adsTransitionTime: 0.25
+    adsPositionOffset: {x: 0, y: 0, z: 0}
+    adsRotationOffset: {x: 0, y: 0, z: 0}
+    adsSetupInfo: Not configured
+    adsSetupVersion: 1
+  ammoData:
+    compatibleWeapons: []
+    damageModifier: 1
+  clothingData:
+    clothingType: 0
+    validLayers: 
+    defenseValue: 0
+    warmthValue: 0
+    rainResistance: 0
+    maxCondition: 100
+    currentCondition: 100
+    damageRate: 1
+    canBeRepaired: 1
+    minimumRepairCondition: 20
+  meleeWeaponData:
+    damage: 10
+    weaponType: 0
+  toolData:
+    isActionHeld: 0
+  throwableData:
+    damage: 10
+    throwableType: 0
+    effectRadius: 5
+    fuseTime: 3
+    canCancelThrow: 1
+  bowData:
+    damage: 10
+    range: 20
+    adsFOV: 45
+    adsTransitionTime: 0.25
+    adsPositionOffset: {x: 0, y: 0, z: 0}
+    adsRotationOffset: {x: 0, y: 0, z: 0}
+    adsSetupInfo: Not configured
+    adsSetupVersion: 1
+  showDebugInfo: 0

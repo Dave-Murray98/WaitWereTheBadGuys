@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: cbaa6926ae2b3f5418d190621ebd6f17
+ComputeShaderImporter:
+  externalObjects: {}
+  currentAPIMask: 4
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 141674
+  packageName: Crest Water 4 URP (Ocean, Rivers & Lakes)
+  packageVersion: 4.22.1
+  assetPath: Assets/Crest/Crest/Shaders/Resources/QueryFlow.compute
+  uploadId: 749267

@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: e66dbc64761412d41801763633a21b35
+timeCreated: 1520678361
+licenseType: Store
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 141674
+  packageName: Crest Water 4 URP (Ocean, Rivers & Lakes)
+  packageVersion: 4.22.1
+  assetPath: Assets/Crest/Crest/Scripts/Interaction/ObjectWaterInteraction.cs
+  uploadId: 749267

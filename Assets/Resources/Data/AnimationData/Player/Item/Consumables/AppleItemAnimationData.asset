@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1b65a755b93baf46995dbedc0dd1ae8, type: 3}
+  m_Name: AppleItemAnimationData
+  m_EditorClassIdentifier: 
+  itemType: 1
+  displayName: Apple Item Animations
+  description: 
+  idle: {fileID: 7400000, guid: d2b472610cccfa24696e4e0e6fba61c5, type: 2}
+  rangedWeaponAnimations:
+    shoot: {fileID: 0}
+    reload: {fileID: 0}
+  toolAnimations:
+    useTool: {fileID: 0}
+    activeLoop: {fileID: 0}
+  keyItemAnimations:
+    useItem: {fileID: 0}
+  consumableAnimations:
+    useItem: {fileID: 7400000, guid: 0d4d7d150748aa540b89d4ae95dde41d, type: 2}
+  bowAnimations:
+    startDraw: {fileID: 0}
+    drawnLoop: {fileID: 0}
+    shoot: {fileID: 0}
+    cancel: {fileID: 0}
+    reload: {fileID: 0}
+  enableDebugLogs: 0

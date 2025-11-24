@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a43f47272e61c6544964556b82effb8f
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 147990
+  packageName: Dynamic Water Physics 2
+  packageVersion: 14.0.0
+  assetPath: Assets/Plugins/NWH/Dynamic Water Physics 2/Scripts/WaterObject/WaterObjectMaterial/Materials/Default.asset
+  uploadId: 819958

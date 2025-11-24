@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 7aec040cae0142fa98b123bb82550344
+timeCreated: 1653625261
+AssetOrigin:
+  serializedVersion: 1
+  productId: 235104
+  packageName: Infohazard Core Utility Library
+  packageVersion: 1.4.2
+  assetPath: Assets/Plugins/Infohazard/Infohazard.Core/Runtime/Attributes/EditNameOnlyAttribute.cs
+  uploadId: 780025

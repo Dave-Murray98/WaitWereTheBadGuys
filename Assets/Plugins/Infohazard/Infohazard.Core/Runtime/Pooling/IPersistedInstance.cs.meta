@@ -1,0 +1,10 @@
+﻿fileFormatVersion: 2
+guid: 21f76c5a737b4e46a92cca2cc62f0991
+timeCreated: 1659592347
+AssetOrigin:
+  serializedVersion: 1
+  productId: 235104
+  packageName: Infohazard Core Utility Library
+  packageVersion: 1.4.2
+  assetPath: Assets/Plugins/Infohazard/Infohazard.Core/Runtime/Pooling/IPersistedInstance.cs
+  uploadId: 780025

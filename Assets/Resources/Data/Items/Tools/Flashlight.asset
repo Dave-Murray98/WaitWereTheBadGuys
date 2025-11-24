@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3943def95315f084d917e2efd64303a2, type: 3}
+  m_Name: Flashlight
+  m_EditorClassIdentifier: 
+  itemName: Flashlight
+  description: Gives Light
+  itemType: 5
+  shapeType: 1
+  itemSprite: {fileID: 21300000, guid: 30c1a9f327e748442a6a1b25e78b9f68, type: 3}
+  spriteScaleX: 2
+  spriteScaleY: 2
+  spritePositionOffset: {x: 0, y: -1}
+  cellColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  equippedItemPrefab: {fileID: 1245392932827506, guid: 59dcee9f08fcf084f9c10cf1c3ae3b08, type: 3}
+  equippedPositionOffset: {x: 0, y: 0, z: 0}
+  equippedRotationOffset: {x: 0, y: 0, z: 0}
+  equippedScaleOverride: {x: 100, y: 100, z: 100}
+  visualPrefab: {fileID: 1245392932827506, guid: 59dcee9f08fcf084f9c10cf1c3ae3b08, type: 3}
+  visualPrefabScale: {x: 0, y: 0, z: 0}
+  groundHeightOffset: 0.1
+  usePhysicsOnDrop: 1
+  objectMass: 1
+  shouldFloat: 0
+  interactionColliderSize: {x: 0, y: 0, z: 0}
+  stackSize: 1
+  isRotatable: 1
+  canUseOnGround: 1
+  canUseInWater: 1
+  canUseInVehicle: 0
+  degradationType: 0
+  maxDurability: 100
+  degradationRate: 1
+  degradationInterval: 1
+  playerBodyAnimationDatabase: {fileID: 11400000, guid: 2acac83177a822b4b98e0c18da04400a, type: 2}
+  playerItemAnimationDatabase: {fileID: 11400000, guid: 786d896a395165e488589da8c60c31f9, type: 2}
+  consumableData:
+    healthRestore: 0
+    hungerRestore: 0
+    thirstRestore: 0
+    consumeTime: 2
+    multiUse: 0
+    maxUses: 1
+  rangedWeaponData:
+    damage: 10
+    range: 5
+    fireRate: 1
+    requiredAmmoType: {fileID: 0}
+    maxAmmo: 30
+    currentAmmo: 0
+    adsFOV: 45
+    adsTransitionTime: 0.25
+    adsPositionOffset: {x: 0, y: 0, z: 0}
+    adsRotationOffset: {x: 0, y: 0, z: 0}
+    adsSetupInfo: Not configured
+    adsSetupVersion: 1
+  ammoData:
+    compatibleWeapons: []
+    damageModifier: 1
+  clothingData:
+    clothingType: 0
+    validLayers: 
+    defenseValue: 0
+    warmthValue: 0
+    rainResistance: 0
+    maxCondition: 100
+    currentCondition: 100
+    damageRate: 1
+    canBeRepaired: 1
+    minimumRepairCondition: 20
+  meleeWeaponData:
+    damage: 10
+    weaponType: 0
+  toolData:
+    isActionHeld: 0
+  throwableData:
+    damage: 10
+    throwableType: 0
+    effectRadius: 5
+    fuseTime: 3
+    canCancelThrow: 1
+  bowData:
+    damage: 10
+    range: 20
+    adsFOV: 45
+    adsTransitionTime: 0.25
+    adsPositionOffset: {x: 0, y: 0, z: 0}
+    adsRotationOffset: {x: 0, y: 0, z: 0}
+    adsSetupInfo: Not configured
+    adsSetupVersion: 1
+  showDebugInfo: 0

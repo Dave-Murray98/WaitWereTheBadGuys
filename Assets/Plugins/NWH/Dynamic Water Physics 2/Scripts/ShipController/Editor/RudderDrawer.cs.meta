@@ -1,0 +1,10 @@
+﻿fileFormatVersion: 2
+guid: dc0e24fdc9bb4df0bd9f791b1fc90913
+timeCreated: 1592992131
+AssetOrigin:
+  serializedVersion: 1
+  productId: 147990
+  packageName: Dynamic Water Physics 2
+  packageVersion: 14.0.0
+  assetPath: Assets/Plugins/NWH/Dynamic Water Physics 2/Scripts/ShipController/Editor/RudderDrawer.cs
+  uploadId: 819958

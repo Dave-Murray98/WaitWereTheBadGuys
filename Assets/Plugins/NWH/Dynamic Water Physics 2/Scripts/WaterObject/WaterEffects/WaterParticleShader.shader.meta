@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 44e1bf9aba10f314fbc1aacd1e602f07
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 147990
+  packageName: Dynamic Water Physics 2
+  packageVersion: 14.0.0
+  assetPath: Assets/Plugins/NWH/Dynamic Water Physics 2/Scripts/WaterObject/WaterEffects/WaterParticleShader.shader
+  uploadId: 819958

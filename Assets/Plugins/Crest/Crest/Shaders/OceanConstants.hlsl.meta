@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 79dd7512b28c4d64b8992f6333bee58a
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 141674
+  packageName: Crest Water 4 URP (Ocean, Rivers & Lakes)
+  packageVersion: 4.22.1
+  assetPath: Assets/Crest/Crest/Shaders/OceanConstants.hlsl
+  uploadId: 749267

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: c992382ede7b2dd458f62dc3a0c0f518
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 235104
+  packageName: Infohazard Core Utility Library
+  packageVersion: 1.4.2
+  assetPath: Assets/Plugins/Infohazard/Infohazard.Core/Runtime/UniqueName/UniqueNameList.cs
+  uploadId: 780025

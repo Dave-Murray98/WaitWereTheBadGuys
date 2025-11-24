@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 6d2bb93ad3706424f878df7b6a6c1cc7
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 147990
+  packageName: Dynamic Water Physics 2
+  packageVersion: 14.0.0
+  assetPath: Packages/com.nwh.dynamicwaterphysics/Documentation~/DWP2_Manual.pdf
+  uploadId: 819958

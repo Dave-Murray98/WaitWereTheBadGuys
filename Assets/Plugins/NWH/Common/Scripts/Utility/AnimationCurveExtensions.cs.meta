@@ -1,0 +1,10 @@
+﻿fileFormatVersion: 2
+guid: 34b51e6bc0d3493cbab61632bb388338
+timeCreated: 1607279175
+AssetOrigin:
+  serializedVersion: 1
+  productId: 147990
+  packageName: Dynamic Water Physics 2
+  packageVersion: 14.0.0
+  assetPath: Assets/Plugins/NWH/Common/Scripts/Utility/AnimationCurveExtensions.cs
+  uploadId: 819958

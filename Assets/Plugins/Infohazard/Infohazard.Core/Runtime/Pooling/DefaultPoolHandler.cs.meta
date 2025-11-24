@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 7fd7786a05c24f63b9c99ed31ac18958
+timeCreated: 1673665347
+AssetOrigin:
+  serializedVersion: 1
+  productId: 235104
+  packageName: Infohazard Core Utility Library
+  packageVersion: 1.4.2
+  assetPath: Assets/Plugins/Infohazard/Infohazard.Core/Runtime/Pooling/DefaultPoolHandler.cs
+  uploadId: 780025

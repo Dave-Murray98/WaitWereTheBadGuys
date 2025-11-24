@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 165efeaecea92734e944f00a6df46c30
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 147990
+  packageName: Dynamic Water Physics 2
+  packageVersion: 14.0.0
+  assetPath: Assets/Plugins/NWH/Dynamic Water Physics 2/Materials/WaterFoam.mat
+  uploadId: 819958

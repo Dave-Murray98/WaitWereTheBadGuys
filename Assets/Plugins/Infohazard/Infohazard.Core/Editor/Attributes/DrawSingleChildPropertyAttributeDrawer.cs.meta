@@ -1,0 +1,10 @@
+﻿fileFormatVersion: 2
+guid: 651e567dbcfb42ecba3c792b0db9704b
+timeCreated: 1641632501
+AssetOrigin:
+  serializedVersion: 1
+  productId: 235104
+  packageName: Infohazard Core Utility Library
+  packageVersion: 1.4.2
+  assetPath: Assets/Plugins/Infohazard/Infohazard.Core/Editor/Attributes/DrawSingleChildPropertyAttributeDrawer.cs
+  uploadId: 780025

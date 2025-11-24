@@ -1,0 +1,10 @@
+﻿fileFormatVersion: 2
+guid: ec707ef612184d5e9a0dfbf4bdba1e7d
+timeCreated: 1593368891
+AssetOrigin:
+  serializedVersion: 1
+  productId: 147990
+  packageName: Dynamic Water Physics 2
+  packageVersion: 14.0.0
+  assetPath: Assets/Plugins/NWH/Common/Scripts/Input/InputManager/InputManagerSceneInputProvider.cs
+  uploadId: 819958

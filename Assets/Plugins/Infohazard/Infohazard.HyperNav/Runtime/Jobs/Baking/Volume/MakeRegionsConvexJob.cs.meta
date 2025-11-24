@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 8f0d77324ba848de846c0570afbff79a
+timeCreated: 1708157256
+AssetOrigin:
+  serializedVersion: 1
+  productId: 235638
+  packageName: 'HyperNav: 3D Pathfinding and Navigation'
+  packageVersion: 2.3.0
+  assetPath: Assets/Plugins/Infohazard/Infohazard.HyperNav/Runtime/Jobs/Baking/Volume/MakeRegionsConvexJob.cs
+  uploadId: 803424

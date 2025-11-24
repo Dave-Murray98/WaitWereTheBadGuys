@@ -1,0 +1,29 @@
+{
+    "name": "com.nwh.common",
+    "version": "14.0.0",
+    "displayName": "NWH Common Package",
+    "description": "Common assets shared between NWH packages.",
+    "unity": "6000.0",
+    "unityRelease": "40f1",
+    "author": 
+    {
+        "name": "NWH Coding",
+        "email": "nwhcoding@gmail.com",
+        "url": "https://nwhcoding.com"
+    },
+    "licensesUrl": "https://unity.com/legal/as-terms",
+    "dependencies": 
+    {
+        "com.unity.burst": "1.8.23",
+        "com.unity.cinemachine": "3.1.4",
+        "com.unity.inputsystem": "1.11.2",
+        "com.unity.render-pipelines.universal": "17.0.3"
+    },
+    "samples": [
+        {
+            "displayName": "Common Base Sample",
+            "description": "REQUIRED FOR OTHER SAMPLES FROM NWH! Contains shared demo assets.",
+            "path": "Samples~/CommonBaseSample"
+        }
+    ]
+}

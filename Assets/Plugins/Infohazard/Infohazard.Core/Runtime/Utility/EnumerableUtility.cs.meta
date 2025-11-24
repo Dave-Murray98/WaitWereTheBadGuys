@@ -1,0 +1,10 @@
+﻿fileFormatVersion: 2
+guid: e27b9a861695452fb1ac06f4ec0613d2
+timeCreated: 1659590069
+AssetOrigin:
+  serializedVersion: 1
+  productId: 235104
+  packageName: Infohazard Core Utility Library
+  packageVersion: 1.4.2
+  assetPath: Assets/Plugins/Infohazard/Infohazard.Core/Runtime/Utility/EnumerableUtility.cs
+  uploadId: 780025

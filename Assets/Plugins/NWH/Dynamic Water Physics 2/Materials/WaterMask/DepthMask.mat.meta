@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7c8cd4b738b0049439b8a84b93e55291
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 147990
+  packageName: Dynamic Water Physics 2
+  packageVersion: 14.0.0
+  assetPath: Assets/Plugins/NWH/Dynamic Water Physics 2/Materials/WaterMask/DepthMask.mat
+  uploadId: 819958

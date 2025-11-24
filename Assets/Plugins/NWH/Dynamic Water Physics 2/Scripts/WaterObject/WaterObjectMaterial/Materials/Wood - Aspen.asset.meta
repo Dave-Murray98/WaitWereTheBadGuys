@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: b86190ebd65a8704cbea83fd71b016df
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 147990
+  packageName: Dynamic Water Physics 2
+  packageVersion: 14.0.0
+  assetPath: Assets/Plugins/NWH/Dynamic Water Physics 2/Scripts/WaterObject/WaterObjectMaterial/Materials/Wood
+    - Aspen.asset
+  uploadId: 819958

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 6fd46b79d067f44b5bf411bfc5af658f
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 141674
+  packageName: Crest Water 4 URP (Ocean, Rivers & Lakes)
+  packageVersion: 4.22.1
+  assetPath: Assets/Crest/Crest/Scripts/Underwater/UnderwaterRenderer.Mask.cs
+  uploadId: 749267

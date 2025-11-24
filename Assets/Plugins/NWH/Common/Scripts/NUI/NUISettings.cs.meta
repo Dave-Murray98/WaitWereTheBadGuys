@@ -1,0 +1,10 @@
+﻿﻿fileFormatVersion: 2
+guid: 4569c8453c17406d83a470d6e849d57f
+timeCreated: 1581892208
+AssetOrigin:
+  serializedVersion: 1
+  productId: 147990
+  packageName: Dynamic Water Physics 2
+  packageVersion: 14.0.0
+  assetPath: Assets/Plugins/NWH/Common/Scripts/NUI/NUISettings.cs
+  uploadId: 819958

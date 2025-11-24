@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 4f816f0dc7364f4bae0a7dbacd7c700b
+timeCreated: 1740629070
+AssetOrigin:
+  serializedVersion: 1
+  productId: 235638
+  packageName: 'HyperNav: 3D Pathfinding and Navigation'
+  packageVersion: 2.3.0
+  assetPath: Assets/Plugins/Infohazard/Infohazard.HyperNav/Runtime/Settings/NavSurfaceSettings.cs
+  uploadId: 803424

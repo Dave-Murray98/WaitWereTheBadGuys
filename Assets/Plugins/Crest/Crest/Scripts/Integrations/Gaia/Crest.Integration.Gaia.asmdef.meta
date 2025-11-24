@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 1c4070cb1d689471b80e17ee7aa518e6
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 141674
+  packageName: Crest Water 4 URP (Ocean, Rivers & Lakes)
+  packageVersion: 4.22.1
+  assetPath: Assets/Crest/Crest/Scripts/Integrations/Gaia/Crest.Integration.Gaia.asmdef
+  uploadId: 749267

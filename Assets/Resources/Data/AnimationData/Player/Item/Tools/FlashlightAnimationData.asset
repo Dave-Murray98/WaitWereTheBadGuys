@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1b65a755b93baf46995dbedc0dd1ae8, type: 3}
+  m_Name: FlashlightAnimationData
+  m_EditorClassIdentifier: 
+  itemType: 5
+  displayName: Flashlight Item Animations
+  description: 
+  idle: {fileID: 7400000, guid: f716ea4962b1df941865da3d070f5c06, type: 2}
+  rangedWeaponAnimations:
+    shoot: {fileID: 0}
+    reload: {fileID: 0}
+  toolAnimations:
+    useTool: {fileID: 7400000, guid: 705991ee952ad9649ab6c843a833cf39, type: 2}
+    activeLoop: {fileID: 0}
+  keyItemAnimations:
+    useItem: {fileID: 0}
+  consumableAnimations:
+    useItem: {fileID: 0}
+  bowAnimations:
+    startDraw: {fileID: 0}
+    drawnLoop: {fileID: 0}
+    shoot: {fileID: 0}
+    cancel: {fileID: 0}
+    reload: {fileID: 0}
+  enableDebugLogs: 0

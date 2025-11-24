@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 916b93094d9636447a81709fe0165b47
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 141674
+  packageName: Crest Water 4 URP (Ocean, Rivers & Lakes)
+  packageVersion: 4.22.1
+  assetPath: Assets/Crest/Crest/Shaders/ShadergraphFramework/CrestNodeFoam.hlsl
+  uploadId: 749267

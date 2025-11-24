@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 0059730b5a844f628fffc635ef555f6d
+timeCreated: 1673739130
+AssetOrigin:
+  serializedVersion: 1
+  productId: 235104
+  packageName: Infohazard Core Utility Library
+  packageVersion: 1.4.2
+  assetPath: Assets/Plugins/Infohazard/Infohazard.Core/Runtime/Pooling/SpawnRef.cs
+  uploadId: 780025

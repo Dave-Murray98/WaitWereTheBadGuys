@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 21bf33aba1254264afd85d098253a2fc
+timeCreated: 1688087906
+AssetOrigin:
+  serializedVersion: 1
+  productId: 235104
+  packageName: Infohazard Core Utility Library
+  packageVersion: 1.4.2
+  assetPath: Assets/Plugins/Infohazard/Infohazard.Core/Runtime/Attributes/MustImplementAttribute.cs
+  uploadId: 780025

@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: c3854ce2935d48e2bc25c568c7d60886
+timeCreated: 1653626808
+AssetOrigin:
+  serializedVersion: 1
+  productId: 235104
+  packageName: Infohazard Core Utility Library
+  packageVersion: 1.4.2
+  assetPath: Assets/Plugins/Infohazard/Infohazard.Core/Editor/UniqueName/UniqueNameListEntryDrawer.cs
+  uploadId: 780025

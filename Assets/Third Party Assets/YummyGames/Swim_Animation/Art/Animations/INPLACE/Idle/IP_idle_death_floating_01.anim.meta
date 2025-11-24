@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 473e1e9e7eb83a54baea035b2b28d9b2
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 232936
+  packageName: Swim Mocap Animation
+  packageVersion: 1.0
+  assetPath: Assets/YummyGames/Swim_Animation/Art/Animations/INPLACE/Idle/IP_idle_death_floating_01.anim
+  uploadId: 526209

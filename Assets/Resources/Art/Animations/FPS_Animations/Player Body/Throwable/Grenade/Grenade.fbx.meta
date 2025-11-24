@@ -1,0 +1,801 @@
+fileFormatVersion: 2
+guid: d729c8a237c90aa43807893f0a5a89b0
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'Grenade' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Synty_Humanoid_Rig:Elbow_L' has translation
+      animation that will be discarded.\n\t'Synty_Humanoid_Rig:Elbow_R' has translation
+      animation that will be discarded.\n\t'Synty_Humanoid_Rig:LowerLeg_R' has translation
+      animation that will be discarded.\n\t'Synty_Humanoid_Rig:LowerLeg_L' has translation
+      animation that will be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Grenade_Idle
+      takeName: Grenade
+      internalID: 6373700394438915860
+      firstFrame: 1
+      lastFrame: 61
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Grenade_Run
+      takeName: Grenade
+      internalID: -1591645589608201588
+      firstFrame: 62
+      lastFrame: 86
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Grenade_Throw
+      takeName: Grenade
+      internalID: 478198105566510137
+      firstFrame: 83
+      lastFrame: 145
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: Synty_Humanoid_Rig:Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Synty_Humanoid_Rig:UpperLeg_L
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Synty_Humanoid_Rig:UpperLeg_R
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Synty_Humanoid_Rig:LowerLeg_L
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Synty_Humanoid_Rig:LowerLeg_R
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Synty_Humanoid_Rig:Ankle_L
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Synty_Humanoid_Rig:Ankle_R
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Synty_Humanoid_Rig:Spine_01
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Synty_Humanoid_Rig:Spine_02
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Synty_Humanoid_Rig:Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Synty_Humanoid_Rig:Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Synty_Humanoid_Rig:Clavicle_L
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Synty_Humanoid_Rig:Clavicle_R
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Synty_Humanoid_Rig:Shoulder_L
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Synty_Humanoid_Rig:Shoulder_R
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Synty_Humanoid_Rig:Elbow_L
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Synty_Humanoid_Rig:Elbow_R
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Synty_Humanoid_Rig:Hand_L
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Synty_Humanoid_Rig:Hand_R
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Synty_Humanoid_Rig:Ball_L
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Synty_Humanoid_Rig:Ball_R
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Synty_Humanoid_Rig:Eyes
+      humanName: LeftEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Synty_Humanoid_Rig:Eyebrows
+      humanName: Jaw
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Synty_Humanoid_Rig:Thumb_01_L
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Synty_Humanoid_Rig:Thumb_02_L
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Synty_Humanoid_Rig:Thumb_03_L
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Synty_Humanoid_Rig:IndexFinger_01_L
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Synty_Humanoid_Rig:IndexFinger_02_L
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Synty_Humanoid_Rig:IndexFinger_03_L
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Synty_Humanoid_Rig:Finger_01_L
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Synty_Humanoid_Rig:Finger_02_L
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Synty_Humanoid_Rig:Finger_03_L
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Synty_Humanoid_Rig:Thumb_01_R
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Synty_Humanoid_Rig:Thumb_02_R
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Synty_Humanoid_Rig:Thumb_03_R
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Synty_Humanoid_Rig:IndexFinger_01_R
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Synty_Humanoid_Rig:IndexFinger_02_R
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Synty_Humanoid_Rig:IndexFinger_03_R
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Synty_Humanoid_Rig:Finger_01_R
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Synty_Humanoid_Rig:Finger_02_R
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Synty_Humanoid_Rig:Finger_03_R
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Synty_Humanoid_Rig:Spine_03
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Grenade(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Synty_Humanoid_Rig:Character_Skeleton
+      parentName: Grenade(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Synty_Humanoid_Rig:Root
+      parentName: Synty_Humanoid_Rig:Character_Skeleton
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Synty_Humanoid_Rig:Hips
+      parentName: Synty_Humanoid_Rig:Root
+      position: {x: 2.2737356e-15, y: 0.9042904, z: 0.0000008344644}
+      rotation: {x: 0.4611366, y: -0.5360532, z: -0.4611366, w: 0.5360532}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Synty_Humanoid_Rig:Spine_01
+      parentName: Synty_Humanoid_Rig:Hips
+      position: {x: -0.10393269, y: 0.000000010653916, z: -0.000000007716636}
+      rotation: {x: -0.9950197, y: 0.099679, z: -0, w: 0}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1}
+    - name: Synty_Humanoid_Rig:Spine_02
+      parentName: Synty_Humanoid_Rig:Spine_01
+      position: {x: -0.18151163, y: -0.00000007691046, z: -0.000000006812817}
+      rotation: {x: 0.99518615, y: -0.0980027, z: -0, w: 0}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: Synty_Humanoid_Rig:Spine_03
+      parentName: Synty_Humanoid_Rig:Spine_02
+      position: {x: -0.17903706, y: 0.00000006089424, z: 0.0000000065947994}
+      rotation: {x: -0.99381036, y: 0.1110902, z: -0.000000029852483, w: -0.000000029752078}
+      scale: {x: 1, y: 0.99999994, z: 0.9999999}
+    - name: Synty_Humanoid_Rig:Neck
+      parentName: Synty_Humanoid_Rig:Spine_03
+      position: {x: -0.111889705, y: 0.00000006112396, z: -0.0000000041978523}
+      rotation: {x: -0.000000001398943, y: -0.0000000010668463, z: 0.041733507, w: 0.99912876}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: Synty_Humanoid_Rig:Head
+      parentName: Synty_Humanoid_Rig:Neck
+      position: {x: -0.12164423, y: 0.0000003513591, z: -0.0000000034132632}
+      rotation: {x: 0.4585709, y: -0.53824973, z: 0.4585709, w: 0.5382497}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: Synty_Humanoid_Rig:Eyes
+      parentName: Synty_Humanoid_Rig:Head
+      position: {x: -2.0510383e-31, y: 0.09447606, z: 0.12272215}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 0.9999998}
+    - name: Synty_Humanoid_Rig:Eyebrows
+      parentName: Synty_Humanoid_Rig:Head
+      position: {x: 2.5243548e-31, y: 0.1276692, z: 0.12272215}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 0.9999998}
+    - name: Synty_Humanoid_Rig:Clavicle_L
+      parentName: Synty_Humanoid_Rig:Spine_03
+      position: {x: -0.05801171, y: -0.04191448, z: -0.07447154}
+      rotation: {x: 0.54901904, y: -0.59847736, z: 0.39792946, w: 0.42667925}
+      scale: {x: 0.99999994, y: 0.9999998, z: 0.99999994}
+    - name: Synty_Humanoid_Rig:Shoulder_L
+      parentName: Synty_Humanoid_Rig:Clavicle_L
+      position: {x: -0.13197851, y: 0.00000005786917, z: -0.000000011125541}
+      rotation: {x: 0.0077302735, y: 0.19767088, z: 0.011898366, w: 0.9801657}
+      scale: {x: 0.99999994, y: 1.0000001, z: 0.9999998}
+    - name: Synty_Humanoid_Rig:Elbow_L
+      parentName: Synty_Humanoid_Rig:Shoulder_L
+      position: {x: -0.33947298, y: -0.00145945, z: -0.0014297923}
+      rotation: {x: 0.0005652649, y: 0.0017439873, z: -0.028790193, w: 0.99958384}
+      scale: {x: 1.0000001, y: 1.0000001, z: 0.99999994}
+    - name: Synty_Humanoid_Rig:Hand_L
+      parentName: Synty_Humanoid_Rig:Elbow_L
+      position: {x: -0.27114534, y: -0.00000035587803, z: -0.00038110884}
+      rotation: {x: 0.000000038184222, y: -0.035830706, z: 0.000000012078997, w: 0.9993579}
+      scale: {x: 0.99999994, y: 1, z: 0.99999994}
+    - name: Synty_Humanoid_Rig:Thumb_01_L
+      parentName: Synty_Humanoid_Rig:Hand_L
+      position: {x: -0.03514045, y: -0.011706936, z: 0.04505532}
+      rotation: {x: 0.0119291255, y: 0.3203636, z: 0.05606687, w: 0.9455588}
+      scale: {x: 0.9999997, y: 0.9999998, z: 1.0000001}
+    - name: Synty_Humanoid_Rig:Thumb_02_L
+      parentName: Synty_Humanoid_Rig:Thumb_01_L
+      position: {x: -0.06370224, y: 0.00000017164626, z: 0.0000001271605}
+      rotation: {x: -0.04061381, y: -0.021911047, z: 0.02633533, w: 0.9985874}
+      scale: {x: 1.0000002, y: 1, z: 1.0000002}
+    - name: Synty_Humanoid_Rig:Thumb_03_L
+      parentName: Synty_Humanoid_Rig:Thumb_02_L
+      position: {x: -0.056655616, y: -0.00000003298551, z: -9.765325e-10}
+      rotation: {x: -0.03640335, y: -0.15203467, z: -0.22999516, w: 0.9605533}
+      scale: {x: 1, y: 1, z: 0.9999996}
+    - name: Synty_Humanoid_Rig:IndexFinger_01_L
+      parentName: Synty_Humanoid_Rig:Hand_L
+      position: {x: -0.103965566, y: 0.003987123, z: 0.026726369}
+      rotation: {x: 0.00028042798, y: 0.065794446, z: 0.0042538927, w: 0.99782413}
+      scale: {x: 0.99999994, y: 0.99999994, z: 0.9999999}
+    - name: Synty_Humanoid_Rig:IndexFinger_02_L
+      parentName: Synty_Humanoid_Rig:IndexFinger_01_L
+      position: {x: -0.040936384, y: -0.000000044080128, z: -0.000000054281426}
+      rotation: {x: -0.0011585999, y: -0.004197834, z: 0.038433436, w: 0.99925166}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000002}
+    - name: Synty_Humanoid_Rig:IndexFinger_03_L
+      parentName: Synty_Humanoid_Rig:IndexFinger_02_L
+      position: {x: -0.037911892, y: -0.000000017128555, z: -0.00000003306973}
+      rotation: {x: -0.006920171, y: -0.016654387, z: 0.03691493, w: 0.9991557}
+      scale: {x: 1.0000005, y: 1.0000001, z: 1.0000002}
+    - name: Synty_Humanoid_Rig:IndexFinger_04_L
+      parentName: Synty_Humanoid_Rig:IndexFinger_03_L
+      position: {x: -0.037797924, y: 0.00000001968072, z: 0.000000020780208}
+      rotation: {x: -0.004519708, y: -0.0280399, z: -0.15906808, w: 0.9868591}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: Synty_Humanoid_Rig:Finger_01_L
+      parentName: Synty_Humanoid_Rig:Hand_L
+      position: {x: -0.09982516, y: -0.0011595686, z: -0.032833405}
+      rotation: {x: -0.0024864033, y: -0.04387973, z: 0.056519106, w: 0.9974338}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: Synty_Humanoid_Rig:Finger_02_L
+      parentName: Synty_Humanoid_Rig:Finger_01_L
+      position: {x: -0.0424881, y: 0.000000063684716, z: -0.000000039674287}
+      rotation: {x: 0.002637251, y: 0.019491995, z: 0.021269474, w: 0.99958026}
+      scale: {x: 1.0000006, y: 1.0000002, z: 1.0000006}
+    - name: Synty_Humanoid_Rig:Finger_03_L
+      parentName: Synty_Humanoid_Rig:Finger_02_L
+      position: {x: -0.03513329, y: -0.00000003695856, z: 0.000000012582829}
+      rotation: {x: -0.018261492, y: -0.023078011, z: 0.029869549, w: 0.99912053}
+      scale: {x: 0.99999994, y: 1, z: 0.9999996}
+    - name: Synty_Humanoid_Rig:Finger_04_L
+      parentName: Synty_Humanoid_Rig:Finger_03_L
+      position: {x: -0.030032339, y: -0.000000015254699, z: -0.000000046589907}
+      rotation: {x: 0.016646236, y: 0.096525155, z: -0.16912994, w: 0.98071444}
+      scale: {x: 1.0000002, y: 0.99999994, z: 0.99999994}
+    - name: Synty_Humanoid_Rig:Clavicle_R
+      parentName: Synty_Humanoid_Rig:Spine_03
+      position: {x: -0.05801537, y: -0.041914187, z: 0.0744715}
+      rotation: {x: 0.59847397, y: 0.5490221, z: 0.42668462, w: -0.3979245}
+      scale: {x: 1, y: 1, z: 0.9999998}
+    - name: Synty_Humanoid_Rig:Shoulder_R
+      parentName: Synty_Humanoid_Rig:Clavicle_R
+      position: {x: 0.13197838, y: 0.000006496873, z: 0.000000058512065}
+      rotation: {x: 0.007731883, y: 0.19767596, z: 0.011906591, w: 0.98016465}
+      scale: {x: 1.0000001, y: 1.0000004, z: 1.0000002}
+    - name: Synty_Humanoid_Rig:Elbow_R
+      parentName: Synty_Humanoid_Rig:Shoulder_R
+      position: {x: 0.33947343, y: 0.0014574263, z: 0.0014321604}
+      rotation: {x: 0.0005646343, y: 0.0017340032, z: -0.028784888, w: 0.999584}
+      scale: {x: 1.0000004, y: 1, z: 0.9999998}
+    - name: Synty_Humanoid_Rig:Hand_R
+      parentName: Synty_Humanoid_Rig:Elbow_R
+      position: {x: 0.27114505, y: -0.0000031839354, z: 0.0003792423}
+      rotation: {x: 0.0000000017462298, y: -0.035830725, z: 0.000000030647243, w: 0.9993579}
+      scale: {x: 1.0000001, y: 1, z: 1.0000002}
+    - name: Synty_Humanoid_Rig:Thumb_01_R
+      parentName: Synty_Humanoid_Rig:Hand_R
+      position: {x: 0.03514006, y: 0.01171, z: -0.045055274}
+      rotation: {x: 0.0119452225, y: 0.32035264, z: 0.05609803, w: 0.94556046}
+      scale: {x: 1.0000002, y: 1.0000006, z: 1.0000005}
+    - name: Synty_Humanoid_Rig:Thumb_02_R
+      parentName: Synty_Humanoid_Rig:Thumb_01_R
+      position: {x: 0.063701436, y: -0.000007823078, z: 0.00000043968225}
+      rotation: {x: -0.040607996, y: -0.02190619, z: 0.026278442, w: 0.9985893}
+      scale: {x: 1.0000006, y: 1.0000004, z: 1.0000002}
+    - name: Synty_Humanoid_Rig:Thumb_03_R
+      parentName: Synty_Humanoid_Rig:Thumb_02_R
+      position: {x: 0.05665512, y: 0.000000051983193, z: -0.00000020098524}
+      rotation: {x: -0.036403324, y: -0.1520346, z: -0.22999518, w: 0.9605532}
+      scale: {x: 1.0000005, y: 1.0000001, z: 1.0000005}
+    - name: Synty_Humanoid_Rig:IndexFinger_01_R
+      parentName: Synty_Humanoid_Rig:Hand_R
+      position: {x: 0.10396603, y: -0.0039900253, z: -0.026726529}
+      rotation: {x: 0.00028046555, y: 0.06579448, z: 0.0042538764, w: 0.99782413}
+      scale: {x: 1.0000002, y: 1.0000004, z: 1.0000006}
+    - name: Synty_Humanoid_Rig:IndexFinger_02_R
+      parentName: Synty_Humanoid_Rig:IndexFinger_01_R
+      position: {x: 0.04093591, y: 0.000001072279, z: -0.000000028519395}
+      rotation: {x: -0.0011590763, y: -0.004195063, z: 0.038400058, w: 0.999253}
+      scale: {x: 1, y: 1.0000004, z: 1}
+    - name: Synty_Humanoid_Rig:IndexFinger_03_R
+      parentName: Synty_Humanoid_Rig:IndexFinger_02_R
+      position: {x: 0.037912056, y: 0.000003235895, z: 0.000000010579722}
+      rotation: {x: -0.0069198087, y: -0.016684972, z: 0.037021205, w: 0.99915123}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: Synty_Humanoid_Rig:IndexFinger_04_R
+      parentName: Synty_Humanoid_Rig:IndexFinger_03_R
+      position: {x: 0.037793353, y: -0.000005256372, z: -0.00000015367986}
+      rotation: {x: -0.004519724, y: -0.028039984, z: -0.15906806, w: 0.986859}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: Synty_Humanoid_Rig:Finger_01_R
+      parentName: Synty_Humanoid_Rig:Hand_R
+      position: {x: 0.09982505, y: 0.0011600398, z: 0.03283338}
+      rotation: {x: -0.002486383, y: -0.043879695, z: 0.05651914, w: 0.9974337}
+      scale: {x: 1.0000004, y: 1.0000002, z: 1.0000005}
+    - name: Synty_Humanoid_Rig:Finger_02_R
+      parentName: Synty_Humanoid_Rig:Finger_01_R
+      position: {x: 0.042488053, y: 0.0000002382338, z: -0.000000028620073}
+      rotation: {x: 0.002637163, y: 0.01949195, z: 0.0212693, w: 0.99958026}
+      scale: {x: 0.9999997, y: 1.0000005, z: 1.0000004}
+    - name: Synty_Humanoid_Rig:Finger_03_R
+      parentName: Synty_Humanoid_Rig:Finger_02_R
+      position: {x: 0.03513327, y: -0.00000012674636, z: 0.000000056549183}
+      rotation: {x: -0.01826165, y: -0.023072293, z: 0.029850187, w: 0.99912125}
+      scale: {x: 1.0000004, y: 0.99999994, z: 1}
+    - name: Synty_Humanoid_Rig:Finger_04_R
+      parentName: Synty_Humanoid_Rig:Finger_03_R
+      position: {x: 0.030031096, y: 0.0000010915924, z: 0.0000003886621}
+      rotation: {x: 0.01664621, y: 0.09652512, z: -0.16912994, w: 0.98071444}
+      scale: {x: 1.0000005, y: 1.0000002, z: 1.0000004}
+    - name: Synty_Humanoid_Rig:UpperLeg_R
+      parentName: Synty_Humanoid_Rig:Hips
+      position: {x: 0.04115767, y: -0.026920646, z: -0.09896687}
+      rotation: {x: 0.04177526, y: 0.7058717, z: -0.7041901, w: -0.06415946}
+      scale: {x: 0.9999999, y: 0.9999998, z: 0.9999999}
+    - name: Synty_Humanoid_Rig:LowerLeg_R
+      parentName: Synty_Humanoid_Rig:UpperLeg_R
+      position: {x: -0.39930823, y: 0.0000018607292, z: -0.000022766766}
+      rotation: {x: 0.64437765, y: 0.02446274, z: -0.0047376165, w: 0.7643014}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000002}
+    - name: Synty_Humanoid_Rig:Ankle_R
+      parentName: Synty_Humanoid_Rig:LowerLeg_R
+      position: {x: -0.37712333, y: 0.000004810779, z: -0.000000016337431}
+      rotation: {x: -0.8576702, y: -0.5072129, z: -0.039752763, w: 0.07454372}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000001}
+    - name: Synty_Humanoid_Rig:Ball_R
+      parentName: Synty_Humanoid_Rig:Ankle_R
+      position: {x: -0.11284002, y: -0.000000026699, z: -0.000000005046116}
+      rotation: {x: -0.0000000074505797, y: -0.000000031664964, z: -0.27001593, w: 0.96285594}
+      scale: {x: 1.0000001, y: 0.99999994, z: 1.0000002}
+    - name: Synty_Humanoid_Rig:Toes_R
+      parentName: Synty_Humanoid_Rig:Ball_R
+      position: {x: -0.072957516, y: 0.0000000043671364, z: -0.000000003815601}
+      rotation: {x: 0.000000005072666, y: -0.70710677, z: -0.00000004977614, w: 0.7071067}
+      scale: {x: 1.0000002, y: 1, z: 1.0000001}
+    - name: Synty_Humanoid_Rig:UpperLeg_L
+      parentName: Synty_Humanoid_Rig:Hips
+      position: {x: 0.041157797, y: -0.026920704, z: 0.09896691}
+      rotation: {x: -0.7058717, y: 0.041775316, z: -0.06415939, w: 0.70419}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000001}
+    - name: Synty_Humanoid_Rig:LowerLeg_L
+      parentName: Synty_Humanoid_Rig:UpperLeg_L
+      position: {x: 0.39930806, y: -0.0000022361835, z: 0.0000123150585}
+      rotation: {x: 0.6443777, y: 0.024462674, z: -0.004737714, w: 0.7643013}
+      scale: {x: 0.99999976, y: 1, z: 1}
+    - name: Synty_Humanoid_Rig:Ankle_L
+      parentName: Synty_Humanoid_Rig:LowerLeg_L
+      position: {x: 0.3771231, y: -0.0000048693837, z: -0.0000011654494}
+      rotation: {x: 0.8576701, y: 0.5072128, z: 0.039752718, w: -0.07454367}
+      scale: {x: 1.0000006, y: 1.0000011, z: 1.0000008}
+    - name: Synty_Humanoid_Rig:Ball_L
+      parentName: Synty_Humanoid_Rig:Ankle_L
+      position: {x: 0.11284004, y: -0.000000010307795, z: -0.000000009958622}
+      rotation: {x: -0.000000052154068, y: 0.0000000074505815, z: -0.2700159, w: 0.9628559}
+      scale: {x: 1.0000001, y: 1.0000004, z: 1.0000002}
+    - name: Synty_Humanoid_Rig:Toes_L
+      parentName: Synty_Humanoid_Rig:Ball_L
+      position: {x: 0.07295748, y: -0.000000010654419, z: -0.000000019819447}
+      rotation: {x: 0.000000050409838, y: -0.7071068, z: -0.000000065311006, w: 0.7071067}
+      scale: {x: 1.0000002, y: 1.0000005, z: 1.0000006}
+    - name: Synty_Humanoid_Rig:Character_Model
+      parentName: Grenade(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Synty_Humanoid_Rig:Character_Dummy_Male_01
+      parentName: Synty_Humanoid_Rig:Character_Model
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

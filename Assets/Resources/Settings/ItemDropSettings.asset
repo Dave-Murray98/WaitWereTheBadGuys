@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e18a28ec46a7bd428f2b1ab3b2a7347, type: 3}
+  m_Name: ItemDropSettings
+  m_EditorClassIdentifier: 
+  maxDroppedItems: 50
+  dropDistanceFromPlayer: 1.5
+  enablePhysicsSettling: 1
+  physicsSettleTime: 5
+  pickupInteractionPrefab: {fileID: 2273072809719146425, guid: 072f36290b6c8f24d80173cae8f6a567, type: 3}
+  itemDrag: 1
+  itemAngularDrag: 2
+  usePhysicsSimulation: 1
+  dropForceMin: {x: -1, y: 0, z: -1}
+  dropForceMax: {x: 1, y: 2, z: 1}
+  maxSearchRadius: 3
+  maxGroundCheckDistance: 10
+  maxDropSlope: 30
+  additionalGroundOffset: 0.1
+  obstacleCheckRadius: 0.5
+  groundLayerMask:
+    serializedVersion: 2
+    m_Bits: 8
+  obstacleLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  dropEffect: {fileID: 0}
+  dropSound: {fileID: 0}
+  enableItemBobbing: 0
+  bobbingHeight: 0.05
+  bobbingSpeed: 1
+  enableDebugLogs: 0
+  showDebugVisualization: 0
+  debugColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}

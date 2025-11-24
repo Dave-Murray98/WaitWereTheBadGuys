@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: a28a41509db44002bde99d5360a64463
+timeCreated: 1707466384
+AssetOrigin:
+  serializedVersion: 1
+  productId: 235104
+  packageName: Infohazard Core Utility Library
+  packageVersion: 1.4.2
+  assetPath: Assets/Plugins/Infohazard/Infohazard.Core/Runtime/Utility/SerializableRange.cs
+  uploadId: 780025

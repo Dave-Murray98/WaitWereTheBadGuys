@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &9151528357053711758
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4786800207662815047}
+  - component: {fileID: 7031232575349988811}
+  m_Layer: 5
+  m_Name: StorageContainerGridVisual
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &4786800207662815047
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9151528357053711758}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 150, y: -100}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0, y: 1}
+--- !u!114 &7031232575349988811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9151528357053711758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cafeb0ff7bb05b488c1e7e2e2b7b227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cellSize: 50
+  cellSpacing: 2
+  gridLineColor: {r: 0, g: 0, b: 0, a: 0.7}
+  validPreviewColor: {r: 0, g: 1, b: 0, a: 0.5}
+  invalidPreviewColor: {r: 1, g: 0, b: 0, a: 0.5}
+  itemVisualPrefab: {fileID: 8720481152623599973, guid: 00b97a8c39f7b0545b91f91bb5f3eb8a, type: 3}
+  previewCellPrefab: {fileID: 1609398255486087772, guid: 120b278ee3d2e11459c113a4e738922b, type: 3}
+  enableDebugLogs: 0
+  autoConnectToNearestContainer: 1
+  targetContainerID: 
+  specificContainer: {fileID: 0}
+  containerGridLineColor: {r: 0.4, g: 0.6, b: 0.8, a: 0.7}
+  containerValidPreviewColor: {r: 0, g: 0.8, b: 1, a: 0.5}
+  containerInvalidPreviewColor: {r: 1, g: 0.4, b: 0, a: 0.5}

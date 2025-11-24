@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: b7b01dd578485d4498457299aaaeffa8
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 141674
+  packageName: Crest Water 4 URP (Ocean, Rivers & Lakes)
+  packageVersion: 4.22.1
+  assetPath: Assets/Crest/Crest/Scripts/LodData/SplinePointData/SplinePointDataFoam.cs
+  uploadId: 749267

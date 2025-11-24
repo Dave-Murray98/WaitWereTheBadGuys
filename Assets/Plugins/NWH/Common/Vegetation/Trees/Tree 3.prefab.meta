@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 0d376a2e381cbe745849cf5320d67493
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 147990
+  packageName: Dynamic Water Physics 2
+  packageVersion: 14.0.0
+  assetPath: Assets/Plugins/NWH/Common/Vegetation/Trees/Tree 3.prefab
+  uploadId: 819958

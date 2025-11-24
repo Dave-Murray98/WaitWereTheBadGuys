@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: ae44cf6af42246478bf7193192d68090
+timeCreated: 1722146686
+AssetOrigin:
+  serializedVersion: 1
+  productId: 235638
+  packageName: 'HyperNav: 3D Pathfinding and Navigation'
+  packageVersion: 2.3.0
+  assetPath: Assets/Plugins/Infohazard/Infohazard.HyperNav/Runtime/Jobs/Baking/Surface/UpdateNormalsJob.cs
+  uploadId: 803424

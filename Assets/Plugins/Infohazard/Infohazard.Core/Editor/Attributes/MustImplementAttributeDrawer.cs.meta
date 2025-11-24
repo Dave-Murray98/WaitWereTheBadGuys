@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 4f13c23a68384535bbe2b1c2ae4bd9b7
+timeCreated: 1688156670
+AssetOrigin:
+  serializedVersion: 1
+  productId: 235104
+  packageName: Infohazard Core Utility Library
+  packageVersion: 1.4.2
+  assetPath: Assets/Plugins/Infohazard/Infohazard.Core/Editor/Attributes/MustImplementAttributeDrawer.cs
+  uploadId: 780025

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 6306a7aa4e66cb24aa90836f583b6d4e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 147990
+  packageName: Dynamic Water Physics 2
+  packageVersion: 14.0.0
+  assetPath: Assets/Plugins/NWH/Dynamic Water Physics 2/Scripts/ShipController/Input/InputProviders/InputSystemProvider/ShipInputActions.cs
+  uploadId: 819958

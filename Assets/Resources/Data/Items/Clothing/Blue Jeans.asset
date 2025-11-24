@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3943def95315f084d917e2efd64303a2, type: 3}
+  m_Name: Blue Jeans
+  m_EditorClassIdentifier: 
+  itemName: Blue Jeans
+  description: Light Trousers
+  itemType: 8
+  shapeType: 2
+  itemSprite: {fileID: 21300000, guid: 679a3f7b466215d4f88c92b6977cb66e, type: 3}
+  spriteScaleX: 1
+  spriteScaleY: 1
+  spritePositionOffset: {x: 0, y: -1}
+  cellColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  equippedItemPrefab: {fileID: 0}
+  equippedPositionOffset: {x: 0, y: 0, z: 0}
+  equippedRotationOffset: {x: 0, y: 0, z: 0}
+  equippedScaleOverride: {x: 0, y: 0, z: 0}
+  visualPrefab: {fileID: 1320539295254762, guid: e9be0263a06856c4d96e5614c5650332, type: 3}
+  visualPrefabScale: {x: 0, y: 0, z: 0}
+  groundHeightOffset: 0.1
+  usePhysicsOnDrop: 1
+  objectMass: 5
+  shouldFloat: 0
+  interactionColliderSize: {x: 0, y: 0, z: 0}
+  stackSize: 1
+  isRotatable: 1
+  canUseOnGround: 1
+  canUseInWater: 0
+  canUseInVehicle: 0
+  degradationType: 0
+  maxDurability: 100
+  degradationRate: 1
+  degradationInterval: 1
+  animationDatabase: {fileID: 0}
+  consumableData:
+    healthRestore: 0
+    hungerRestore: 0
+    thirstRestore: 0
+    consumeTime: 2
+    multiUse: 0
+    maxUses: 1
+  rangedWeaponData:
+    damage: 10
+    range: 5
+    fireRate: 1
+    requiredAmmoType: {fileID: 0}
+    maxAmmo: 30
+    currentAmmo: 0
+    adsFOV: 45
+    adsTransitionTime: 0.25
+    adsCameraDistance: 0.15
+    rearSightLocalPosition: {x: 0, y: 0, z: 0}
+    rearSightLocalRotation: {x: 0, y: 0, z: 0}
+    frontSightLocalPosition: {x: 0, y: 0, z: 0}
+    frontSightLocalRotation: {x: 0, y: 0, z: 0}
+    weaponPositionOffset: {x: 0, y: 0, z: 0}
+    weaponRotationOffset: {x: 0, y: 0, z: 0}
+  equipmentData:
+    compatibleInteractionTags: []
+    useRange: 2
+    useTime: 1
+    hasLimitedUses: 0
+    maxUses: 10
+  ammoData:
+    compatibleWeapons: []
+    damageModifier: 1
+  clothingData:
+    clothingType: 3
+    validLayers: 05000000
+    defenseValue: 1
+    warmthValue: 1
+    rainResistance: 1
+    maxCondition: 100
+    currentCondition: 100
+    damageRate: 1
+    canBeRepaired: 1
+    minimumRepairCondition: 99
+  meleeWeaponData:
+    damage: 10
+    weaponType: 0
+  toolData:
+    isActionHeld: 0
+  throwableData:
+    damage: 10
+    throwableType: 0
+    effectRadius: 5
+    fuseTime: 3
+    canCancelThrow: 1
+  bowData:
+    damage: 10
+    range: 20
+    adsFOV: 45
+    adsTransitionTime: 0.25
+    adsCameraDistance: 0.15
+    rearSightLocalPosition: {x: 0, y: 0, z: 0}
+    rearSightLocalRotation: {x: 0, y: 0, z: 0}
+    frontSightLocalPosition: {x: 0, y: 0, z: 0}
+    frontSightLocalRotation: {x: 0, y: 0, z: 0}
+    weaponPositionOffset: {x: 0, y: 0, z: 0}
+    weaponRotationOffset: {x: 0, y: 0, z: 0}
+  showDebugInfo: 0

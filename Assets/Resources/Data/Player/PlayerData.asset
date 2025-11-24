@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcfe9bbdc1dcb204983a733ab7a99fcb, type: 3}
+  m_Name: PlayerData
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 0
+  healthRegenRate: 0
+  walkSpeed: 5
+  runSpeed: 8
+  crouchSpeed: 2.5
+  jumpHeight: 2
+  gravity: -9.81
+  stopForce: 10
+  currentPosition: {x: 0, y: 0, z: 0}
+  currentRotation: {x: 0, y: 0, z: 0}
+  footstepRate: 0.5
+  lookSensitivity: 3
+  verticalLookLimit: 85
+  crouchHeightMultiplier: 0.5

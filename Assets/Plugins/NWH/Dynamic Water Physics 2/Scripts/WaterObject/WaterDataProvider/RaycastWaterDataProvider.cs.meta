@@ -1,0 +1,10 @@
+﻿fileFormatVersion: 2
+guid: 223c7c03b51c437d903c9d67b650402e
+timeCreated: 1594572266
+AssetOrigin:
+  serializedVersion: 1
+  productId: 147990
+  packageName: Dynamic Water Physics 2
+  packageVersion: 14.0.0
+  assetPath: Assets/Plugins/NWH/Dynamic Water Physics 2/Scripts/WaterObject/WaterDataProvider/RaycastWaterDataProvider.cs
+  uploadId: 819958

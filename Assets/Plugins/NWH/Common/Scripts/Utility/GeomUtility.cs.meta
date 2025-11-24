@@ -1,0 +1,10 @@
+﻿fileFormatVersion: 2
+guid: beed53cc984d46af9792ca3197ced971
+timeCreated: 1614097334
+AssetOrigin:
+  serializedVersion: 1
+  productId: 147990
+  packageName: Dynamic Water Physics 2
+  packageVersion: 14.0.0
+  assetPath: Assets/Plugins/NWH/Common/Scripts/Utility/GeomUtility.cs
+  uploadId: 819958

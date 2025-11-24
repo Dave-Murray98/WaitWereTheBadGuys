@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: eb3085107770689438d3a97cf6959965
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 141674
+  packageName: Crest Water 4 URP (Ocean, Rivers & Lakes)
+  packageVersion: 4.22.1
+  assetPath: Assets/Crest/Crest/Shaders/Underwater/Resources/UnderwaterEffectURP.shader
+  uploadId: 749267

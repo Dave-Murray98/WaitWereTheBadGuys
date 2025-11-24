@@ -1,0 +1,10 @@
+﻿fileFormatVersion: 2
+guid: 993b5ed1c02645b9b5bbf6037644a91d
+timeCreated: 1611072600
+AssetOrigin:
+  serializedVersion: 1
+  productId: 147990
+  packageName: Dynamic Water Physics 2
+  packageVersion: 14.0.0
+  assetPath: Assets/Plugins/NWH/Common/Scripts/Utility/QuaternionExtensions.cs
+  uploadId: 819958

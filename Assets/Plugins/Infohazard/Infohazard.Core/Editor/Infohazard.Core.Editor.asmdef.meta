@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 41b3be209e3cc074c9bab47ec8148e91
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 235104
+  packageName: Infohazard Core Utility Library
+  packageVersion: 1.4.2
+  assetPath: Assets/Plugins/Infohazard/Infohazard.Core/Editor/Infohazard.Core.Editor.asmdef
+  uploadId: 780025

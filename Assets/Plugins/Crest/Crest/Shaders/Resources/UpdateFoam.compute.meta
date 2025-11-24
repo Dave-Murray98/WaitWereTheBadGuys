@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 1fcae09851a82364bbd83acc248ab057
+ComputeShaderImporter:
+  externalObjects: {}
+  currentAPIMask: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 141674
+  packageName: Crest Water 4 URP (Ocean, Rivers & Lakes)
+  packageVersion: 4.22.1
+  assetPath: Assets/Crest/Crest/Shaders/Resources/UpdateFoam.compute
+  uploadId: 749267

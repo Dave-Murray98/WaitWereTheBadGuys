@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 3b257e4de803141d7860029fa166888e
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  preprocessorOverride: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 141674
+  packageName: Crest Water 4 URP (Ocean, Rivers & Lakes)
+  packageVersion: 4.22.1
+  assetPath: Assets/Crest/Crest/Shaders/Underwater/Resources/WaterVolumeGeometry.shader
+  uploadId: 749267

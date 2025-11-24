@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 2016a48b9887c584584b4fff3c5c3365
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 141674
+  packageName: Crest Water 4 URP (Ocean, Rivers & Lakes)
+  packageVersion: 4.22.1
+  assetPath: Assets/Crest/Crest/Shaders/Underwater/UnderwaterMeniscus.shader
+  uploadId: 749267

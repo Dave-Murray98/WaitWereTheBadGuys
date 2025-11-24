@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 134cf6d94be3649db97a5455fe30630c
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  preprocessorOverride: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 141674
+  packageName: Crest Water 4 URP (Ocean, Rivers & Lakes)
+  packageVersion: 4.22.1
+  assetPath: Assets/Crest/Crest/Shaders/OceanInputs/AnimWavesSpectrum.shader
+  uploadId: 749267

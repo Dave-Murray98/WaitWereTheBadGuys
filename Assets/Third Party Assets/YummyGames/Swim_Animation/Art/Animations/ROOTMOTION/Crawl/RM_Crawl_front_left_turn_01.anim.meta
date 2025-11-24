@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c644342ee7287144d807c8f9917ae7d7
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 232936
+  packageName: Swim Mocap Animation
+  packageVersion: 1.0
+  assetPath: Assets/YummyGames/Swim_Animation/Art/Animations/ROOTMOTION/Crawl/RM_Crawl_front_left_turn_01.anim
+  uploadId: 526209

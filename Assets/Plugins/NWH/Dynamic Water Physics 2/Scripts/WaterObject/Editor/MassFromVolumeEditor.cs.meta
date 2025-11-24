@@ -1,0 +1,10 @@
+﻿fileFormatVersion: 2
+guid: e4d7cea0eaeb4875948ee3242c6d65fe
+timeCreated: 1593873668
+AssetOrigin:
+  serializedVersion: 1
+  productId: 147990
+  packageName: Dynamic Water Physics 2
+  packageVersion: 14.0.0
+  assetPath: Assets/Plugins/NWH/Dynamic Water Physics 2/Scripts/WaterObject/Editor/MassFromVolumeEditor.cs
+  uploadId: 819958

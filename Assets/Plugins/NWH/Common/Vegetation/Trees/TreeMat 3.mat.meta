@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 55a7d8a7cc6e7d84e8b7dd6d67fd600b
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 147990
+  packageName: Dynamic Water Physics 2
+  packageVersion: 14.0.0
+  assetPath: Assets/Plugins/NWH/Common/Vegetation/Trees/TreeMat 3.mat
+  uploadId: 819958

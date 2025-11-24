@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8001f52a6c4ad64e9f47c79fa5db30e, type: 3}
+  m_Name: LowerBodyAnimation Database
+  m_EditorClassIdentifier: 
+  displayName: Default Lower Body Animations
+  description: Contains all lower body locomotion animations independent of equipped
+    items.
+  groundAnimations:
+    idle: {fileID: 7400000, guid: ba0fdcea9c6083943a1b2e3dbd86d54a, type: 2}
+    walkForward: {fileID: 7400000, guid: 5c6588fc60ae4da4eb65455c2ff06d9b, type: 2}
+    walkBackward: {fileID: 7400000, guid: c2dc661d0bb3c7f49a091d392ecc40dd, type: 2}
+    walkLeft: {fileID: 7400000, guid: c569e1554d61b3b4ba2235f8e9ab4809, type: 2}
+    walkRight: {fileID: 7400000, guid: e95eb6eb10af1ff4882f201a71504615, type: 2}
+    walkForwardLeft: {fileID: 7400000, guid: f534d5f6c7d1b4a428959f4dacae2037, type: 2}
+    walkForwardRight: {fileID: 7400000, guid: d28b8cba2bac72644a9e80dde48af73c, type: 2}
+    walkBackwardLeft: {fileID: 7400000, guid: bdbe8d6890430814bac21ea434022e7a, type: 2}
+    walkBackwardRight: {fileID: 7400000, guid: 69a163f7c0a23354faa8e1106ed009ac, type: 2}
+    runForward: {fileID: 7400000, guid: 85a5a528245f6e549b9fe07f96568334, type: 2}
+    crouchIdle: {fileID: 7400000, guid: 65c7f1d6dc8ab7c4d93e5d08369b93cd, type: 2}
+    crouchWalkForward: {fileID: 7400000, guid: 4e2e0916cd6f6c2428b2bc667ba27ed8, type: 2}
+    crouchWalkBackward: {fileID: 7400000, guid: 7e54c0fe6736ac3419dad3cc359c892d, type: 2}
+    crouchWalkLeft: {fileID: 7400000, guid: 95971c9b1a45861478c3a2f80ac17de7, type: 2}
+    crouchWalkRight: {fileID: 7400000, guid: 8171963fdcbbd97438e06d4a332144a8, type: 2}
+    crouchWalkForwardLeft: {fileID: 7400000, guid: 46233e4a2689b4b40baee55570789c28, type: 2}
+    crouchWalkForwardRight: {fileID: 7400000, guid: 50f8c5676f4579d41814af27fbc0f2f9, type: 2}
+    crouchWalkBackwardLeft: {fileID: 7400000, guid: 6644e393c17e95347bd1c35e5b6f3e11, type: 2}
+    crouchWalkBackwardRight: {fileID: 7400000, guid: a1b542cc3cb4c494880c8cc8d40f84f7, type: 2}
+  waterAnimations:
+    swimIdle: {fileID: 7400000, guid: 5899a8682689ad84ca3dc75a9e7b0510, type: 2}
+    swimForward: {fileID: 7400000, guid: eccee979594a4be46aa00c1ab53cd4c5, type: 2}
+    swimBackward: {fileID: 7400000, guid: c9866ca70c582f54f9d21aa5d14b265b, type: 2}
+    swimLeft: {fileID: 7400000, guid: caf5421154131ad418e35767bb70d154, type: 2}
+    swimRight: {fileID: 7400000, guid: da4ffe88e9c5f4f43a028eb326e7b8fb, type: 2}
+    swimFastForward: {fileID: 7400000, guid: 6c8890ca94084554f80c40c778be9faf, type: 2}
+  vehicleAnimations:
+    vehicleIdleStanding: {fileID: 7400000, guid: 79c8b69662648bf4a9006654cacb78de, type: 2}
+    vehicleIdleSitting: {fileID: 7400000, guid: 2e71a49a1d0475e48ae065c0ae63555e, type: 2}
+  climbingAnimations:
+    climb: {fileID: 7400000, guid: a41f7c51904574d48aa876ce98b471a6, type: 2}
+  enableDebugLogs: 1

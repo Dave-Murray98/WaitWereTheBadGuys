@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f3574f259f0d204481bdf848bfe3661, type: 3}
+  m_Name: M9BodyAnimationData
+  m_EditorClassIdentifier: 
+  itemType: 2
+  displayName: M9
+  groundAnimations:
+    idle: {fileID: 7400000, guid: f7b9e38235844d04ba2074c2fafa7f34, type: 2}
+    walk: {fileID: 7400000, guid: 41159b8d0f2ddba46a2674c08a1e96dc, type: 2}
+    runForward: {fileID: 7400000, guid: 12797acc743b9104385431179dafedaa, type: 2}
+  waterAnimations:
+    swimIdle: {fileID: 7400000, guid: 22b50c9b8534a2942803d5fa774d8d4a, type: 2}
+    swimForward: {fileID: 7400000, guid: cff71153f5e18d04ba2a1a513ea640e5, type: 2}
+    swimBackward: {fileID: 7400000, guid: 2a0bc91688dface41b6680df2195d6cd, type: 2}
+    swimLeft: {fileID: 7400000, guid: c1239fa0f0f38934c9db195a2170ebe6, type: 2}
+    swimRight: {fileID: 7400000, guid: 6355508e250ba504eab7198740b8261d, type: 2}
+    swimFastForward: {fileID: 7400000, guid: 4af4c25b7d019254fa60949bbd9b53be, type: 2}
+  actionAnimations:
+    primaryAction: {fileID: 7400000, guid: b8aac8fbc4c8c484082d8aefeb381fce, type: 2}
+    secondaryAction: {fileID: 0}
+    reloadAction: {fileID: 7400000, guid: c23e423fa6016a64281f0ad5bc930465, type: 2}
+    meleeAction: {fileID: 7400000, guid: dbc60cb65f87bb841a112a10d51ef005, type: 2}
+  enableDebugLogs: 0

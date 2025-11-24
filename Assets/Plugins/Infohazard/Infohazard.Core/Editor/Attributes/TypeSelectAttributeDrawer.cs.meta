@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 819a59e7faa3bdd48a254cd70d9b14d5
+timeCreated: 1517688297
+licenseType: Store
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 235104
+  packageName: Infohazard Core Utility Library
+  packageVersion: 1.4.2
+  assetPath: Assets/Plugins/Infohazard/Infohazard.Core/Editor/Attributes/TypeSelectAttributeDrawer.cs
+  uploadId: 780025

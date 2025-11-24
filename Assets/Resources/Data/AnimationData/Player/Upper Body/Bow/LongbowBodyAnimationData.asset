@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f3574f259f0d204481bdf848bfe3661, type: 3}
+  m_Name: LongbowBodyAnimationData
+  m_EditorClassIdentifier: 
+  itemType: 9
+  displayName: Longbow
+  groundAnimations:
+    idle: {fileID: 7400000, guid: de927515620aee445a4f8d6c9fb14b17, type: 2}
+    walk: {fileID: 7400000, guid: 455fed2ee345cc444a94bb64bf1b3fca, type: 2}
+    runForward: {fileID: 7400000, guid: 76e4ca37183d4374da9f9535365beb35, type: 2}
+  waterAnimations:
+    swimIdle: {fileID: 0}
+    swimForward: {fileID: 0}
+    swimBackward: {fileID: 0}
+    swimLeft: {fileID: 0}
+    swimRight: {fileID: 0}
+    swimFastForward: {fileID: 0}
+  vehicleAnimations:
+    vehicleIdleStanding: {fileID: 7400000, guid: 79c8b69662648bf4a9006654cacb78de, type: 2}
+    vehicleIdleSitting: {fileID: 7400000, guid: 2e71a49a1d0475e48ae065c0ae63555e, type: 2}
+  actionAnimations:
+    primaryAction: {fileID: 0}
+    heldPrimaryActionStart: {fileID: 7400000, guid: 87efea5b3f1d77b469f2d02e0a021792, type: 2}
+    heldPrimaryActionLoop: {fileID: 7400000, guid: a82bcb08cdc3eb947871bffb2d2dadab, type: 2}
+    heldPrimaryActionEnd: {fileID: 7400000, guid: 22a897100ec045240aa511bc669b6476, type: 2}
+    cancelHeldPrimaryAction: {fileID: 7400000, guid: 1db518363ddcbfe409f1c581a1ac075e, type: 2}
+    secondaryAction: {fileID: 0}
+    heldSecondaryActionStart: {fileID: 0}
+    heldSecondaryActionLoop: {fileID: 0}
+    heldSecondaryActionEnd: {fileID: 0}
+    cancelHeldSecondaryAction: {fileID: 0}
+    reloadAction: {fileID: 7400000, guid: d837399a83cfee845a700735d8d4cc9b, type: 2}
+    meleeAction: {fileID: 7400000, guid: 4ff282aea6665b24b96ef88672a42a03, type: 2}
+    meleeActionStart: {fileID: 0}
+    meleeActionEndLight: {fileID: 0}
+    meleeActionEndHeavy: {fileID: 0}
+    meleeActionCancel: {fileID: 0}
+    meleeActionLoop: {fileID: 0}
+  enableDebugLogs: 0

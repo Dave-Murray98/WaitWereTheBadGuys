@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1b65a755b93baf46995dbedc0dd1ae8, type: 3}
+  m_Name: M9ItemAnimationData
+  m_EditorClassIdentifier: 
+  itemType: 2
+  displayName: M9 Item Animations
+  description: 
+  idle: {fileID: 7400000, guid: cfc31427eee8dec4ca760c8085868255, type: 2}
+  rangedWeaponAnimations:
+    shoot: {fileID: 7400000, guid: 8f4d5ec708659e04da92046350e9069b, type: 2}
+    reload: {fileID: 7400000, guid: 45ce562b597612841b18450842950de2, type: 2}
+  toolAnimations:
+    useTool: {fileID: 0}
+    activeLoop: {fileID: 0}
+  keyItemAnimations:
+    useItem: {fileID: 0}
+  consumableAnimations:
+    useItem: {fileID: 0}
+  bowAnimations:
+    startDraw: {fileID: 0}
+    drawnLoop: {fileID: 0}
+    shoot: {fileID: 0}
+    cancel: {fileID: 0}
+    reload: {fileID: 0}
+  enableDebugLogs: 0

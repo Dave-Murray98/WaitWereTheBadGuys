@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: fcba0dca35f0046c3b0b8ae5152ae5db
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 141674
+  packageName: Crest Water 4 URP (Ocean, Rivers & Lakes)
+  packageVersion: 4.22.1
+  assetPath: Assets/Crest/Crest/Shaders/Helpers/BIRP/InputsDriven.hlsl
+  uploadId: 749267

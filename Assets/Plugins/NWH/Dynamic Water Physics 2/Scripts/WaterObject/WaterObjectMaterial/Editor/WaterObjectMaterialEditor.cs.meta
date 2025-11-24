@@ -1,0 +1,10 @@
+﻿fileFormatVersion: 2
+guid: 7eea0dd9f8424a68a8be74e7efd1b4fa
+timeCreated: 1593008530
+AssetOrigin:
+  serializedVersion: 1
+  productId: 147990
+  packageName: Dynamic Water Physics 2
+  packageVersion: 14.0.0
+  assetPath: Assets/Plugins/NWH/Dynamic Water Physics 2/Scripts/WaterObject/WaterObjectMaterial/Editor/WaterObjectMaterialEditor.cs
+  uploadId: 819958

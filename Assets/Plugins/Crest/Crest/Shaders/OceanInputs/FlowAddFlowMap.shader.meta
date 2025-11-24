@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: b3174a828b6803c4c8869dc722de510b
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 141674
+  packageName: Crest Water 4 URP (Ocean, Rivers & Lakes)
+  packageVersion: 4.22.1
+  assetPath: Assets/Crest/Crest/Shaders/OceanInputs/FlowAddFlowMap.shader
+  uploadId: 749267

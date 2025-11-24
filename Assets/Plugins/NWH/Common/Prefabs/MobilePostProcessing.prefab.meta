@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 5d8eaefbcac3dbe4f891ac54ae477e10
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 147990
+  packageName: Dynamic Water Physics 2
+  packageVersion: 14.0.0
+  assetPath: Assets/Plugins/NWH/Common/Prefabs/MobilePostProcessing.prefab
+  uploadId: 819958

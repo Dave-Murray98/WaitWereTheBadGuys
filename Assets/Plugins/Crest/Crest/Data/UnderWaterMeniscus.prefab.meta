@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6d79ad5f5edb537448c2c13e54ffac88
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 141674
+  packageName: Crest Water 4 URP (Ocean, Rivers & Lakes)
+  packageVersion: 4.22.1
+  assetPath: Assets/Crest/Crest/Data/UnderWaterMeniscus.prefab
+  uploadId: 749267

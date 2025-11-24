@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 23f85bc431f882d4bb3f3ac0dabcf06a
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 147990
+  packageName: Dynamic Water Physics 2
+  packageVersion: 2.22
+  assetPath: Assets/Plugins/NWH/Dynamic Water Physics 2/_Documentation/__DOCUMENTATION_README__.txt
+  uploadId: 690874

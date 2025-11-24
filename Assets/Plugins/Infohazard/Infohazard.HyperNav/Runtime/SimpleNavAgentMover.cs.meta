@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 3811b6f7a6b54757afc9cc0b75a7faed
+timeCreated: 1712899614
+AssetOrigin:
+  serializedVersion: 1
+  productId: 235638
+  packageName: 'HyperNav: 3D Pathfinding and Navigation'
+  packageVersion: 2.3.0
+  assetPath: Assets/Plugins/Infohazard/Infohazard.HyperNav/Runtime/SimpleNavAgentMover.cs
+  uploadId: 803424

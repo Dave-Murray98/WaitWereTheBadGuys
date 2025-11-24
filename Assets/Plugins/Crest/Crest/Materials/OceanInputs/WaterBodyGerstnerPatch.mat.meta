@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 81037f0c2e8306a4ca79d01a8859eaf8
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 141674
+  packageName: Crest Water 4 URP (Ocean, Rivers & Lakes)
+  packageVersion: 4.22.1
+  assetPath: Assets/Crest/Crest/Materials/OceanInputs/WaterBodyGerstnerPatch.mat
+  uploadId: 749267

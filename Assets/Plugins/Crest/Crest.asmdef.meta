@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 5b35af79ebbe89647a157055d52c59d3
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 141674
+  packageName: Crest Water 4 URP (Ocean, Rivers & Lakes)
+  packageVersion: 4.22.1
+  assetPath: Assets/Crest/Crest/Scripts/Crest.asmdef
+  uploadId: 749267

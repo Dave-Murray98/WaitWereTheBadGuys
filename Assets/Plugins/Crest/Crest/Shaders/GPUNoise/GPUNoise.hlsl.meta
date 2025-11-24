@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 1548b5c35ac216d4cb0c1cdc346a41af
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 141674
+  packageName: Crest Water 4 URP (Ocean, Rivers & Lakes)
+  packageVersion: 4.22.1
+  assetPath: Assets/Crest/Crest/Shaders/GPUNoise/GPUNoise.hlsl
+  uploadId: 749267

@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f3574f259f0d204481bdf848bfe3661, type: 3}
+  m_Name: SabreSawBodyAnimationData
+  m_EditorClassIdentifier: 
+  itemType: 5
+  displayName: SabreSaw
+  groundAnimations:
+    idle: {fileID: 7400000, guid: bab9d46a9e7426547bb7fa607b5deb6e, type: 2}
+    walk: {fileID: 7400000, guid: f43268400fafdf64da5bb9c5dced45c6, type: 2}
+    runForward: {fileID: 7400000, guid: 5db4907453675fe408b00f9cc7360de2, type: 2}
+  waterAnimations:
+    swimIdle: {fileID: 7400000, guid: ed05947b21682a74ab0c9236d0abf688, type: 2}
+    swimForward: {fileID: 7400000, guid: 55f05991d8559194fabf56ce69f64b5f, type: 2}
+    swimBackward: {fileID: 7400000, guid: 028c602f15f9da040b7e46aac462f84f, type: 2}
+    swimLeft: {fileID: 7400000, guid: ec2155b135ca13844bfb9a093273ab30, type: 2}
+    swimRight: {fileID: 7400000, guid: 7451bde44a6885e418da6e1c1375defa, type: 2}
+    swimFastForward: {fileID: 7400000, guid: 7fac6992316d85d4a87c088345efc8a3, type: 2}
+  actionAnimations:
+    primaryAction: {fileID: 7400000, guid: 48816cbefcbd2cb4f8761ab03b4ceb77, type: 2}
+    heldPrimaryActionStart: {fileID: 0}
+    heldPrimaryActionLoop: {fileID: 0}
+    heldPrimaryActionEnd: {fileID: 0}
+    cancelHeldPrimaryAction: {fileID: 0}
+    secondaryAction: {fileID: 0}
+    heldSecondaryActionStart: {fileID: 7400000, guid: 4416271d0aea22f44bd4082417907881, type: 2}
+    heldSecondaryActionLoop: {fileID: 7400000, guid: feabbb47415fb0640afc9bbce663ab12, type: 2}
+    heldSecondaryActionEnd: {fileID: 7400000, guid: 7c047ae17beb4f7499d4c140198d11a4, type: 2}
+    cancelHeldSecondaryAction: {fileID: 0}
+    reloadAction: {fileID: 0}
+    meleeAction: {fileID: 7400000, guid: 48816cbefcbd2cb4f8761ab03b4ceb77, type: 2}
+  enableDebugLogs: 0

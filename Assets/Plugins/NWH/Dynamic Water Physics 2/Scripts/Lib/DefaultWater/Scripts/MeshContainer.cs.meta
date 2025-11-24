@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 951d74f7d57bed84cb623c62436bd064
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 147990
+  packageName: Dynamic Water Physics 2
+  packageVersion: 2.22
+  assetPath: Assets/Plugins/NWH/Dynamic Water Physics 2/Scripts/Lib/DefaultWater/Scripts/MeshContainer.cs
+  uploadId: 690874

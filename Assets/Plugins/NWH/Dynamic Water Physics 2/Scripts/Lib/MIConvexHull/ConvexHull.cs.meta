@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 761f2eca68a8d2c4fbd8f0d07be2153e
+timeCreated: 1490199238
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 147990
+  packageName: Dynamic Water Physics 2
+  packageVersion: 14.0.0
+  assetPath: Assets/Plugins/NWH/Dynamic Water Physics 2/Scripts/Lib/MIConvexHull/ConvexHull.cs
+  uploadId: 819958

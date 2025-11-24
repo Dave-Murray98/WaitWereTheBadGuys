@@ -1,0 +1,10 @@
+﻿fileFormatVersion: 2
+guid: 53cb59151a1e4444b4ac40b54b15b673
+timeCreated: 1592992142
+AssetOrigin:
+  serializedVersion: 1
+  productId: 147990
+  packageName: Dynamic Water Physics 2
+  packageVersion: 14.0.0
+  assetPath: Assets/Plugins/NWH/Dynamic Water Physics 2/Scripts/ShipController/Editor/ThrusterDrawer.cs
+  uploadId: 819958

@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 0ce611a1477c4d828b272b6fe0a62611
+timeCreated: 1688160115
+AssetOrigin:
+  serializedVersion: 1
+  productId: 235104
+  packageName: Infohazard Core Utility Library
+  packageVersion: 1.4.2
+  assetPath: Assets/Plugins/Infohazard/Infohazard.Core/Editor/Utility/ObjectValidators.cs
+  uploadId: 780025

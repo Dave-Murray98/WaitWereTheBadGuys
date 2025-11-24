@@ -1,0 +1,10 @@
+﻿fileFormatVersion: 2
+guid: 8731b80ab2594e348b23e9b94430cad2
+timeCreated: 1659601674
+AssetOrigin:
+  serializedVersion: 1
+  productId: 235104
+  packageName: Infohazard Core Utility Library
+  packageVersion: 1.4.2
+  assetPath: Assets/Plugins/Infohazard/Infohazard.Core/Editor/Misc/TagMaskDrawer.cs
+  uploadId: 780025

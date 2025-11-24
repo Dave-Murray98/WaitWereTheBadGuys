@@ -1,0 +1,10 @@
+﻿fileFormatVersion: 2
+guid: 6e2a38dc6b814caa8f2638c49a2972c7
+timeCreated: 1593013502
+AssetOrigin:
+  serializedVersion: 1
+  productId: 147990
+  packageName: Dynamic Water Physics 2
+  packageVersion: 14.0.0
+  assetPath: Assets/Plugins/NWH/Dynamic Water Physics 2/Scripts/WaterObject/Editor/MassFromChildrenEditor.cs
+  uploadId: 819958

@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: ca515b79b69f4847baebf28700c631fa
+timeCreated: 1754176010
+AssetOrigin:
+  serializedVersion: 1
+  productId: 235104
+  packageName: Infohazard Core Utility Library
+  packageVersion: 1.4.2
+  assetPath: Assets/Plugins/Infohazard/Infohazard.Core/Editor/Attributes/SceneRefDrawer.cs
+  uploadId: 780025

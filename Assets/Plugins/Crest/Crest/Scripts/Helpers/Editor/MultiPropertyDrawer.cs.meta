@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 1284cc26bae2f460793ff317c5b8a9c6
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 141674
+  packageName: Crest Water 4 URP (Ocean, Rivers & Lakes)
+  packageVersion: 4.22.1
+  assetPath: Assets/Crest/Crest/Scripts/Helpers/Editor/MultiPropertyDrawer.cs
+  uploadId: 749267

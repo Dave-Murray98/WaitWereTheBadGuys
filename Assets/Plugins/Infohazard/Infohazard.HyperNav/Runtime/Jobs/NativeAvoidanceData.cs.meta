@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 6edce0c7aec94ab4a9d2fa5c9522a0fe
+timeCreated: 1668672337
+AssetOrigin:
+  serializedVersion: 1
+  productId: 235638
+  packageName: 'HyperNav: 3D Pathfinding and Navigation'
+  packageVersion: 2.3.0
+  assetPath: Assets/Plugins/Infohazard/Infohazard.HyperNav/Runtime/Jobs/NativeAvoidanceData.cs
+  uploadId: 803424

@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: d9c091ce69f1f2d419b8868f6a80d3c5
+AssetOrigin:
+  serializedVersion: 1
+  productId: 147990
+  packageName: Dynamic Water Physics 2
+  packageVersion: 14.0.0
+  assetPath: Assets/Plugins/NWH/Dynamic Water Physics 2/Scripts/ShipController/DWP2NUIPropertyDrawer.cs
+  uploadId: 819958

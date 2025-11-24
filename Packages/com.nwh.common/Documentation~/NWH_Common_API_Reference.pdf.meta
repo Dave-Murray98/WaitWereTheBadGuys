@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 3ac20541cebf80c418819d178e1b9527
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 147990
+  packageName: Dynamic Water Physics 2
+  packageVersion: 14.0.0
+  assetPath: Packages/com.nwh.common/Documentation~/NWH_Common_API_Reference.pdf
+  uploadId: 819958

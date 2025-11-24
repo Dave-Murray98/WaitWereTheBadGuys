@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4284fa72efca94c47b88c457dd761d87
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 147990
+  packageName: Dynamic Water Physics 2
+  packageVersion: 14.0.0
+  assetPath: Assets/Plugins/NWH/Common/PostProcessing/MobilePostProcessing.asset
+  uploadId: 819958

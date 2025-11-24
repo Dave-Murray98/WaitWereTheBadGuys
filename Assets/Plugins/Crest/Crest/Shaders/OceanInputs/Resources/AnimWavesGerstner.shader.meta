@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 2edf25ce84c11d049871c9c0dff30c2d
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 141674
+  packageName: Crest Water 4 URP (Ocean, Rivers & Lakes)
+  packageVersion: 4.22.1
+  assetPath: Assets/Crest/Crest/Shaders/OceanInputs/Resources/AnimWavesGerstner.shader
+  uploadId: 749267

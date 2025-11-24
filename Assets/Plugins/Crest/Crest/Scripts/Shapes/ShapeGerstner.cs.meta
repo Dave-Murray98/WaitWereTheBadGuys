@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 83cb23af551c5cd4b81f094099c1c6fd
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _rasterMesh: {instanceID: 0}
+  - _spectrum: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 141674
+  packageName: Crest Water 4 URP (Ocean, Rivers & Lakes)
+  packageVersion: 4.22.1
+  assetPath: Assets/Crest/Crest/Scripts/Shapes/ShapeGerstner.cs
+  uploadId: 749267

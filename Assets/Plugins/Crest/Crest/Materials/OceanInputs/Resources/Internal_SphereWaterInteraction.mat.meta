@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e49035d001fa14e57b6e6b206460366a
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 141674
+  packageName: Crest Water 4 URP (Ocean, Rivers & Lakes)
+  packageVersion: 4.22.1
+  assetPath: Assets/Crest/Crest/Materials/OceanInputs/Resources/Internal_SphereWaterInteraction.mat
+  uploadId: 749267

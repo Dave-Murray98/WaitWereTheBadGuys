@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 38031e724ad9c06468a3dde27f0a61e8
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 147990
+  packageName: Dynamic Water Physics 2
+  packageVersion: 14.0.0
+  assetPath: Assets/Plugins/NWH/Common/Resources/Rendering/Low_PipelineAsset_ForwardRenderer.asset
+  uploadId: 819958
