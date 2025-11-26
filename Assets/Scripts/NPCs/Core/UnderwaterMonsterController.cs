@@ -7,8 +7,12 @@ public class UnderwaterMonsterController : MonoBehaviour
     public Transform target;
     public Rigidbody rb;
 
+    [Header("Components")]
     [SerializeField] private MonsterUnderwaterMovement underwaterMovement;
     [SerializeField] private MonsterAnimationHandler animationHandler;
+
+    [Header("Debug")]
+    [SerializeField] private bool enableDebugLogs;
 
     private void Awake()
     {
@@ -35,12 +39,30 @@ public class UnderwaterMonsterController : MonoBehaviour
     }
 
     [Button]
-    public void Bite()
+    public void Attack()
     {
         // Placeholder for bite logic
-        Debug.Log($"{gameObject.name} performed a bite!");
-        animationHandler.TriggerAnimation("Bite");
+        DebugLog("Attacking");
+        animationHandler.PlayAttackAnimation();
     }
 
+    [Button]
+    public void DeactivateMovement()
+    {
+        underwaterMovement.DeactivateMovement();
+    }
 
+    [Button]
+    public void ActivateMovement()
+    {
+        underwaterMovement.ActivateMovement();
+    }
+
+    private void DebugLog(string message)
+    {
+        if (enableDebugLogs)
+        {
+            Debug.Log($"[UnderwaterMonsterController] {message}");
+        }
+    }
 }

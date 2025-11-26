@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using BehaviorDesigner.Runtime.Tasks.Unity.Timeline;
 using Infohazard.HyperNav;
 using UnityEngine;
 
@@ -34,7 +35,7 @@ public class MonsterUnderwaterMovement : MonoBehaviour
     [SerializeField] private float waterDrag = 5f;
 
     [Header("Debug")]
-    [SerializeField] private bool showDebugInfo = true;
+    [SerializeField] private bool enableDebugLogs = true;
 
     // OPTIMIZATION: Pre-calculated squared distances
     private float arriveDistanceSqr;
@@ -44,8 +45,7 @@ public class MonsterUnderwaterMovement : MonoBehaviour
     private Vector3 moveDirection;
     private Vector3 desiredVelocity;
     private bool hasReachedDestination = false;
-    private bool isActive = false;
-    private float lastTargetCheck = 0f;
+    [SerializeField] private bool isActive = false;
 
 
     // OPTIMIZATION: Cached target
@@ -65,10 +65,8 @@ public class MonsterUnderwaterMovement : MonoBehaviour
     // Events
     public Action OnDestinationReached;
 
-    public void Initialize(UnderwaterMonsterController controller)
+    private void Awake()
     {
-        monsterController = controller;
-
         if (agent == null)
         {
             agent = GetComponent<SplineNavAgent>();
@@ -79,19 +77,25 @@ public class MonsterUnderwaterMovement : MonoBehaviour
             }
         }
 
+        agent.PathFailed += OnPathFailed;
+
         // OPTIMIZATION: Pre-calculate squared distances
         arriveDistanceSqr = arriveAtDestinationDistance * arriveAtDestinationDistance;
         slowDownDistanceSqr = slowDownDistance * slowDownDistance;
+    }
 
-        // OPTIMIZATION: Stagger target checks across NPCs
-        lastTargetCheck = -UnityEngine.Random.Range(0f, targetCheckInterval);
+    public void Initialize(UnderwaterMonsterController controller)
+    {
+        monsterController = controller;
 
         currentState = MovementState.Moving;
     }
 
     private void Update()
     {
-        if (!isActive) return;
+        if (!isActive)
+            return;
+
 
         UpdateNavigation();
         UpdateMovementState();
@@ -106,39 +110,24 @@ public class MonsterUnderwaterMovement : MonoBehaviour
 
     public void ActivateMovement()
     {
+        DebugLog("Activated Movement");
         isActive = true;
-        hasReachedDestination = false;
         currentState = MovementState.Moving;
+        hasReachedDestination = false;
 
         // Reset caches
-        cachedTarget = Vector3.zero;
+        cachedTarget = monsterController.target.position;
         targetCacheTimer = 0f;
-
-        // Disable agent to clear any old pathfinding data, and re-enable it in the next frame
-        agent.enabled = false;
-        StartCoroutine(ReActivateAgentAfterFrame());
-
-        if (showDebugInfo)
-        {
-            Debug.Log($"{gameObject.name} activated Complex Zone Movement");
-        }
-    }
-
-    // Re-enable agent in the next frame (used to clear old pathfinding data before we start moving in the complex zone)
-    private IEnumerator ReActivateAgentAfterFrame()
-    {
-        yield return null;
-        agent.enabled = true;
     }
 
     public void DeactivateMovement()
     {
         isActive = false;
 
-        if (showDebugInfo)
-        {
-            Debug.Log($"{gameObject.name} deactivated Complex Zone Movement");
-        }
+        // Stop the monster if it's currently moving
+        StopMovement();
+
+        DebugLog("Deactivated Movement");
     }
 
     /// <summary>
@@ -238,15 +227,8 @@ public class MonsterUnderwaterMovement : MonoBehaviour
 
     private void StopMovement()
     {
-        Vector3 stoppingForce = -monsterController.rb.linearVelocity * deceleration;
-        stoppingForce = Vector3.ClampMagnitude(stoppingForce, maxForce);
-        monsterController.rb.AddForce(stoppingForce, ForceMode.Force);
-
-        // OPTIMIZATION: Use sqrMagnitude to avoid sqrt
-        if (monsterController.rb.linearVelocity.sqrMagnitude < 0.01f)
-        {
-            monsterController.rb.linearVelocity = Vector3.zero;
-        }
+        DebugLog("Stopped Movement");
+        monsterController.rb.linearVelocity = Vector3.zero;
     }
 
     private void ApplyMovementForce(float forceMultiplier)
@@ -273,12 +255,18 @@ public class MonsterUnderwaterMovement : MonoBehaviour
     {
         hasReachedDestination = true;
 
-        if (showDebugInfo)
-        {
-            Debug.Log($"{gameObject.name} has arrived at destination!");
-        }
+        DebugLog("Arrived at Destination");
 
         OnDestinationReached?.Invoke();
+    }
+
+    /// <summary>
+    /// Called when the pathfinding fails to find a valid path.
+    /// This will usually be if the target is unreachable (ie outside the navigation zone).
+    /// </summary>
+    private void OnPathFailed()
+    {
+        Debug.Log($"{gameObject.name} Path Failed!");
     }
 
     // Public interface methods
@@ -286,5 +274,12 @@ public class MonsterUnderwaterMovement : MonoBehaviour
     public MovementState GetCurrentState() => currentState;
     public void SetMaxSpeed(float newSpeed) => maxSpeed = newSpeed;
 
+    private void DebugLog(string message)
+    {
+        if (enableDebugLogs)
+        {
+            Debug.Log($"[MonsterUnderwaterMovement] {message}");
+        }
+    }
 
 }

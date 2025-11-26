@@ -13,7 +13,13 @@ public class MonsterAnimationHandler : MonoBehaviour
         }
     }
 
-
+    public void PlayAttackAnimation()
+    {
+        if (animator != null)
+        {
+            animator.SetTrigger("Bite");
+        }
+    }
 
     public void TriggerAnimation(string triggerName)
     {
