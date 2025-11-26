@@ -124,7 +124,7 @@ public class MonsterUnderwaterMovement : MonoBehaviour
     {
         isActive = false;
 
-        // Stop the monster if it's currently moving
+        // Stop the monster
         StopMovement();
 
         DebugLog("Deactivated Movement");
