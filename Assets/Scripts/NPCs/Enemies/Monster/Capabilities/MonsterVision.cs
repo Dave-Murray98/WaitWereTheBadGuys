@@ -8,7 +8,7 @@ using UnityEngine;
 /// Uses a cone trigger collider to detect when the player enters the vision area,
 /// then performs staggered raycasts toward the player for line-of-sight validation.
 /// </summary>
-public class MonsterVisionSystem : MonoBehaviour
+public class MonsterVision : MonoBehaviour
 {
     [Header("Vision Configuration")]
     [SerializeField] private Transform visionOrigin;

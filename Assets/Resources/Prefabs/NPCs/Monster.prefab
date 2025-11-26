@@ -160,6 +160,7 @@ Transform:
   - {fileID: 964501565255035982}
   - {fileID: 3238795737224881865}
   - {fileID: 6366204211418539957}
+  - {fileID: 501499014276668738}
   m_Father: {fileID: 3629241328222316523}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &991926311271527050
@@ -1573,6 +1574,76 @@ Transform:
   - {fileID: 3339422801666486598}
   m_Father: {fileID: 6085784934014566453}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4281588728892368418
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 501499014276668738}
+  - component: {fileID: 5713832755838017247}
+  - component: {fileID: 7578399474031715160}
+  m_Layer: 19
+  m_Name: Hearing
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &501499014276668738
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4281588728892368418}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1393628497695613122}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &5713832755838017247
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4281588728892368418}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 150
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7578399474031715160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4281588728892368418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc250b39d5054254795b5ad9c8d01b2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hearingSensitivity: 0.5
+  maxHearingRange: 25
+  enableDebugLogs: 1
+  enableDebugVisualization: 1
 --- !u!1 &4301235138273291905
 GameObject:
   m_ObjectHideFlags: 0
@@ -2194,7 +2265,7 @@ GameObject:
   - component: {fileID: 3499688103338760480}
   - component: {fileID: 8233873540931270706}
   m_Layer: 18
-  m_Name: Vision Cone
+  m_Name: Vision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2303,7 +2374,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visionOrigin: {fileID: 1393628497695613122}
-  visionRange: 25
+  visionRange: 19
   totalRaycastsToPlayer: 5
   raycastInterval: 0.1
   raycastSpread: 0.5
