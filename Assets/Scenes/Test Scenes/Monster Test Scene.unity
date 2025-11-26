@@ -182,10 +182,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8520894671832873573, guid: 166f4f7732d5fcf4fb7e35880df44204, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1804014476}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 166f4f7732d5fcf4fb7e35880df44204, type: 3}
 --- !u!1 &33840187
 GameObject:
@@ -1377,11 +1374,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 394872351}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &84069557 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1393628497695613122, guid: 166f4f7732d5fcf4fb7e35880df44204, type: 3}
-  m_PrefabInstance: {fileID: 13666430}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &164681533
 GameObject:
   m_ObjectHideFlags: 0
@@ -6723,7 +6715,7 @@ Transform:
   m_GameObject: {fileID: 1091898536}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.8, y: -0.248, z: -6.5}
+  m_LocalPosition: {x: -9.14, y: -0.248, z: -8.38}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10991,36 +10983,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!1 &1804014474 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8520894671832873573, guid: 166f4f7732d5fcf4fb7e35880df44204, type: 3}
-  m_PrefabInstance: {fileID: 13666430}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1804014476
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1804014474}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1a47d5a78ac4f640bcbb3bbb16b04f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  visionOrigin: {fileID: 84069557}
-  visionRange: 25
-  totalRaycastsToPlayer: 5
-  raycastInterval: 0.1
-  raycastSpread: 0.5
-  layersMonsterCanSee:
-    serializedVersion: 2
-    m_Bits: 73
-  playerLayerMaskInt: 6
-  minDetectionRatio: 0.4
-  enableDebugLogs: 1
-  enableDebugVisualization: 1
-  debugLineDuration: 0.1
 --- !u!43 &1819808899
 Mesh:
   m_ObjectHideFlags: 0
