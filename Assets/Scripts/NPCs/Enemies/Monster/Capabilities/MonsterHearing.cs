@@ -28,7 +28,7 @@ public class MonsterHearing : MonoBehaviour
     [ShowInInspector, ReadOnly] private Vector3 lastHeardNoisePosition;
 
     // Events
-    public Action<Vector3, float> OnNoiseHeard; // Position, Volume
+    public Action<Vector3> OnNoiseHeard; // Position of the noise
 
     #region Public Properties
     public bool HasHeardRecentNoise => hasHeardRecentNoise;
@@ -136,7 +136,7 @@ public class MonsterHearing : MonoBehaviour
         DebugLog($"NOISE HEARD! Position: {position}, Volume: {volume:F2}, Distance: {distance:F2}");
 
         // Trigger the heard noise event
-        OnNoiseHeard?.Invoke(position, volume);
+        OnNoiseHeard?.Invoke(position);
 
         // Draw debug visualization
         if (enableDebugVisualization)
