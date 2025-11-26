@@ -4,11 +4,11 @@ using Sirenix.OdinInspector;
 using UnityEngine;
 
 /// <summary>
-/// Efficient trigger-based vision system for the underwater monster.
+/// Efficient trigger-based vision system for enemies.
 /// Uses a cone trigger collider to detect when the player enters the vision area,
 /// then performs staggered raycasts toward the player for line-of-sight validation.
 /// </summary>
-public class MonsterVision : MonoBehaviour
+public class EnemyVision : MonoBehaviour
 {
     [Header("Vision Configuration")]
     [SerializeField] private Transform visionOrigin;
@@ -20,8 +20,8 @@ public class MonsterVision : MonoBehaviour
     [SerializeField] private float raycastSpread = 1f; // How spread out the rays are around the player
 
     [Header("Detection Settings")]
-    [Tooltip("Set this to everything that the monster's vision raycasts can collide with (ground, obstacles, player, etc.)")]
-    [SerializeField] private LayerMask layersMonsterCanSee = -1;
+    [Tooltip("Set this to everything that the enemy's vision raycasts can collide with (ground, obstacles, player, etc.)")]
+    [SerializeField] private LayerMask layersEnemyCanSee = -1;
     [SerializeField] private int playerLayerMaskInt = 6;
     [SerializeField] private float minDetectionRatio = 0.4f; // Minimum percentage of rays that must hit player
 
@@ -230,7 +230,7 @@ public class MonsterVision : MonoBehaviour
         DebugLog($"Raycast {rayIndex}: From {rayOrigin} toward player with direction {rayDirection}");
 
         // Perform the raycast
-        if (Physics.Raycast(rayOrigin, rayDirection, out RaycastHit hit, visionRange, layersMonsterCanSee))
+        if (Physics.Raycast(rayOrigin, rayDirection, out RaycastHit hit, visionRange, layersEnemyCanSee))
         {
             DebugLog($"Raycast {rayIndex} hit: {hit.collider.name} at distance {hit.distance}");
 
@@ -357,7 +357,7 @@ public class MonsterVision : MonoBehaviour
             Vector3 rayOrigin = visionOrigin.position;
             Vector3 rayDirection = (player.position - rayOrigin).normalized;
 
-            if (Physics.Raycast(rayOrigin, rayDirection, out RaycastHit hit, visionRange, layersMonsterCanSee))
+            if (Physics.Raycast(rayOrigin, rayDirection, out RaycastHit hit, visionRange, layersEnemyCanSee))
             {
                 bool hitPlayer = hit.collider.gameObject.layer == playerLayerMaskInt;
                 SetPlayerDetected(hitPlayer, hitPlayer ? hit.point : Vector3.zero);
@@ -382,7 +382,7 @@ public class MonsterVision : MonoBehaviour
     }
 
     /// <summary>
-    /// Force stop all vision checks (useful for when monster is disabled)
+    /// Force stop all vision checks (useful for when enemy is disabled)
     /// </summary>
     public void ForceStopVision()
     {
@@ -397,7 +397,7 @@ public class MonsterVision : MonoBehaviour
     {
         if (enableDebugLogs)
         {
-            Debug.Log($"[TriggerVision] {message}");
+            Debug.Log($"[EnemyVision] {message}");
         }
     }
 

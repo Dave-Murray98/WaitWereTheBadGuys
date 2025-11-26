@@ -135,9 +135,17 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1091898540}
+    - target: {fileID: 6312803182678123808, guid: 166f4f7732d5fcf4fb7e35880df44204, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6312803182678123808, guid: 166f4f7732d5fcf4fb7e35880df44204, type: 3}
+      propertyPath: maxEngageDistance
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7292528924947842843, guid: 166f4f7732d5fcf4fb7e35880df44204, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8609570422893848802, guid: 166f4f7732d5fcf4fb7e35880df44204, type: 3}
       propertyPath: m_LocalPosition.x

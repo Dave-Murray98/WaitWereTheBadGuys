@@ -274,6 +274,8 @@ public class MonsterUnderwaterMovement : MonoBehaviour
     public MovementState GetCurrentState() => currentState;
     public void SetMaxSpeed(float newSpeed) => maxSpeed = newSpeed;
 
+    public float GetDistanceToTarget() => agent.RemainingDistance;
+
     private void DebugLog(string message)
     {
         if (enableDebugLogs)

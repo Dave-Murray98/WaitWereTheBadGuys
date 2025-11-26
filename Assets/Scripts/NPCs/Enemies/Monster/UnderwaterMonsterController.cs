@@ -8,11 +8,22 @@ public class UnderwaterMonsterController : MonoBehaviour
     public Rigidbody rb;
 
     [Header("Components")]
-    [SerializeField] private MonsterUnderwaterMovement underwaterMovement;
+    [SerializeField] private MonsterUnderwaterMovement movement;
     [SerializeField] private MonsterAnimationHandler animationHandler;
+
+    [Header("Vision and Hearing")]
+    public EnemyVision vision;
+    public EnemyHearing hearing;
+
+    [Header("State Stats")]
+    public float maxEngageDistance = 10f;
+    public float maxPursuitTime = 10f;
+    public float investigateStateTime = 10f;
 
     [Header("Debug")]
     [SerializeField] private bool enableDebugLogs;
+
+    public float currentHealth = 100f;
 
     private void Awake()
     {
@@ -22,7 +33,7 @@ public class UnderwaterMonsterController : MonoBehaviour
     private void GetComponenets()
     {
         if (rb == null) rb = GetComponent<Rigidbody>();
-        if (underwaterMovement == null) underwaterMovement = GetComponent<MonsterUnderwaterMovement>();
+        if (movement == null) movement = GetComponent<MonsterUnderwaterMovement>();
         if (animationHandler == null) animationHandler = GetComponent<MonsterAnimationHandler>();
     }
 
@@ -30,12 +41,12 @@ public class UnderwaterMonsterController : MonoBehaviour
     {
         Initialize();
 
-        underwaterMovement.ActivateMovement();
+        movement.ActivateMovement();
     }
 
     private void Initialize()
     {
-        underwaterMovement.Initialize(this);
+        movement.Initialize(this);
     }
 
     [Button]
@@ -49,13 +60,13 @@ public class UnderwaterMonsterController : MonoBehaviour
     [Button]
     public void DeactivateMovement()
     {
-        underwaterMovement.DeactivateMovement();
+        movement.DeactivateMovement();
     }
 
     [Button]
     public void ActivateMovement()
     {
-        underwaterMovement.ActivateMovement();
+        movement.ActivateMovement();
     }
 
     private void DebugLog(string message)
@@ -64,5 +75,10 @@ public class UnderwaterMonsterController : MonoBehaviour
         {
             Debug.Log($"[UnderwaterMonsterController] {message}");
         }
+    }
+
+    public float GetDistanceToTarget()
+    {
+        return movement.GetDistanceToTarget();
     }
 }

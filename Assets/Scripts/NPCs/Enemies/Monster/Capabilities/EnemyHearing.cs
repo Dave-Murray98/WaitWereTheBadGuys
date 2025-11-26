@@ -2,13 +2,12 @@ using System;
 using UnityEngine;
 using Sirenix.OdinInspector;
 using System.Collections;
-using Unity.Transforms;
 
 /// <summary>
-/// Monster hearing system that detects noise sources within a spherical trigger area.
-/// Uses volume-to-distance ratio calculations to determine if sounds are audible to the monster.
+/// enemy hearing system that detects noise sources within a spherical trigger area.
+/// Uses volume-to-distance ratio calculations to determine if sounds are audible to the enemy.
 /// </summary>
-public class MonsterHearing : MonoBehaviour
+public class EnemyHearing : MonoBehaviour
 {
     [Header("Hearing Configuration")]
     [SerializeField, Range(0.1f, 5f)]
@@ -16,7 +15,7 @@ public class MonsterHearing : MonoBehaviour
     private float hearingSensitivity = 1f;
 
     [SerializeField]
-    [Tooltip("Maximum distance the monster can hear sounds from")]
+    [Tooltip("Maximum distance the enemy can hear sounds from")]
     private float maxHearingRange = 20f;
 
     [Header("Debug")]
@@ -72,7 +71,7 @@ public class MonsterHearing : MonoBehaviour
         // Update collider radius to match hearing range based on parent scale
         sphereCollider.radius = adjustedRange;
 
-        DebugLog("MonsterHearing system initialized");
+        DebugLog("enemyHearing system initialized");
     }
     #endregion
 
@@ -88,13 +87,13 @@ public class MonsterHearing : MonoBehaviour
             return;
         }
 
-        // Calculate if the monster can hear this noise
+        // Calculate if the enemy can hear this noise
         ProcessNoise(noiseComponent);
     }
 
 
     /// <summary>
-    /// Process a noise to determine if the monster can hear it
+    /// Process a noise to determine if the enemy can hear it
     /// </summary>
     private void ProcessNoise(Noise noise)
     {
@@ -116,7 +115,7 @@ public class MonsterHearing : MonoBehaviour
         // Check if the noise is loud enough to be heard
         if (effectiveVolume >= hearingSensitivity)
         {
-            // Monster heard the noise!
+            // enemy heard the noise!
             RegisterHeardNoise(noisePosition, noiseVolume, distanceToNoise);
         }
         else
@@ -126,7 +125,7 @@ public class MonsterHearing : MonoBehaviour
     }
 
     /// <summary>
-    /// Register a noise that the monster successfully heard
+    /// Register a noise that the enemy successfully heard
     /// </summary>
     private void RegisterHeardNoise(Vector3 position, float volume, float distance)
     {
@@ -219,7 +218,7 @@ public class MonsterHearing : MonoBehaviour
     {
         if (enableDebugLogs)
         {
-            Debug.Log($"[MonsterHearing] {message}");
+            Debug.Log($"[EnemyHearing] {message}");
         }
     }
 
