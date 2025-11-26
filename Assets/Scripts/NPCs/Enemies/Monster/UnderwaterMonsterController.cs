@@ -40,7 +40,7 @@ public class UnderwaterMonsterController : MonoBehaviour
         if (rb == null) rb = GetComponent<Rigidbody>();
         if (movement == null) movement = GetComponent<MonsterUnderwaterMovement>();
         if (animationHandler == null) animationHandler = GetComponent<MonsterAnimationHandler>();
-        if (attack == null) attack = GetComponent<MonsterAttack>();
+        if (attack == null) attack = GetComponentInChildren<MonsterAttack>();
     }
 
     private void Start()
