@@ -4,12 +4,15 @@ using UnityEngine;
 public class UnderwaterMonsterController : MonoBehaviour
 {
 
-    public Transform target;
+    public Transform player;
     public Rigidbody rb;
 
     [Header("Components")]
     [SerializeField] private MonsterUnderwaterMovement movement;
     [SerializeField] private MonsterAnimationHandler animationHandler;
+
+    [Header("Attack")]
+    public MonsterAttack attack;
 
     [Header("Vision and Hearing")]
     public EnemyVision vision;
@@ -25,6 +28,8 @@ public class UnderwaterMonsterController : MonoBehaviour
 
     public float currentHealth = 100f;
 
+    [HideInInspector] public Vector3 targetPosition;
+
     private void Awake()
     {
         GetComponenets();
@@ -35,6 +40,7 @@ public class UnderwaterMonsterController : MonoBehaviour
         if (rb == null) rb = GetComponent<Rigidbody>();
         if (movement == null) movement = GetComponent<MonsterUnderwaterMovement>();
         if (animationHandler == null) animationHandler = GetComponent<MonsterAnimationHandler>();
+        if (attack == null) attack = GetComponent<MonsterAttack>();
     }
 
     private void Start()
@@ -52,9 +58,7 @@ public class UnderwaterMonsterController : MonoBehaviour
     [Button]
     public void Attack()
     {
-        // Placeholder for bite logic
-        DebugLog("Attacking");
-        animationHandler.PlayAttackAnimation();
+        attack.PerformAttack();
     }
 
     [Button]

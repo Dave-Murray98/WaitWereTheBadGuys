@@ -132,21 +132,13 @@ PrefabInstance:
       value: Monster
       objectReference: {fileID: 0}
     - target: {fileID: 6312803182678123808, guid: 166f4f7732d5fcf4fb7e35880df44204, type: 3}
-      propertyPath: target
+      propertyPath: player
       value: 
       objectReference: {fileID: 1091898540}
     - target: {fileID: 6312803182678123808, guid: 166f4f7732d5fcf4fb7e35880df44204, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6312803182678123808, guid: 166f4f7732d5fcf4fb7e35880df44204, type: 3}
-      propertyPath: maxEngageDistance
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7292528924947842843, guid: 166f4f7732d5fcf4fb7e35880df44204, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1091898540}
     - target: {fileID: 8609570422893848802, guid: 166f4f7732d5fcf4fb7e35880df44204, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.3
@@ -6655,7 +6647,7 @@ GameObject:
   - component: {fileID: 1091898538}
   - component: {fileID: 1091898541}
   m_Layer: 6
-  m_Name: Target
+  m_Name: PlayerTarget
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

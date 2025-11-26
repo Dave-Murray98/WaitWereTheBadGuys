@@ -982,6 +982,7 @@ GameObject:
   - component: {fileID: 6416299391549651202}
   - component: {fileID: 7292528924947842843}
   - component: {fileID: 9115232157743423632}
+  - component: {fileID: 3808845025132872702}
   - component: {fileID: 1176461051552699353}
   - component: {fileID: 6765693208889994796}
   m_Layer: 15
@@ -999,7 +1000,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1274573959617391877}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -21.53, y: -9.5, z: 102.5165}
   m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
   m_ConstrainProportionsScale: 1
@@ -1075,9 +1076,10 @@ MonoBehaviour:
   rb: {fileID: 6291323384613600378}
   movement: {fileID: 7292528924947842843}
   animationHandler: {fileID: 9115232157743423632}
+  attack: {fileID: 3808845025132872702}
   vision: {fileID: 8233873540931270706}
   hearing: {fileID: 7578399474031715160}
-  maxEngageDistance: 10
+  maxEngageDistance: 5
   maxPursuitTime: 10
   investigateStateTime: 10
   enableDebugLogs: 0
@@ -1140,6 +1142,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 6765693208889994796}
+--- !u!114 &3808845025132872702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1274573959617391877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 676796e877e70934f8b3fdabf636bf41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationHandler: {fileID: 9115232157743423632}
+  enableDebugLogs: 0
 --- !u!114 &1176461051552699353
 MonoBehaviour:
   m_ObjectHideFlags: 0

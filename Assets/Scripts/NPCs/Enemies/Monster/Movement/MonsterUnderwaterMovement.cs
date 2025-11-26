@@ -116,7 +116,7 @@ public class MonsterUnderwaterMovement : MonoBehaviour
         hasReachedDestination = false;
 
         // Reset caches
-        cachedTarget = monsterController.target.position;
+        cachedTarget = monsterController.targetPosition;
         targetCacheTimer = 0f;
     }
 
@@ -140,7 +140,7 @@ public class MonsterUnderwaterMovement : MonoBehaviour
         if (targetCacheTimer >= TARGET_CACHE_DURATION)
         {
             targetCacheTimer = 0f;
-            cachedTarget = monsterController.target.position;
+            cachedTarget = monsterController.targetPosition;
         }
 
         return cachedTarget;
@@ -148,7 +148,7 @@ public class MonsterUnderwaterMovement : MonoBehaviour
 
     private void UpdateNavigation()
     {
-        if (monsterController.target == null || !agent.enabled) return;
+        if (monsterController.targetPosition == Vector3.zero || !agent.enabled) return;
 
         // OPTIMIZATION: Use cached targets to reduce property accesses
         Vector3 cachedTargetPos = GetCachedTarget();
