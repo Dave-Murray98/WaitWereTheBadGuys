@@ -1,10 +1,10 @@
 using System;
+using Pathfinding.ECS;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
 public class UnderwaterMonsterController : MonoBehaviour
 {
-
     public Transform player;
     public Rigidbody rb;
 
@@ -28,8 +28,7 @@ public class UnderwaterMonsterController : MonoBehaviour
     [SerializeField] private bool enableDebugLogs;
 
     public float currentHealth = 100f;
-
-    [HideInInspector] public Vector3 targetPosition;
+    public Vector3 targetPosition;
 
     private void Awake()
     {
@@ -58,7 +57,7 @@ public class UnderwaterMonsterController : MonoBehaviour
 
     public void SetPatrolDestination()
     {
-        //placeholder
+        SetTargetPosition(NPCPathfindingUtilities.Instance.GetRandomValidPositionToMoveTo(transform.position));
     }
 
     [Button]

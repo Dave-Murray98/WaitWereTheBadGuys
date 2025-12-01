@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using Infohazard.HyperNav;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 /// <summary>
@@ -14,7 +15,7 @@ using UnityEngine;
 public class MonsterUnderwaterMovement : MonoBehaviour
 {
     [SerializeField] private SplineNavAgent agent;
-    private UnderwaterMonsterController monsterController;
+    private UnderwaterMonsterController controller;
 
     [Header("Movement Settings")]
     [SerializeField] private float maxSpeed = 5f;
@@ -43,7 +44,7 @@ public class MonsterUnderwaterMovement : MonoBehaviour
     // Private variables
     private Vector3 moveDirection;
     private Vector3 desiredVelocity;
-    private bool hasReachedDestination = false;
+    [ShowInInspector] private bool hasReachedDestination = false;
     [SerializeField] private bool isActive = false;
 
 
@@ -56,7 +57,8 @@ public class MonsterUnderwaterMovement : MonoBehaviour
     {
         Moving,
         SlowingDown,
-        Arrived
+        Arrived,
+        Idle
     }
 
     [SerializeField] private MovementState currentState = MovementState.Moving;
@@ -85,7 +87,7 @@ public class MonsterUnderwaterMovement : MonoBehaviour
 
     public void Initialize(UnderwaterMonsterController controller)
     {
-        monsterController = controller;
+        this.controller = controller;
 
         currentState = MovementState.Moving;
     }
@@ -111,13 +113,16 @@ public class MonsterUnderwaterMovement : MonoBehaviour
     {
         DebugLog("Activated Movement");
         isActive = true;
-        currentState = MovementState.Moving;
         hasReachedDestination = false;
 
         // Reset caches
-        cachedTarget = monsterController.targetPosition;
+        cachedTarget = controller.targetPosition;
         targetCacheTimer = 0f;
         agent.enabled = true;
+
+        agent.Destination = controller.targetPosition;
+        currentState = MovementState.Moving;
+
     }
 
     public void DeactivateMovement()
@@ -126,6 +131,8 @@ public class MonsterUnderwaterMovement : MonoBehaviour
 
         agent.Stop(true);
         agent.enabled = false;
+
+        hasReachedDestination = false;
         // Stop the monster
         StopMovement();
 
@@ -142,7 +149,7 @@ public class MonsterUnderwaterMovement : MonoBehaviour
         if (targetCacheTimer >= TARGET_CACHE_DURATION)
         {
             targetCacheTimer = 0f;
-            cachedTarget = monsterController.targetPosition;
+            cachedTarget = controller.targetPosition;
         }
 
         return cachedTarget;
@@ -150,7 +157,7 @@ public class MonsterUnderwaterMovement : MonoBehaviour
 
     private void UpdateNavigation()
     {
-        if (monsterController.targetPosition == Vector3.zero || !agent.enabled) return;
+        if (controller.targetPosition == Vector3.zero || !agent.enabled) return;
 
         // OPTIMIZATION: Use cached targets to reduce property accesses
         Vector3 cachedTargetPos = GetCachedTarget();
@@ -191,7 +198,7 @@ public class MonsterUnderwaterMovement : MonoBehaviour
 
     private void HandleMovement()
     {
-        if (monsterController.rb == null) return;
+        if (controller.rb == null) return;
 
         switch (currentState)
         {
@@ -230,16 +237,17 @@ public class MonsterUnderwaterMovement : MonoBehaviour
     private void StopMovement()
     {
         DebugLog("Stopped Movement");
-        monsterController.rb.linearVelocity = Vector3.zero;
+        controller.rb.linearVelocity = Vector3.zero;
+        currentState = MovementState.Idle;
     }
 
     private void ApplyMovementForce(float forceMultiplier)
     {
-        Vector3 velocityDifference = desiredVelocity - monsterController.rb.linearVelocity;
+        Vector3 velocityDifference = desiredVelocity - controller.rb.linearVelocity;
         Vector3 force = velocityDifference * forceMultiplier;
         force = Vector3.ClampMagnitude(force, maxForce);
 
-        monsterController.rb.AddForce(force, ForceMode.Force);
+        controller.rb.AddForce(force, ForceMode.Force);
     }
 
     private void HandleRotation()
