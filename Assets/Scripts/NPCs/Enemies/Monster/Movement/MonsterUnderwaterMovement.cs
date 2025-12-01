@@ -97,7 +97,6 @@ public class MonsterUnderwaterMovement : MonoBehaviour
         if (!isActive)
             return;
 
-
         UpdateNavigation();
         UpdateMovementState();
         HandleRotation();
@@ -133,6 +132,7 @@ public class MonsterUnderwaterMovement : MonoBehaviour
         agent.enabled = false;
 
         hasReachedDestination = false;
+
         // Stop the monster
         StopMovement();
 
