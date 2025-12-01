@@ -27,6 +27,7 @@ public class EnemyVision : MonoBehaviour
 
     [Header("Debug")]
     [SerializeField] private bool enableDebugLogs = true;
+    [SerializeField] private bool showDebugGizmos = false;
     [SerializeField] private bool enableDebugVisualization = true;
     [SerializeField] private float debugLineDuration = 0.5f;
 
@@ -403,6 +404,8 @@ public class EnemyVision : MonoBehaviour
 
     private void OnDrawGizmosSelected()
     {
+        if (!showDebugGizmos) return;
+
         if (visionOrigin == null) return;
 
         // Draw vision range

@@ -156,16 +156,20 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3784164084269955421, guid: 166f4f7732d5fcf4fb7e35880df44204, type: 3}
+      propertyPath: showDebugGizmos
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3784164084269955421, guid: 166f4f7732d5fcf4fb7e35880df44204, type: 3}
       propertyPath: farInfluenceRadius
-      value: 3
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3784164084269955421, guid: 166f4f7732d5fcf4fb7e35880df44204, type: 3}
       propertyPath: closeInfluenceRadius
-      value: 10
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 3784164084269955421, guid: 166f4f7732d5fcf4fb7e35880df44204, type: 3}
       propertyPath: mediumInfluenceRadius
-      value: 6
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 5503962831170204001, guid: 166f4f7732d5fcf4fb7e35880df44204, type: 3}
       propertyPath: m_Enabled
@@ -182,6 +186,22 @@ PrefabInstance:
     - target: {fileID: 6312803182678123808, guid: 166f4f7732d5fcf4fb7e35880df44204, type: 3}
       propertyPath: maxPursuitTime
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7578399474031715160, guid: 166f4f7732d5fcf4fb7e35880df44204, type: 3}
+      propertyPath: enableDebugLogs
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7578399474031715160, guid: 166f4f7732d5fcf4fb7e35880df44204, type: 3}
+      propertyPath: enableDebugVisualization
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8233873540931270706, guid: 166f4f7732d5fcf4fb7e35880df44204, type: 3}
+      propertyPath: enableDebugLogs
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8233873540931270706, guid: 166f4f7732d5fcf4fb7e35880df44204, type: 3}
+      propertyPath: enableDebugVisualization
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8404392366600987179, guid: 166f4f7732d5fcf4fb7e35880df44204, type: 3}
       propertyPath: m_Enabled
@@ -6920,7 +6940,7 @@ Transform:
   m_GameObject: {fileID: 1091898536}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -42.2, y: -0.248, z: -13.5}
+  m_LocalPosition: {x: -10.04, y: -9.26, z: -23.53}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7681,7 +7701,7 @@ MonoBehaviour:
   - {fileID: 555671436}
   showDebugSpheres: 1
   debugSphereColor: {r: 0, g: 1, b: 1, a: 1}
-  debugSphereDuration: 2
+  debugSphereDuration: 4
 --- !u!1 &1197778227
 GameObject:
   m_ObjectHideFlags: 0

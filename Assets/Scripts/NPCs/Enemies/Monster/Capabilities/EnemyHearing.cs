@@ -20,6 +20,7 @@ public class EnemyHearing : MonoBehaviour
 
     [Header("Debug")]
     [SerializeField] private bool enableDebugLogs = true;
+    [SerializeField] private bool enableDebugGizmos = false;
     [SerializeField] private bool enableDebugVisualization = true;
 
     // Hearing state
@@ -224,6 +225,8 @@ public class EnemyHearing : MonoBehaviour
 
     private void OnDrawGizmosSelected()
     {
+        if (!enableDebugGizmos) return;
+
         // Draw hearing range
         Gizmos.color = hasHeardRecentNoise ? Color.red : Color.blue;
         Gizmos.DrawWireSphere(transform.position, maxHearingRange);

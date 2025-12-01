@@ -1,7 +1,6 @@
 using UnityEngine;
 using Infohazard.HyperNav;
 using Sirenix.OdinInspector;
-using System.Collections;
 using System.Collections.Generic;
 
 public class NPCPathfindingUtilities : MonoBehaviour
@@ -13,7 +12,7 @@ public class NPCPathfindingUtilities : MonoBehaviour
     [Header("Debug Visualization")]
     [SerializeField] private bool showDebugSpheres = true;
     [SerializeField] private Color debugSphereColor = Color.cyan;
-    [SerializeField] private float debugSphereDuration = 2f;
+    [SerializeField] private float debugSphereDuration = 4f;
 
     // Debug sphere data for visualization
     private struct DebugSphere
@@ -145,14 +144,6 @@ public class NPCPathfindingUtilities : MonoBehaviour
     public void FindVolumes()
     {
         navVolumes = FindObjectsByType<NavVolume>(FindObjectsSortMode.None);
-    }
-
-    [Button]
-    [ShowIf("@Application.isPlaying")]
-    public void TestDebugSphere()
-    {
-        // Test the debug sphere at the current position
-        AddDebugSphere(transform.position, 15f, debugSphereDuration, Color.red);
     }
 
     private void OnDrawGizmos()

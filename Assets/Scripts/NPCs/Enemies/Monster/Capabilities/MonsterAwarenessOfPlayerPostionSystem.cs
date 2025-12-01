@@ -19,22 +19,22 @@ public class MonsterAwarenessOfPlayerPostionSystem : MonoBehaviour
 
     [Header("Distance Thresholds")]
     [Tooltip("Distance beyond which the monster considers itself 'far' from the player")]
-    [SerializeField] private float farThreshold = 30f;
+    [SerializeField] private float farThreshold = 20f;
 
     [Tooltip("Distance beyond which the monster considers itself at 'medium' distance from the player")]
-    [SerializeField] private float mediumThreshold = 15f;
+    [SerializeField] private float mediumThreshold = 10f;
 
     // Anything closer than mediumThreshold is considered 'Close'
 
     [Header("Patrol Influence Radius")]
     [Tooltip("When FAR: Monster searches this radius around player's position for patrol points")]
-    [SerializeField] private float farInfluenceRadius = 10f;
+    [SerializeField] private float farInfluenceRadius = 20f;
 
     [Tooltip("When MEDIUM: Monster searches this radius around player's position for patrol points")]
-    [SerializeField] private float mediumInfluenceRadius = 15f;
+    [SerializeField] private float mediumInfluenceRadius = 30f;
 
     [Tooltip("When CLOSE: Monster searches this radius around player's position (or uses random if 0)")]
-    [SerializeField] private float closeInfluenceRadius = 0f; // 0 = completely random
+    [SerializeField] private float closeInfluenceRadius = 40f; // 0 = completely random
 
     [Header("Performance")]
     [Tooltip("How often to recalculate distance to player (in seconds)")]
@@ -208,7 +208,7 @@ public class MonsterAwarenessOfPlayerPostionSystem : MonoBehaviour
 
     private void OnDrawGizmosSelected()
     {
-        if (!showDebugGizmos || playerTransform == null) return;
+        if (!showDebugGizmos) return;
 
         // Draw distance thresholds around the monster
         Gizmos.color = Color.red;
@@ -220,6 +220,8 @@ public class MonsterAwarenessOfPlayerPostionSystem : MonoBehaviour
         // Draw current influence radius around the player
         if (Application.isPlaying)
         {
+            if (playerTransform == null) return;
+
             Gizmos.color = currentProximity switch
             {
                 PlayerProximity.Far => Color.green,
