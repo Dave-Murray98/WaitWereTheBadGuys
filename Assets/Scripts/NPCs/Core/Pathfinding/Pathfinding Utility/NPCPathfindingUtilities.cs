@@ -9,6 +9,8 @@ public class NPCPathfindingUtilities : MonoBehaviour
 
     [SerializeField] private NavVolume[] navVolumes;
 
+    [SerializeField] private Transform playerTransform;
+
     private void Awake()
     {
         if (Instance == null)
@@ -21,7 +23,7 @@ public class NPCPathfindingUtilities : MonoBehaviour
         }
     }
 
-    public Vector3 GetRandomValidPositionToMoveTo(Vector3 agentPos, Vector3 targetPos)
+    public Vector3 GetRandomValidPositionToMoveTo(Vector3 agentPos)
     {
         NavVolume closestVolume = GetClosestVolume(agentPos);
 
