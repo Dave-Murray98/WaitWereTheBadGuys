@@ -131,6 +131,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1125956825592671056, guid: 166f4f7732d5fcf4fb7e35880df44204, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1274573959617391877, guid: 166f4f7732d5fcf4fb7e35880df44204, type: 3}
       propertyPath: m_Name
       value: Monster
@@ -7675,6 +7679,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   navVolumes:
   - {fileID: 555671436}
+  showDebugSpheres: 1
+  debugSphereColor: {r: 0, g: 1, b: 1, a: 1}
+  debugSphereDuration: 2
 --- !u!1 &1197778227
 GameObject:
   m_ObjectHideFlags: 0
