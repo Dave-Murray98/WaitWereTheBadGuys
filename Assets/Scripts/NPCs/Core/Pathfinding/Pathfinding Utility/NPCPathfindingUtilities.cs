@@ -62,7 +62,7 @@ public class NPCPathfindingUtilities : MonoBehaviour
         return closestVolume.Data.Regions[randomIndex].Bounds.center;
     }
 
-    public Vector3 GetRandomValidPositionNearPoint(Vector3 point, float radius = 10f)
+    public Vector3 GetRandomValidPositionNearPoint(Vector3 point, float radius = 20f)
     {
         // Add debug sphere visualization
         if (showDebugSpheres)

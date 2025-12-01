@@ -24,6 +24,7 @@ public class UnderwaterMonsterController : MonoBehaviour
     public float maxEngageDistance = 10f;
     public float maxPursuitTime = 10f;
     public float investigateStateTime = 10f;
+    public float investigateStateRadius = 10f;
 
     [Header("Debug")]
     [SerializeField] private bool enableDebugLogs;
@@ -88,6 +89,16 @@ public class UnderwaterMonsterController : MonoBehaviour
         {
             newPatrolPosition = NPCPathfindingUtilities.Instance.GetRandomValidPosition(transform.position);
         }
+
+        SetTargetPosition(newPatrolPosition);
+    }
+
+    public void SetPatrolPositionToRandomPositionNearLastHeardNoise()
+    {
+        Vector3 newPatrolPosition = NPCPathfindingUtilities.Instance.GetRandomValidPositionNearPoint(hearing.LastHeardNoisePosition, investigateStateRadius);
+
+        if (targetPosition == Vector3.zero)
+            targetPosition = NPCPathfindingUtilities.Instance.GetRandomValidPosition(transform.position);
 
         SetTargetPosition(newPatrolPosition);
     }
