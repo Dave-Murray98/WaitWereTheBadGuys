@@ -21,42 +21,12 @@ public class NPCPathfindingUtilities : MonoBehaviour
         }
     }
 
-    // public Vector3 GetRandomValidPosition(SplineNavAgent agent)
-    // {
-    //     if (agent == null)
-    //         return Vector3.zero;
-
-    //     // Get the last waypoint
-    //     int furthestWaypointIndex = agent.CurrentPath.Waypoints.Count - 1;
-    //     NavWaypoint furthestWaypoint = agent.CurrentPath.Waypoints[furthestWaypointIndex];
-
-    //     if (furthestWaypoint.IsVolume)
-    //         return furthestWaypoint.Position;
-    //     else
-    //     {
-    //         while (furthestWaypointIndex > 0)
-    //         {
-    //             furthestWaypointIndex--;
-    //             furthestWaypoint = agent.CurrentPath.Waypoints[furthestWaypointIndex];
-    //             if (furthestWaypoint.IsVolume)
-    //                 return furthestWaypoint.Position;
-    //         }
-    //     }
-
-    //     return Vector3.zero;
-    // }
-
-    public Vector3 GetRandomValidPositionToMoveTo(Vector3 agentPos, float radius = 10f)
+    public Vector3 GetRandomValidPositionToMoveTo(Vector3 agentPos, Vector3 targetPos)
     {
         NavVolume closestVolume = GetClosestVolume(agentPos);
 
         if (closestVolume == null)
             return Vector3.zero;
-
-        // Draw a sphere around the agent's radius and pick a random position from within it 
-        // that's valid (ie in the nav volume, and not in a wall)
-        Vector3 randomPosition = Random.insideUnitSphere * radius;
-        randomPosition += agentPos;
 
         int randomIndex = Random.Range(0, closestVolume.Data.Regions.Count - 1);
 
