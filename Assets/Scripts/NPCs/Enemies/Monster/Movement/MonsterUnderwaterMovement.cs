@@ -47,6 +47,10 @@ public class MonsterUnderwaterMovement : MonoBehaviour
     [ShowInInspector] private bool hasReachedDestination = false;
     [SerializeField] private bool isActive = false;
 
+    // FIX: Add pathfinding state tracking
+    private bool isPathCalculating = false;
+    private float pathCalculationStartTime = 0f;
+    private const float MAX_PATH_CALCULATION_TIME = 2f;
 
     // OPTIMIZATION: Cached target
     private Vector3 cachedTarget;
@@ -58,7 +62,8 @@ public class MonsterUnderwaterMovement : MonoBehaviour
         Moving,
         SlowingDown,
         Arrived,
-        Idle
+        Idle,
+        CalculatingPath  // NEW: Add state for path calculation
     }
 
     [SerializeField] private MovementState currentState = MovementState.Moving;
@@ -88,8 +93,7 @@ public class MonsterUnderwaterMovement : MonoBehaviour
     public void Initialize(UnderwaterMonsterController controller)
     {
         this.controller = controller;
-
-        currentState = MovementState.Moving;
+        currentState = MovementState.Idle;
     }
 
     private void Update()
@@ -113,20 +117,54 @@ public class MonsterUnderwaterMovement : MonoBehaviour
         DebugLog("Activated Movement");
         isActive = true;
         hasReachedDestination = false;
+        isPathCalculating = true;
+        pathCalculationStartTime = Time.time;
 
         // Reset caches
         cachedTarget = controller.targetPosition;
         targetCacheTimer = 0f;
         agent.enabled = true;
 
+        // Set the destination
         agent.Destination = controller.targetPosition;
-        currentState = MovementState.Moving;
+        currentState = MovementState.CalculatingPath;
 
+        DebugLog($"Setting destination to: {controller.targetPosition}");
+
+        // Start checking for path completion
+        StartCoroutine(WaitForPathCalculation());
+    }
+
+    private IEnumerator WaitForPathCalculation()
+    {
+        // Wait for the pathfinding to complete
+        while (isPathCalculating && (Time.time - pathCalculationStartTime) < MAX_PATH_CALCULATION_TIME)
+        {
+            // Check if the agent has a valid path and is no longer calculating
+            if (agent.CurrentPath != null && agent.RemainingDistance > arriveAtDestinationDistance)
+            {
+                isPathCalculating = false;
+                currentState = MovementState.Moving;
+                DebugLog($"Path calculation complete! RemainingDistance: {agent.RemainingDistance}");
+                break;
+            }
+
+            yield return new WaitForSeconds(0.1f); // Check every 0.1 seconds
+        }
+
+        // If we timeout or still don't have a valid path, something's wrong
+        if (isPathCalculating)
+        {
+            isPathCalculating = false;
+            DebugLog("Path calculation timed out or failed!");
+            OnPathFailed();
+        }
     }
 
     public void DeactivateMovement()
     {
         isActive = false;
+        isPathCalculating = false;
 
         agent.Stop(true);
         agent.enabled = false;
@@ -157,7 +195,8 @@ public class MonsterUnderwaterMovement : MonoBehaviour
 
     private void UpdateNavigation()
     {
-        if (controller.targetPosition == Vector3.zero || !agent.enabled) return;
+        if (controller.targetPosition == Vector3.zero || !agent.enabled || isPathCalculating)
+            return;
 
         // OPTIMIZATION: Use cached targets to reduce property accesses
         Vector3 cachedTargetPos = GetCachedTarget();
@@ -171,8 +210,25 @@ public class MonsterUnderwaterMovement : MonoBehaviour
 
     private void UpdateMovementState()
     {
+        // Don't update movement state while calculating path
+        if (isPathCalculating || currentState == MovementState.CalculatingPath)
+            return;
+
+        // Make sure we have a valid path before checking distances
+        if (agent.CurrentPath == null)
+        {
+            DebugLog("Agent has no path!");
+            return;
+        }
+
         // OPTIMIZATION: Cache remaining distance as it's accessed multiple times
         float remainingDistance = agent.RemainingDistance;
+
+        // Add extra debug information
+        if (enableDebugLogs && Time.frameCount % 60 == 0) // Log once per second at 60fps
+        {
+            DebugLog($"Current distance to target: {remainingDistance}, Current state: {currentState}");
+        }
 
         // OPTIMIZATION: Pre-calculated squared distances for comparison
         float remainingDistanceSqr = remainingDistance * remainingDistance;
@@ -202,6 +258,10 @@ public class MonsterUnderwaterMovement : MonoBehaviour
 
         switch (currentState)
         {
+            case MovementState.CalculatingPath:
+                // Don't move while calculating path
+                break;
+
             case MovementState.Moving:
                 MoveAtFullSpeed();
                 break;
@@ -276,7 +336,9 @@ public class MonsterUnderwaterMovement : MonoBehaviour
     /// </summary>
     private void OnPathFailed()
     {
-        Debug.Log($"{gameObject.name} Path Failed!");
+        DebugLog("Path Failed! Target might be unreachable.");
+        isPathCalculating = false;
+        hasReachedDestination = true; // Mark as reached so we can try again
     }
 
     // Public interface methods
@@ -293,5 +355,4 @@ public class MonsterUnderwaterMovement : MonoBehaviour
             Debug.Log($"[MonsterUnderwaterMovement] {message}");
         }
     }
-
 }

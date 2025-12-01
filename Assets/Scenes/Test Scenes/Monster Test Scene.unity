@@ -6797,6 +6797,17 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1106069885 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6312803182678123808, guid: 166f4f7732d5fcf4fb7e35880df44204, type: 3}
+  m_PrefabInstance: {fileID: 13666430}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c0a14e69898ded4dbd0882ed5dd5003, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1106202413
 GameObject:
   m_ObjectHideFlags: 0
@@ -15926,6 +15937,7 @@ GameObject:
   - component: {fileID: 2073238891}
   - component: {fileID: 2073238890}
   - component: {fileID: 2073238889}
+  - component: {fileID: 2073238892}
   m_Layer: 0
   m_Name: Target Pos Marker
   m_TagString: Untagged
@@ -16001,6 +16013,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2073238892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2073238888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fa618b2b78b623448c5028d1b50968f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 1106069885}
 --- !u!1 &2073267127
 GameObject:
   m_ObjectHideFlags: 0
