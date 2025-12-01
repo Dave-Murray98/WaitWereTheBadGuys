@@ -1,3 +1,4 @@
+using System;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
@@ -8,7 +9,7 @@ public class UnderwaterMonsterController : MonoBehaviour
     public Rigidbody rb;
 
     [Header("Components")]
-    [SerializeField] private MonsterUnderwaterMovement movement;
+    public MonsterUnderwaterMovement movement;
     [SerializeField] private MonsterAnimationHandler animationHandler;
 
     [Header("Attack")]
@@ -55,10 +56,17 @@ public class UnderwaterMonsterController : MonoBehaviour
         movement.Initialize(this);
     }
 
+    public void SetPatrolDestination()
+    {
+        //placeholder
+    }
+
     [Button]
     public void Attack()
     {
-        attack.PerformAttack();
+        if (attack.isAttacking) return;
+
+        StartCoroutine(attack.AttackCoroutine());
     }
 
     [Button]
@@ -73,6 +81,32 @@ public class UnderwaterMonsterController : MonoBehaviour
         movement.ActivateMovement();
     }
 
+
+    public float GetDistanceToTarget()
+    {
+        return movement.GetDistanceToTarget();
+    }
+
+    public void SetTargetPosition(Vector3 targetPosition)
+    {
+        this.targetPosition = targetPosition;
+    }
+
+    private void OnDestroy()
+    {
+        Cleanup();
+    }
+
+    private void OnDisable()
+    {
+        Cleanup();
+    }
+
+    private void Cleanup()
+    {
+        StopAllCoroutines();
+    }
+
     private void DebugLog(string message)
     {
         if (enableDebugLogs)
@@ -81,8 +115,4 @@ public class UnderwaterMonsterController : MonoBehaviour
         }
     }
 
-    public float GetDistanceToTarget()
-    {
-        return movement.GetDistanceToTarget();
-    }
 }

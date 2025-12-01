@@ -1505,8 +1505,11 @@ MonoBehaviour:
       parentIndex: 
       startIndex: 
       variableStartIndex: 
-      JSONSerialization: '{"EntryTask":{"Type":"BehaviorDesigner.Runtime.Tasks.EntryTask","NodeData":{"Offset":"(81283.69,-264212.7)"},"ID":0,"Name":"Entry","Instant":true},"RootTask":{"Type":"BehaviorDesigner.Runtime.Tasks.Log","NodeData":{"Offset":"(3.6875,117.3125)"},"ID":1,"Name":"Log","Instant":true,"SharedStringtext":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"Enterered
-        Engaging Behaviour Tree"},"SharedBoollogError":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedBoollogTime":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false}}}'
+      JSONSerialization: '{"EntryTask":{"Type":"BehaviorDesigner.Runtime.Tasks.EntryTask","NodeData":{"Offset":"(81283.69,-264228.3)"},"ID":0,"Name":"Entry","Instant":true},"RootTask":{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(5.80470371,98.86456)"},"ID":1,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Log","NodeData":{"Offset":"(-243.125,148.125)"},"ID":2,"Name":"Log","Instant":true,"SharedStringtext":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"Enterered
+        Engaging Behaviour Tree"},"SharedBoollogError":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedBoollogTime":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false}},{"Type":"BehaviorDesigner.Runtime.Tasks.Repeater","NodeData":{"Offset":"(1.25,218.125)"},"ID":3,"Name":"Repeater","Instant":true,"SharedIntcount":{"Type":"BehaviorDesigner.Runtime.SharedInt","Name":null,"Int32mValue":0},"SharedBoolrepeatForever":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true},"SharedBoolendOnFailure":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Selector","NodeData":{"Offset":"(2.35677719,138.44046)"},"ID":4,"Name":"Selector","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-247.1057,121.575851)"},"ID":5,"Name":"Sequence","Instant":true,"AbortTypeabortType":"LowerPriority","Children":[{"Type":"IsPlayerInAttackRange","NodeData":{"Offset":"(-151.90477,132.857208)"},"ID":6,"Name":"Is
+        Player In Attack Range","Instant":true},{"Type":"AttackPlayer","NodeData":{"Offset":"(16.20797,139.851166)"},"ID":7,"Name":"Attack
+        Player","Instant":true}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(67.91406,167.25)"},"ID":8,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"MoveTowardsPlayer","NodeData":{"Offset":"(6.41109467,126.53125)"},"ID":9,"Name":"Move
+        Towards Player","Instant":true}]}]}]}]}}'
       fieldSerializationData:
         typeName: []
         fieldNameHash: 
@@ -1907,8 +1910,9 @@ MonoBehaviour:
       parentIndex: 
       startIndex: 
       variableStartIndex: 
-      JSONSerialization: '{"EntryTask":{"Type":"BehaviorDesigner.Runtime.Tasks.EntryTask","NodeData":{"Offset":"(210.458862,13.5975952)"},"ID":0,"Name":"Entry","Instant":true},"RootTask":{"Type":"BehaviorDesigner.Runtime.Tasks.Log","NodeData":{"Offset":"(0.4588623,234.708679)"},"ID":1,"Name":"Log","Instant":true,"SharedStringtext":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"Enterered
-        Pursuing Behaviour Tree"},"SharedBoollogError":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedBoollogTime":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false}}}'
+      JSONSerialization: '{"EntryTask":{"Type":"BehaviorDesigner.Runtime.Tasks.EntryTask","NodeData":{"Offset":"(210.458862,13.5975952)"},"ID":0,"Name":"Entry","Instant":true},"RootTask":{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-1.32686615,116.1826)"},"ID":1,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Log","NodeData":{"Offset":"(-221.428619,155.2381)"},"ID":2,"Name":"Log","Instant":true,"SharedStringtext":{"Type":"BehaviorDesigner.Runtime.SharedString","Name":null,"StringmValue":"Enterered
+        Pursuing Behaviour Tree"},"SharedBoollogError":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedBoollogTime":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false}},{"Type":"BehaviorDesigner.Runtime.Tasks.Repeater","NodeData":{"Offset":"(-3.70779419,196.522858)"},"ID":3,"Name":"Repeater","Instant":true,"SharedIntcount":{"Type":"BehaviorDesigner.Runtime.SharedInt","Name":null,"Int32mValue":0},"SharedBoolrepeatForever":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true},"SharedBoolendOnFailure":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true},"Children":[{"Type":"MoveTowardsPlayer","NodeData":{"Offset":"(-6.08875656,116.59095)"},"ID":4,"Name":"Move
+        Towards Player","Instant":true}]}]}}'
       fieldSerializationData:
         typeName: []
         fieldNameHash: 
@@ -2268,7 +2272,7 @@ GameObject:
   - component: {fileID: 7635772831715860591}
   - component: {fileID: 104458379590732904}
   - component: {fileID: 7521607398153743116}
-  m_Layer: 15
+  m_Layer: 21
   m_Name: Attack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2302,9 +2306,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 676796e877e70934f8b3fdabf636bf41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controller: {fileID: 6312803182678123808}
   animationHandler: {fileID: 9115232157743423632}
+  rb: {fileID: 6291323384613600378}
   enableDebugLogs: 0
   playerInAttackRange: 0
+  isAttacking: 0
+  attackChargeForce: 100
+  attackDuration: 2
+  attackChargeUpDelay: 0.5
 --- !u!65 &7521607398153743116
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2320,12 +2330,12 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 4, y: 3, z: 3}
-  m_Center: {x: 0, y: 0, z: 0.21}
+  m_Size: {x: 6.944354, y: 4.659915, z: 6.448012}
+  m_Center: {x: 0.0033799806, y: 0.35429487, z: 1.934005}
 --- !u!1 &6259147975024740503
 GameObject:
   m_ObjectHideFlags: 0

@@ -139,6 +139,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1091898540}
+    - target: {fileID: 6312803182678123808, guid: 166f4f7732d5fcf4fb7e35880df44204, type: 3}
+      propertyPath: maxPursuitTime
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8609570422893848802, guid: 166f4f7732d5fcf4fb7e35880df44204, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.3
@@ -6715,7 +6719,7 @@ Transform:
   m_GameObject: {fileID: 1091898536}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.14, y: -0.248, z: -8.38}
+  m_LocalPosition: {x: -24.23, y: -0.248, z: -9.59}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -118,12 +118,15 @@ public class MonsterUnderwaterMovement : MonoBehaviour
         // Reset caches
         cachedTarget = monsterController.targetPosition;
         targetCacheTimer = 0f;
+        agent.enabled = true;
     }
 
     public void DeactivateMovement()
     {
         isActive = false;
 
+        agent.Stop(true);
+        agent.enabled = false;
         // Stop the monster
         StopMovement();
 
