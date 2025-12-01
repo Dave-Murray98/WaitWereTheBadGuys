@@ -1,6 +1,8 @@
 using UnityEngine;
 using Infohazard.HyperNav;
 using Sirenix.OdinInspector;
+using Infohazard.HyperNav.Jobs.Baking.Volume;
+using System.Collections.Generic;
 
 
 public class NPCPathfindingUtilities : MonoBehaviour
@@ -36,6 +38,30 @@ public class NPCPathfindingUtilities : MonoBehaviour
 
         return closestVolume.Data.Regions[randomIndex].Bounds.center;
 
+    }
+
+    public Vector3 GetRandomValidPositionNearPoint(Vector3 point, float radius = 10f)
+    {
+        NavVolume closestVolume = GetClosestVolume(point);
+
+        if (closestVolume == null)
+            return Vector3.zero;
+
+        List<NavRegionData> regionsInsideSphere = new List<NavRegionData>();
+
+        foreach (NavRegionData region in closestVolume.Data.Regions)
+        {
+            if (Vector3.Distance(point, region.Bounds.center) <= radius)
+            {
+                regionsInsideSphere.Add(region);
+            }
+        }
+
+        if (regionsInsideSphere.Count == 0)
+            return Vector3.zero;
+
+        int randomIndex = Random.Range(0, regionsInsideSphere.Count);
+        return regionsInsideSphere[randomIndex].Bounds.center;
     }
 
     private NavVolume GetClosestVolume(Vector3 position)
