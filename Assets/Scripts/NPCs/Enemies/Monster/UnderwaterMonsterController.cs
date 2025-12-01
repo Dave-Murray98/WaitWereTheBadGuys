@@ -57,7 +57,7 @@ public class UnderwaterMonsterController : MonoBehaviour
 
     public void SetPatrolDestination()
     {
-        SetTargetPosition(NPCPathfindingUtilities.Instance.GetRandomValidPositionToMoveTo(transform.position));
+        SetTargetPosition(NPCPathfindingUtilities.Instance.GetRandomValidPosition(transform.position));
     }
 
     [Button]

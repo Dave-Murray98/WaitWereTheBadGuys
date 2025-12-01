@@ -25,7 +25,7 @@ public class NPCPathfindingUtilities : MonoBehaviour
         }
     }
 
-    public Vector3 GetRandomValidPositionToMoveTo(Vector3 agentPos)
+    public Vector3 GetRandomValidPosition(Vector3 agentPos)
     {
         NavVolume closestVolume = GetClosestVolume(agentPos);
 
