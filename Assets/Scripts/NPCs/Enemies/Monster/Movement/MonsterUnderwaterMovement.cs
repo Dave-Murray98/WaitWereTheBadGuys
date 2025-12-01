@@ -224,11 +224,11 @@ public class MonsterUnderwaterMovement : MonoBehaviour
         // OPTIMIZATION: Cache remaining distance as it's accessed multiple times
         float remainingDistance = agent.RemainingDistance;
 
-        // Add extra debug information
-        if (enableDebugLogs && Time.frameCount % 60 == 0) // Log once per second at 60fps
-        {
-            DebugLog($"Current distance to target: {remainingDistance}, Current state: {currentState}");
-        }
+        // // Add extra debug information
+        // if (enableDebugLogs && Time.frameCount % 60 == 0) // Log once per second at 60fps
+        // {
+        //     DebugLog($"Current distance to target: {remainingDistance}, Current state: {currentState}");
+        // }
 
         // OPTIMIZATION: Pre-calculated squared distances for comparison
         float remainingDistanceSqr = remainingDistance * remainingDistance;

@@ -10,6 +10,7 @@ public class UnderwaterMonsterController : MonoBehaviour
 
     [Header("Components")]
     public MonsterUnderwaterMovement movement;
+    public MonsterAwarenessOfPlayerPostionSystem awarenessSystem;
     [SerializeField] private MonsterAnimationHandler animationHandler;
 
     [Header("Attack")]
@@ -41,24 +42,69 @@ public class UnderwaterMonsterController : MonoBehaviour
         if (movement == null) movement = GetComponent<MonsterUnderwaterMovement>();
         if (animationHandler == null) animationHandler = GetComponent<MonsterAnimationHandler>();
         if (attack == null) attack = GetComponentInChildren<MonsterAttack>();
+        if (awarenessSystem == null) awarenessSystem = GetComponent<MonsterAwarenessOfPlayerPostionSystem>();
     }
 
     private void Start()
     {
         Initialize();
-
         movement.ActivateMovement();
     }
 
     private void Initialize()
     {
         movement.Initialize(this);
+
+        // Initialize the awareness system with player reference
+        if (awarenessSystem != null && player != null)
+        {
+            awarenessSystem.Initialize(player);
+        }
+        else
+        {
+            if (awarenessSystem == null)
+                DebugLog("Warning: No PlayerAwarenessSystem found! AI will use basic random patrol.");
+            if (player == null)
+                DebugLog("Warning: No player reference assigned!");
+        }
     }
 
-    public void SetPatrolDestination()
+    /// <summary>
+    /// Sets a patrol destination using the awareness system to influence position based on distance to player.
+    /// </summary>
+    public void SetPatrolDestinationBasedOnDistanceToPlayer()
     {
-        SetTargetPosition(NPCPathfindingUtilities.Instance.GetRandomValidPosition(transform.position));
+        if (awarenessSystem == null)
+        {
+            DebugLog("Warning: No PlayerAwarenessSystem found! AI will use basic random patrol.");
+            return;
+        }
+
+        Vector3 newPatrolPosition = awarenessSystem.GetInfluencedPatrolPosition(transform.position);
+        DebugLog($"Set influenced patrol destination: {newPatrolPosition} (Proximity: {awarenessSystem.CurrentProximity})");
+
+        //fallback to random patrol
+        if (newPatrolPosition == Vector3.zero)
+        {
+            newPatrolPosition = NPCPathfindingUtilities.Instance.GetRandomValidPosition(transform.position);
+        }
+
+        SetTargetPosition(newPatrolPosition);
     }
+
+    /// <summary>
+    /// Alternative patrol method that forces random patrol regardless of awareness system.
+    /// Useful for specific behavior tree nodes or when you want to override the awareness system.
+    /// </summary>
+    [Button("Set Random Patrol")]
+    public void SetRandomPatrolDestination()
+    {
+        Vector3 randomPosition = NPCPathfindingUtilities.Instance.GetRandomValidPosition(transform.position);
+        SetTargetPosition(randomPosition);
+        DebugLog($"Set forced random patrol destination: {randomPosition}");
+    }
+
+
 
     [Button]
     public void Attack()

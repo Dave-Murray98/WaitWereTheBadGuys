@@ -1,7 +1,6 @@
 using UnityEngine;
 using Infohazard.HyperNav;
 using Sirenix.OdinInspector;
-using Infohazard.HyperNav.Jobs.Baking.Volume;
 using System.Collections.Generic;
 
 
@@ -10,8 +9,6 @@ public class NPCPathfindingUtilities : MonoBehaviour
     public static NPCPathfindingUtilities Instance { get; private set; }
 
     [SerializeField] private NavVolume[] navVolumes;
-
-    [SerializeField] private Transform playerTransform;
 
     private void Awake()
     {
@@ -30,7 +27,10 @@ public class NPCPathfindingUtilities : MonoBehaviour
         NavVolume closestVolume = GetClosestVolume(agentPos);
 
         if (closestVolume == null)
+        {
+            Debug.LogWarning("No NavVolume found");
             return Vector3.zero;
+        }
 
         int randomIndex = Random.Range(0, closestVolume.Data.Regions.Count - 1);
 
@@ -45,7 +45,10 @@ public class NPCPathfindingUtilities : MonoBehaviour
         NavVolume closestVolume = GetClosestVolume(point);
 
         if (closestVolume == null)
+        {
+            Debug.LogWarning("No NavVolume found");
             return Vector3.zero;
+        }
 
         List<NavRegionData> regionsInsideSphere = new List<NavRegionData>();
 
@@ -58,11 +61,15 @@ public class NPCPathfindingUtilities : MonoBehaviour
         }
 
         if (regionsInsideSphere.Count == 0)
+        {
+            Debug.LogWarning("No regions found inside the sphere");
             return Vector3.zero;
+        }
 
         int randomIndex = Random.Range(0, regionsInsideSphere.Count);
         return regionsInsideSphere[randomIndex].Bounds.center;
     }
+
 
     private NavVolume GetClosestVolume(Vector3 position)
     {

@@ -980,6 +980,7 @@ GameObject:
   - component: {fileID: 3890586858600311453}
   - component: {fileID: 6291323384613600378}
   - component: {fileID: 6312803182678123808}
+  - component: {fileID: 3784164084269955421}
   - component: {fileID: 6416299391549651202}
   - component: {fileID: 7292528924947842843}
   - component: {fileID: 9115232157743423632}
@@ -1075,16 +1076,37 @@ MonoBehaviour:
   player: {fileID: 0}
   rb: {fileID: 6291323384613600378}
   movement: {fileID: 7292528924947842843}
+  awarenessSystem: {fileID: 3784164084269955421}
   animationHandler: {fileID: 9115232157743423632}
   attack: {fileID: 104458379590732904}
   vision: {fileID: 8233873540931270706}
   hearing: {fileID: 7578399474031715160}
   maxEngageDistance: 5
-  maxPursuitTime: 10
+  maxPursuitTime: 5
   investigateStateTime: 10
   enableDebugLogs: 0
   currentHealth: 100
   targetPosition: {x: 0, y: 0, z: 0}
+--- !u!114 &3784164084269955421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1274573959617391877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 131bfdd8f661a384986083f73c94f7fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  farThreshold: 30
+  mediumThreshold: 15
+  farInfluenceRadius: 10
+  mediumInfluenceRadius: 15
+  closeInfluenceRadius: 0
+  updateInterval: 0.5
+  enableDebugLogs: 0
+  showDebugGizmos: 1
 --- !u!114 &6416299391549651202
 MonoBehaviour:
   m_ObjectHideFlags: 0

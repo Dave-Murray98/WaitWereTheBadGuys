@@ -6,7 +6,7 @@ public class SetPatrolDestination : EnemyAction
     public override void OnStart()
     {
         base.OnStart();
-        controller.SetPatrolDestination();
+        controller.SetPatrolDestinationBasedOnDistanceToPlayer();
     }
 
     public override TaskStatus OnUpdate()
