@@ -127,9 +127,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 426486034821047636, guid: 166f4f7732d5fcf4fb7e35880df44204, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1274573959617391877, guid: 166f4f7732d5fcf4fb7e35880df44204, type: 3}
       propertyPath: m_Name
       value: Monster
+      objectReference: {fileID: 0}
+    - target: {fileID: 1387340492474986483, guid: 166f4f7732d5fcf4fb7e35880df44204, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5503962831170204001, guid: 166f4f7732d5fcf4fb7e35880df44204, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6312803182678123808, guid: 166f4f7732d5fcf4fb7e35880df44204, type: 3}
       propertyPath: player
@@ -142,6 +154,10 @@ PrefabInstance:
     - target: {fileID: 6312803182678123808, guid: 166f4f7732d5fcf4fb7e35880df44204, type: 3}
       propertyPath: maxPursuitTime
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8404392366600987179, guid: 166f4f7732d5fcf4fb7e35880df44204, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8609570422893848802, guid: 166f4f7732d5fcf4fb7e35880df44204, type: 3}
       propertyPath: m_LocalPosition.x

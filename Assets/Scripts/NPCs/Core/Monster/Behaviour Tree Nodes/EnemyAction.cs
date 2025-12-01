@@ -1,5 +1,4 @@
-using BehaviorDesigner.Runtime.Tasks;
-using UnityEngine;
+using Opsive.BehaviorDesigner.Runtime.Tasks.Actions;
 
 public class EnemyAction : Action
 {
@@ -12,3 +11,4 @@ public class EnemyAction : Action
     }
 
 }
+

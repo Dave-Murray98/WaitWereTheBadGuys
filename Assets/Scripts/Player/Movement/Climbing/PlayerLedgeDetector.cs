@@ -1,4 +1,3 @@
-using BehaviorDesigner.Runtime.Tasks.Unity.Timeline;
 using Sirenix.OdinInspector;
 using TMPro;
 using UnityEngine;

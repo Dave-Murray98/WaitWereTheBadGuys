@@ -1,6 +1,5 @@
 using UnityEngine;
-
-using BehaviorDesigner.Runtime.Tasks;
+using Opsive.BehaviorDesigner.Runtime.Tasks;
 
 public class Idle : EnemyAction
 {

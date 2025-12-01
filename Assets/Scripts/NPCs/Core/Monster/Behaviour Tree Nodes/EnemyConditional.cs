@@ -1,5 +1,4 @@
-using BehaviorDesigner.Runtime.Tasks;
-using UnityEngine;
+using Opsive.BehaviorDesigner.Runtime.Tasks.Conditionals;
 
 public class EnemyConditional : Conditional
 {

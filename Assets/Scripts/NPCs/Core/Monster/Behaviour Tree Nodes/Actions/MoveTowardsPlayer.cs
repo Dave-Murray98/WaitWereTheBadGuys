@@ -1,5 +1,4 @@
-using BehaviorDesigner.Runtime.Tasks;
-using UnityEngine;
+using Opsive.BehaviorDesigner.Runtime.Tasks;
 
 public class MoveTowardsPlayer : EnemyAction
 {
@@ -7,7 +6,7 @@ public class MoveTowardsPlayer : EnemyAction
     public override void OnStart()
     {
         base.OnStart();
-
+        controller.ActivateMovement();
         controller.SetTargetPosition(controller.player.position);
     }
 

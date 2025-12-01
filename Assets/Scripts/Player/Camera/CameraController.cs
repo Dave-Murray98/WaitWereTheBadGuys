@@ -2,7 +2,6 @@ using UnityEngine;
 using Unity.Cinemachine;
 using Sirenix.OdinInspector;
 using System;
-using BehaviorDesigner.Runtime.Tasks.Unity.UnityGameObject;
 
 /// <summary>
 /// ENHANCED: Camera controller with vehicle horizontal aiming support.

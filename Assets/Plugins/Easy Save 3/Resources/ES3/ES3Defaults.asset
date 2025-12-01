@@ -53,6 +53,9 @@ MonoBehaviour:
     - NWH.VehiclePhysics2
     - NWH.VehiclePhysics2.SetupWizard
     - NWH.WheelController
+    - Opsive.BehaviorDesigner.Runtime
+    - Opsive.GraphDesigner.Runtime.Wrappers
+    - Opsive.Shared.Runtime
     - PackageTools
     - UniTask
     - UniTask.Addressables
