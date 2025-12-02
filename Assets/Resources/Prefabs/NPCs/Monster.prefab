@@ -980,6 +980,7 @@ GameObject:
   - component: {fileID: 3890586858600311453}
   - component: {fileID: 6291323384613600378}
   - component: {fileID: 6312803182678123808}
+  - component: {fileID: 6318402052719591333}
   - component: {fileID: 3784164084269955421}
   - component: {fileID: 6416299391549651202}
   - component: {fileID: 7967571738856520939}
@@ -1091,6 +1092,28 @@ MonoBehaviour:
   investigateStateRadius: 10
   enableDebugLogs: 0
   targetPosition: {x: 0, y: 0, z: 0}
+--- !u!114 &6318402052719591333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1274573959617391877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1373520391b4c5541aa950f5bff6a0b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  saveID: Monster_Main
+  autoGenerateID: 0
+  enableDebugLogs: 1
+  monsterController: {fileID: 6312803182678123808}
+  monsterHealth: {fileID: 7967571738856520939}
+  stateMachine: {fileID: 6416299391549651202}
+  rb: {fileID: 6291323384613600378}
+  autoFindReferences: 1
+  physicsSettleDelay: 0.1
+  stateRestorationDelay: 0.2
 --- !u!114 &3784164084269955421
 MonoBehaviour:
   m_ObjectHideFlags: 0
