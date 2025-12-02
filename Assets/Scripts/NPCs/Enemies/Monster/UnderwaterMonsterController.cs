@@ -1,6 +1,7 @@
 using System;
 using Pathfinding.ECS;
 using Sirenix.OdinInspector;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class UnderwaterMonsterController : MonoBehaviour
@@ -13,10 +14,10 @@ public class UnderwaterMonsterController : MonoBehaviour
     public MonsterAwarenessOfPlayerPostionSystem awarenessSystem;
     [SerializeField] private MonsterAnimationHandler animationHandler;
 
-    [Header("Attack")]
+    [Header("Capabilities")]
+    public MonsterHealth health;
     public MonsterAttack attack;
 
-    [Header("Vision and Hearing")]
     public EnemyVision vision;
     public EnemyHearing hearing;
 
@@ -29,7 +30,6 @@ public class UnderwaterMonsterController : MonoBehaviour
     [Header("Debug")]
     [SerializeField] private bool enableDebugLogs;
 
-    public float currentHealth = 100f;
     public Vector3 targetPosition;
 
     private void Awake()
@@ -42,6 +42,7 @@ public class UnderwaterMonsterController : MonoBehaviour
         if (rb == null) rb = GetComponent<Rigidbody>();
         if (movement == null) movement = GetComponent<MonsterUnderwaterMovement>();
         if (animationHandler == null) animationHandler = GetComponent<MonsterAnimationHandler>();
+        if (health == null) health = GetComponent<MonsterHealth>();
         if (attack == null) attack = GetComponentInChildren<MonsterAttack>();
         if (awarenessSystem == null) awarenessSystem = GetComponent<MonsterAwarenessOfPlayerPostionSystem>();
     }

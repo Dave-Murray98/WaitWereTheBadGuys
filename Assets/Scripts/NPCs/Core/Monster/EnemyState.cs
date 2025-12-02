@@ -27,7 +27,7 @@ public class EnemyState : State
     {
         base.UpdateLogic();
 
-        if (controller.currentHealth <= 0)
+        if (controller.health.CurrentHealth <= 0)
         {
             if (sm.currentState != ((EnemyStateMachine)stateMachine).deathState)
                 stateMachine.ChangeState(((EnemyStateMachine)stateMachine).deathState);

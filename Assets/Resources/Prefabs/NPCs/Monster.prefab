@@ -982,6 +982,7 @@ GameObject:
   - component: {fileID: 6312803182678123808}
   - component: {fileID: 3784164084269955421}
   - component: {fileID: 6416299391549651202}
+  - component: {fileID: 7967571738856520939}
   - component: {fileID: 7292528924947842843}
   - component: {fileID: 9115232157743423632}
   - component: {fileID: 1176461051552699353}
@@ -1078,6 +1079,7 @@ MonoBehaviour:
   movement: {fileID: 7292528924947842843}
   awarenessSystem: {fileID: 3784164084269955421}
   animationHandler: {fileID: 9115232157743423632}
+  health: {fileID: 0}
   attack: {fileID: 104458379590732904}
   vision: {fileID: 8233873540931270706}
   hearing: {fileID: 7578399474031715160}
@@ -1086,7 +1088,6 @@ MonoBehaviour:
   investigateStateTime: 10
   investigateStateRadius: 10
   enableDebugLogs: 0
-  currentHealth: 100
   targetPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &3784164084269955421
 MonoBehaviour:
@@ -1128,6 +1129,20 @@ MonoBehaviour:
   pursuingPlayerBehaviourTree: {fileID: 426486034821047636}
   investigatingNoiseBehaviourTree: {fileID: 2632242170172006635}
   controller: {fileID: 6312803182678123808}
+--- !u!114 &7967571738856520939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1274573959617391877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de11b2a10e9e22f44a41796bc1b59c91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 100
+  maxHealth: 100
 --- !u!114 &7292528924947842843
 MonoBehaviour:
   m_ObjectHideFlags: 0
