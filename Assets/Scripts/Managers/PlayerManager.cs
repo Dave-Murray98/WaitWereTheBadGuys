@@ -70,6 +70,8 @@ public class PlayerManager : MonoBehaviour, IManager
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, playerData.maxHealth);
         GameEvents.TriggerPlayerHealthChanged(currentHealth, playerData.maxHealth);
 
+        Debug.Log("Modifying player health by " + amount);
+
         if (currentHealth <= 0 && !isDead)
         {
             isDead = true;

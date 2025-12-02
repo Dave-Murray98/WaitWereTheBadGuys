@@ -1,10 +1,11 @@
 using System.Collections;
-using UnityEditor.EditorTools;
 using UnityEngine;
 
 public class MonsterAttack : MonoBehaviour
 {
     [Header("Components")]
+    [SerializeField] private EnemyHurtBox hurtBox;
+
     [SerializeField]
     private UnderwaterMonsterController controller;
     [SerializeField] private MonsterAnimationHandler animationHandler;
@@ -19,9 +20,10 @@ public class MonsterAttack : MonoBehaviour
     // public bool didAttack = false; // True if attack was successful, and will trigger monster to pause (cooldown) after attack
 
     [Header("Attack Parameters")]
+    [SerializeField] private float damage = 20f;
     [Tooltip("The force applied to the enemy when it charges to attack")]
     [SerializeField] private float attackChargeForce = 400f;
-    [SerializeField] private float attackDuration = 1f;
+    [SerializeField] private float attackDuration = 1.2f;
 
     [Header("Improved Attack Timing")]
     [Tooltip("Time to gradually slow down before attacking")]
@@ -42,6 +44,18 @@ public class MonsterAttack : MonoBehaviour
         if (controller == null) controller = GetComponentInParent<UnderwaterMonsterController>();
         if (animationHandler == null) animationHandler = GetComponentInParent<MonsterAnimationHandler>();
         if (rb == null) rb = controller.rb;
+
+        if (hurtBox == null) hurtBox = GetComponentInChildren<EnemyHurtBox>();
+        SetUpHurtBox();
+    }
+
+    private void SetUpHurtBox()
+    {
+        if (hurtBox == null)
+            return;
+
+        hurtBox.damage = damage;
+        hurtBox.gameObject.SetActive(false);
     }
 
     public IEnumerator AttackCoroutine()
@@ -131,10 +145,14 @@ public class MonsterAttack : MonoBehaviour
 
         DebugLog($"Lunging towards player with force: {attackChargeForce}");
         animationHandler.PlayAttackAnimation();
+
+        hurtBox.gameObject.SetActive(true);
     }
 
     private void OnAttackFinished()
     {
+        hurtBox.gameObject.SetActive(false);
+
         isAttacking = false;
         //if true, monster will pause afterwards via behaviour tree
         //didAttack = managedToAttack;

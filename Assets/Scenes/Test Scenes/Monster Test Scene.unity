@@ -127,6 +127,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 420699041526604261, guid: 166f4f7732d5fcf4fb7e35880df44204, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1274573959617391877, guid: 166f4f7732d5fcf4fb7e35880df44204, type: 3}
       propertyPath: m_Name
       value: Monster
@@ -158,6 +162,14 @@ PrefabInstance:
     - target: {fileID: 3784164084269955421, guid: 166f4f7732d5fcf4fb7e35880df44204, type: 3}
       propertyPath: mediumInfluenceRadius
       value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3890586858600311453, guid: 166f4f7732d5fcf4fb7e35880df44204, type: 3}
+      propertyPath: m_Height
+      value: 2.8595963
+      objectReference: {fileID: 0}
+    - target: {fileID: 3890586858600311453, guid: 166f4f7732d5fcf4fb7e35880df44204, type: 3}
+      propertyPath: m_Center.z
+      value: -0.07020195
       objectReference: {fileID: 0}
     - target: {fileID: 5503962831170204001, guid: 166f4f7732d5fcf4fb7e35880df44204, type: 3}
       propertyPath: m_Enabled
@@ -6719,6 +6731,7 @@ GameObject:
   - component: {fileID: 1091898539}
   - component: {fileID: 1091898538}
   - component: {fileID: 1091898541}
+  - component: {fileID: 1091898542}
   m_Layer: 6
   m_Name: PlayerTarget
   m_TagString: Player
@@ -6817,6 +6830,19 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1091898542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091898536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03a74d6b2b5e69c4db7f95655281a72c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 100
 --- !u!114 &1106069885 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6312803182678123808, guid: 166f4f7732d5fcf4fb7e35880df44204, type: 3}
