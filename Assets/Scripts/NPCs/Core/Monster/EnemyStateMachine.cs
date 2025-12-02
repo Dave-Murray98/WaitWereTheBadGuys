@@ -10,6 +10,7 @@ public class EnemyStateMachine : StateMachine
     public BehaviorTree engagingPlayerBehaviourTree;
     public BehaviorTree pursuingPlayerBehaviourTree;
     public BehaviorTree investigatingNoiseBehaviourTree;
+    public BehaviorTree deathBehaviourTree;
     #endregion
 
     #region States

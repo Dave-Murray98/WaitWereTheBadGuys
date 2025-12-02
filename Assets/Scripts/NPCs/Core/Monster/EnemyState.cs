@@ -10,6 +10,7 @@ public class EnemyState : State
     protected BehaviorTree engagingPlayerBehaviourTree;
     protected BehaviorTree pursuingPlayerBehaviourTree;
     protected BehaviorTree investigatingNoiseBehaviourTree;
+    protected BehaviorTree deathBehaviourTree;
 
     public EnemyState(string name, EnemyStateMachine stateMachine) : base(name, stateMachine)
     {
@@ -19,6 +20,7 @@ public class EnemyState : State
         engagingPlayerBehaviourTree = sm.engagingPlayerBehaviourTree;
         investigatingNoiseBehaviourTree = sm.investigatingNoiseBehaviourTree;
         pursuingPlayerBehaviourTree = sm.pursuingPlayerBehaviourTree;
+        deathBehaviourTree = sm.deathBehaviourTree;
 
         controller = sm.controller;
     }

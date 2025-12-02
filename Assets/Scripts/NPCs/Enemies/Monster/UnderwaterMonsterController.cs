@@ -21,6 +21,7 @@ public class UnderwaterMonsterController : MonoBehaviour
     public EnemyHearing hearing;
 
     [Header("State Stats")]
+    public Transform monsterDeathRetreatTransform;
     public float maxEngageDistance = 10f;
     public float maxPursuitTime = 10f;
     public float investigateStateTime = 10f;
@@ -30,6 +31,8 @@ public class UnderwaterMonsterController : MonoBehaviour
     [SerializeField] private bool enableDebugLogs;
 
     public Vector3 targetPosition;
+
+    public event Action OnMonsterDespawned;
 
     private void Awake()
     {
@@ -115,7 +118,13 @@ public class UnderwaterMonsterController : MonoBehaviour
         DebugLog($"Set forced random patrol destination: {randomPosition}");
     }
 
-
+    [Button]
+    public void Despawn()
+    {
+        Debug.Log("MONSTER DESPAWNING");
+        OnMonsterDespawned?.Invoke();
+        gameObject.SetActive(false);
+    }
 
     [Button]
     public void Attack()
