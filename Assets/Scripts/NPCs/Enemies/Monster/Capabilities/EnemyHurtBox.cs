@@ -5,6 +5,8 @@ using UnityEngine;
 public class EnemyHurtBox : MonoBehaviour
 {
     public float damage = 10f;
+    public float attackKnockBackForce = 100f;
+    public Vector3 forceDirection = Vector3.forward;
 
     public float cooldown = 1f;
 
@@ -19,6 +21,9 @@ public class EnemyHurtBox : MonoBehaviour
             if (player != null)
             {
                 player.ModifyHealth(-damage);
+
+                Rigidbody rb = player.GetComponent<Rigidbody>();
+                rb.AddForce(forceDirection * attackKnockBackForce, ForceMode.Impulse);
             }
 
             StartCoroutine(Cooldown());

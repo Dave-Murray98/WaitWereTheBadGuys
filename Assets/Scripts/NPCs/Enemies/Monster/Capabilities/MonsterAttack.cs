@@ -21,6 +21,7 @@ public class MonsterAttack : MonoBehaviour
 
     [Header("Attack Parameters")]
     [SerializeField] private float damage = 20f;
+    [SerializeField] private float attackKnockBackForce = 400f;
     [Tooltip("The force applied to the enemy when it charges to attack")]
     [SerializeField] private float attackChargeForce = 400f;
     [SerializeField] private float attackDuration = 1.2f;
@@ -55,6 +56,7 @@ public class MonsterAttack : MonoBehaviour
             return;
 
         hurtBox.damage = damage;
+        hurtBox.attackKnockBackForce = attackKnockBackForce;
         hurtBox.gameObject.SetActive(false);
     }
 
@@ -146,6 +148,7 @@ public class MonsterAttack : MonoBehaviour
         DebugLog($"Lunging towards player with force: {attackChargeForce}");
         animationHandler.PlayAttackAnimation();
 
+        hurtBox.forceDirection = attackDirection;
         hurtBox.gameObject.SetActive(true);
     }
 
