@@ -1,4 +1,5 @@
 using Opsive.BehaviorDesigner.Runtime;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 public class EnemyStateMachine : StateMachine
@@ -63,5 +64,13 @@ public class EnemyStateMachine : StateMachine
         investigateState = new InvestigatingNoiseState(this);
         deathState = new DeathState(this);
 
+    }
+
+    public void ForceChangeState(EnemyState newState)
+    {
+        if (newState == null)
+            return;
+
+        ChangeState(newState);
     }
 }

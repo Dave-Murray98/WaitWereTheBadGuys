@@ -46,4 +46,9 @@ public class StateMachine : MonoBehaviour
         OnStateChanged?.Invoke(newState);
     }
 
+    public State GetCurrentState()
+    {
+        return currentState;
+    }
+
 }

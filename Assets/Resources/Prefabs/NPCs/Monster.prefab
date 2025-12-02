@@ -1079,6 +1079,7 @@ MonoBehaviour:
   movement: {fileID: 7292528924947842843}
   awarenessSystem: {fileID: 3784164084269955421}
   animationHandler: {fileID: 9115232157743423632}
+  stateMachine: {fileID: 6416299391549651202}
   health: {fileID: 7967571738856520939}
   attack: {fileID: 104458379590732904}
   vision: {fileID: 8233873540931270706}

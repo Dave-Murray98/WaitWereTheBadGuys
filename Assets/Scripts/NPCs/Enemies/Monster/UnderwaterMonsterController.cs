@@ -13,6 +13,8 @@ public class UnderwaterMonsterController : MonoBehaviour
     public MonsterAwarenessOfPlayerPostionSystem awarenessSystem;
     [SerializeField] private MonsterAnimationHandler animationHandler;
 
+    public EnemyStateMachine stateMachine;
+
     [Header("Capabilities")]
     public MonsterHealth health;
     public MonsterAttack attack;
@@ -41,6 +43,7 @@ public class UnderwaterMonsterController : MonoBehaviour
 
     private void GetComponenets()
     {
+        if (stateMachine == null) stateMachine = GetComponent<EnemyStateMachine>();
         if (rb == null) rb = GetComponent<Rigidbody>();
         if (movement == null) movement = GetComponent<MonsterUnderwaterMovement>();
         if (animationHandler == null) animationHandler = GetComponent<MonsterAnimationHandler>();
