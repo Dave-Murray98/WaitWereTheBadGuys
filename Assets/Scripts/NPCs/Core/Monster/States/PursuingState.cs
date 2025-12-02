@@ -43,6 +43,11 @@ public class PursuingState : EnemyState
                 stateMachine.ChangeState(((EnemyStateMachine)stateMachine).patrolState);
                 Debug.Log("Pursuit timer exceeded, changing state to patrol");
             }
+
+            if (controller.hearing.HasHeardRecentNoise)
+            {
+                stateMachine.ChangeState(((EnemyStateMachine)stateMachine).investigateState);
+            }
         }
         else //if you can see the player, reset the pursuit timer
             OnPlayerSeen();
