@@ -35,6 +35,14 @@ public class EnemyState : State
                 stateMachine.ChangeState(((EnemyStateMachine)stateMachine).deathState);
         }
 
+        if (controller.health.isHit)
+        {
+            if (controller.health.isAlive)
+                stateMachine.ChangeState(((EnemyStateMachine)stateMachine).engageState);
+
+            controller.health.isHit = false;
+        }
+
     }
 
 }
