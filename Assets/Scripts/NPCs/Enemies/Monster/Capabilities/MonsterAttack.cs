@@ -19,8 +19,8 @@ public class MonsterAttack : MonoBehaviour
 
     [Header("Attack Parameters")]
     [Tooltip("The force applied to the enemy when it charges to attack")]
-    [SerializeField] private float attackChargeForce = 100f;
-    [SerializeField] private float attackDuration = 2f;
+    [SerializeField] private float attackChargeForce = 400f;
+    [SerializeField] private float attackDuration = 1f;
     [SerializeField] private float attackChargeUpDelay = 0.5f;
 
     private Vector3 attackDirection;
@@ -39,6 +39,14 @@ public class MonsterAttack : MonoBehaviour
         //get player direction
         attackDirection = (controller.player.transform.position - transform.position).normalized;
 
+        //freeze the velocity
+        rb.linearVelocity = Vector3.zero;
+
+        //freeze the rotation
+        rb.angularVelocity = Vector3.zero;
+
+        controller.DeactivateMovement();
+
         //wait for charge up (allows player to potentially dodge)
         yield return new WaitForSeconds(attackChargeUpDelay);
 
@@ -53,7 +61,7 @@ public class MonsterAttack : MonoBehaviour
     {
         rb.AddForce(attackDirection * attackChargeForce, ForceMode.Impulse);
 
-        controller.DeactivateMovement();
+        // controller.DeactivateMovement();
 
         DebugLog("Attacking");
         animationHandler.PlayAttackAnimation();
