@@ -47,8 +47,8 @@ public class EquipmentNotificationSystem : MonoBehaviour
 
 
     [Header("Settings")]
-    [SerializeField] private bool enableNotifications = true;
-    [SerializeField] private bool enableStateDisplay = true;
+    [SerializeField] private bool enableNotifications = false;
+    [SerializeField] private bool enableStateDisplay = false;
     [SerializeField] private int maxQueuedNotifications = 5;
     [SerializeField] private bool enableDebugLogs = false;
 

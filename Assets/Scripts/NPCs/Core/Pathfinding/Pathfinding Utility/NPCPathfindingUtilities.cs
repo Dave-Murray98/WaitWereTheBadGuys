@@ -249,9 +249,13 @@ public class NPCPathfindingUtilities : MonoBehaviour
             Vector3 validPosition = FindValidPositionFromCandidates(candidates, areaTypeMask);
 
             if (validPosition != Vector3.zero)
+            {
+                Debug.Log($"Found valid position {validPosition} from {candidates.Length} candidates");
                 return validPosition;
+            }
         }
 
+        Debug.LogWarning($"Failed to find valid position within bounds {bounds} after {maxRandomAttempts} attempts");
         return Vector3.zero; // Failed to find valid position
     }
 

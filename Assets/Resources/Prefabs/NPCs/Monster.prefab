@@ -1003,8 +1003,8 @@ Transform:
   m_GameObject: {fileID: 1274573959617391877}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -21.53, y: -9.5, z: 102.5165}
-  m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 3629241328222316523}
@@ -1084,8 +1084,8 @@ MonoBehaviour:
   vision: {fileID: 8233873540931270706}
   hearing: {fileID: 7578399474031715160}
   monsterDeathRetreatTransform: {fileID: 0}
-  maxEngageDistance: 5
-  maxPursuitTime: 5
+  maxEngageDistance: 3
+  maxPursuitTime: 3
   investigateStateTime: 10
   investigateStateRadius: 10
   enableDebugLogs: 0
@@ -1144,6 +1144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isAlive: 1
+  isHit: 0
   currentHealth: 100
   maxHealth: 100
 --- !u!114 &7292528924947842843
@@ -3367,8 +3368,8 @@ Transform:
   m_GameObject: {fileID: 8520894671832873573}
   serializedVersion: 2
   m_LocalRotation: {x: -0.70710576, y: -0, z: -0, w: 0.70710784}
-  m_LocalPosition: {x: 0, y: 0, z: 57.8}
-  m_LocalScale: {x: 130, y: 110, z: 60}
+  m_LocalPosition: {x: 0, y: 0, z: 43.2}
+  m_LocalScale: {x: 130, y: 80, z: 60}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1393628497695613122}
@@ -3461,7 +3462,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visionOrigin: {fileID: 1393628497695613122}
-  visionRange: 19
+  visionRange: 19.7
   totalRaycastsToPlayer: 5
   raycastInterval: 0.1
   raycastSpread: 0.5

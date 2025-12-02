@@ -27,6 +27,8 @@ public class PursuingState : EnemyState
     {
         base.UpdateLogic();
 
+        Debug.Log($"Pursuit timer = {pusuitTimer}");
+
         if (controller.GetDistanceToTarget() <= controller.maxEngageDistance)
         {
             stateMachine.ChangeState(((EnemyStateMachine)stateMachine).engageState);
@@ -39,6 +41,7 @@ public class PursuingState : EnemyState
             if (pusuitTimer >= controller.maxPursuitTime)
             {
                 stateMachine.ChangeState(((EnemyStateMachine)stateMachine).patrolState);
+                Debug.Log("Pursuit timer exceeded, changing state to patrol");
             }
         }
         else //if you can see the player, reset the pursuit timer
@@ -49,6 +52,7 @@ public class PursuingState : EnemyState
 
     private void OnPlayerSeen()
     {
+        Debug.Log("PLAYER SEEN, RESETTING PUSUIT TIMER");
         pusuitTimer = 0f;
     }
 

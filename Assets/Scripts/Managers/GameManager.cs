@@ -44,8 +44,8 @@ public class GameManager : MonoBehaviour
     public PlayerManager playerManager;
     public UIManager uiManager;
     public AudioManager audioManager;
-    public InGameTimeManager timeManager;
-    public WeatherManager weatherManager;
+    //public InGameTimeManager timeManager;
+    //public WeatherManager weatherManager;
 
     [Header("Persistent Managers")]
     [ShowInInspector, ReadOnly] private InputManager inputManagerReference;
@@ -219,15 +219,15 @@ public class GameManager : MonoBehaviour
         playerManager = FindFirstObjectByType<PlayerManager>();
         uiManager = FindFirstObjectByType<UIManager>();
         audioManager = FindFirstObjectByType<AudioManager>();
-        timeManager = FindFirstObjectByType<InGameTimeManager>();
-        weatherManager = FindFirstObjectByType<WeatherManager>();
+        // timeManager = FindFirstObjectByType<InGameTimeManager>();
+        // weatherManager = FindFirstObjectByType<WeatherManager>();
 
         // Register scene-based managers that implement IManager
         if (playerManager != null) sceneBasedManagers.Add(playerManager);
         if (uiManager != null) sceneBasedManagers.Add(uiManager);
         if (audioManager != null) sceneBasedManagers.Add(audioManager);
-        if (timeManager != null) sceneBasedManagers.Add(timeManager);
-        if (weatherManager != null) sceneBasedManagers.Add(weatherManager);
+        // if (timeManager != null) sceneBasedManagers.Add(timeManager);
+        // if (weatherManager != null) sceneBasedManagers.Add(weatherManager);
 
         DebugLog($"[GameManager] Found {sceneBasedManagers.Count} scene-based managers");
 
@@ -522,8 +522,8 @@ public class GameManager : MonoBehaviour
         DebugLog($"PlayerManager: {(playerManager != null ? "Available" : "NULL")}");
         DebugLog($"UIManager: {(uiManager != null ? "Available" : "NULL")}");
         DebugLog($"AudioManager: {(audioManager != null ? "Available" : "NULL")}");
-        DebugLog($"TimeManager: {(timeManager != null ? "Available" : "NULL")}");
-        DebugLog($"WeatherManager: {(weatherManager != null ? "Available" : "NULL")}");
+        // DebugLog($"TimeManager: {(timeManager != null ? "Available" : "NULL")}");
+        // DebugLog($"WeatherManager: {(weatherManager != null ? "Available" : "NULL")}");
         DebugLog("==============================");
     }
 
