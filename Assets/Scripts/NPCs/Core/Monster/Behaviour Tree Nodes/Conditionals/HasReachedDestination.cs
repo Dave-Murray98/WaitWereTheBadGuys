@@ -1,16 +1,10 @@
+using Opsive.BehaviorDesigner.Runtime.Tasks;
 using UnityEngine;
 
-public class HasReachedDestination : MonoBehaviour
+public class HasReachedDestination : EnemyConditional
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public override TaskStatus OnUpdate()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        return controller.movement.HasReachedDestination() ? TaskStatus.Success : TaskStatus.Failure;
     }
 }
