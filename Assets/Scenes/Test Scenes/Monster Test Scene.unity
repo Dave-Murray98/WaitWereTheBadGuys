@@ -6944,7 +6944,7 @@ Transform:
   m_GameObject: {fileID: 1091898536}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.04, y: -9.26, z: -23.53}
+  m_LocalPosition: {x: -13.11, y: -17.19, z: -32.58}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7703,9 +7703,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   navVolumes:
   - {fileID: 555671436}
+  maxRandomAttempts: 10
+  defaultSampleRadius: 2
+  batchSize: 5
   showDebugSpheres: 1
   debugSphereColor: {r: 0, g: 1, b: 1, a: 1}
+  validPositionColor: {r: 0, g: 1, b: 0, a: 1}
+  invalidPositionColor: {r: 1, g: 0, b: 0, a: 1}
   debugSphereDuration: 4
+  debugPositionSize: 0.5
 --- !u!1 &1197778227
 GameObject:
   m_ObjectHideFlags: 0
