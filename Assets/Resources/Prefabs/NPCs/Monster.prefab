@@ -1582,9 +1582,9 @@ MonoBehaviour:
       m_Version: 3.4
     - m_ObjectType: Opsive.BehaviorDesigner.Runtime.Tasks.Actions.StackedAction
       m_ValueHashes: 
-      m_LongValueHashes: 30b77c28f48d1b2966cb3cf98c4bd96480f6501333363a66622a4da7e5588b5847627e5c3afba34a138c4f95573857e9e4a06bb554569d8946fff10c773614c9
-      m_ValuePositions: 000000000200000004000000060000000a0000000e0000001200000012000000
-      m_Values: 07000400ffff0100000049646c650000404000000000
+      m_LongValueHashes: 30b77c28f48d1b2966cb3cf98c4bd96480f6501333363a66622a4da7e5588b5847627e5c3afba34a92e9c422d500c69e138c4f95573857e9e4a06bb554569d8946fff10c773614c9
+      m_ValuePositions: 000000000200000004000000060000000a0000000e0000000f0000001300000013000000
+      m_Values: 07000400ffff0100000049646c65000000004000000000
       m_UnityObjects: []
       m_Version: 3.4
     - m_ObjectType: Opsive.BehaviorDesigner.Runtime.Tasks.Composites.Sequence
@@ -1612,7 +1612,7 @@ MonoBehaviour:
     m_SharedVariableData: []
     m_DisabledEventNodesData: []
     m_DisabledLogicNodesData: []
-    m_UniqueID: -1662397840
+    m_UniqueID: -1070873514
     m_LogicNodePropertiesData:
     - m_ObjectType: Opsive.GraphDesigner.Runtime.LogicNodeProperties
       m_ValueHashes: 
@@ -1653,7 +1653,7 @@ MonoBehaviour:
       m_ValueHashes: 
       m_LongValueHashes: bc124df8ef5e104cf36ca30dee0de9958dd19827f48d1b29bd8814239a1bb7642f6406e2580d1e294f869cc9196b0c27aea3bc2e18d5b803a034c7c2b541f015557e981535906112a98ff48b9e8a66b37f542abda0a249c23a7f01b1f88d1a7b
       m_ValuePositions: 00000000240000002c000000300000003000000030000000400000004100000045000000450000004700000049000000
-      m_Values: 36386136623831662d336231662d346665322d623430642d3431363638646165393535309353a6c2ea5c614400800c430000000000000000000000000000000000000000000400060000
+      m_Values: 36386136623831662d336231662d346665322d623430642d3431363638646165393535309353a6c2ea5c614400000d430000000000000000000000000000000000000000000400060000
       m_UnityObjects: []
       m_Version: 3.4
     - m_ObjectType: Opsive.GraphDesigner.Runtime.LogicNodeProperties
@@ -2666,7 +2666,10 @@ MonoBehaviour:
   isAttacking: 0
   attackChargeForce: 500
   attackDuration: 1
-  attackChargeUpDelay: 0.5
+  decelerationTime: 0.3
+  preparationPause: 0.2
+  attackRotationSpeed: 5
+  allowRuntimeTuning: 0
 --- !u!65 &7521607398153743116
 BoxCollider:
   m_ObjectHideFlags: 0
