@@ -40,14 +40,10 @@ MonoBehaviour:
         - GlobalObjectId_V1-2-99c9720ab356a0642a771bea13969a05-1848890812-0
         - GlobalObjectId_V1-2-99c9720ab356a0642a771bea13969a05-2065734295-0
         - GlobalObjectId_V1-2-99c9720ab356a0642a771bea13969a05-2023416098-0
-        - GlobalObjectId_V1-2-99c9720ab356a0642a771bea13969a05-95743634-0
         - GlobalObjectId_V1-2-99c9720ab356a0642a771bea13969a05-639667418-0
         - GlobalObjectId_V1-2-99c9720ab356a0642a771bea13969a05-299646217-0
-        - GlobalObjectId_V1-2-99c9720ab356a0642a771bea13969a05-1059851890-0
         - GlobalObjectId_V1-2-99c9720ab356a0642a771bea13969a05-1342972582-0
-        - GlobalObjectId_V1-2-99c9720ab356a0642a771bea13969a05-1251951229-0
-        - GlobalObjectId_V1-2-99c9720ab356a0642a771bea13969a05-1083654973-0
-        - GlobalObjectId_V1-2-99c9720ab356a0642a771bea13969a05-1068845354-0
+        - GlobalObjectId_V1-2-99c9720ab356a0642a771bea13969a05-328802275-0
         values:
         - iColor: 9
           icon: Canvas Icon
@@ -81,24 +77,16 @@ MonoBehaviour:
           icon: AudioReverbZone Icon
         - iColor: 8
           icon: AvatarMask On Icon
-        - iColor: 8
-          icon: 
         - iColor: 2
           icon: Terrain Icon
         - iColor: 0
           icon: 
-        - iColor: 0
-          icon: AudioReverbZone Icon
         - iColor: 4
           icon: ParticleSystem Icon
-        - iColor: 7
+        - iColor: 8
           icon: MeshCollider Icon
-        - iColor: 5
-          icon: MeshCollider Icon
-        - iColor: 7
-          icon: 
       goDatasByInstanceId:
-        keys: bc15010064120100ca15010064140100c4140100441501008e160100aa1601008c140100581501009c1301004c1201000a180100f6170100961801007c1801006a1201004e140100481301004a15010012160100c61501005e150100521501001ac10100c4bd010028c10100c6bf010026c00100a4c00100e8c1010004c20100eebf0100b8c00100fcbe0100acbd010068c3010054c30100f4c30100dac30100cabd0100b0bf0100a8be0100aac001006ec1010024c10100bec00100b2c00100
+        keys: 181d0100041a0100261d0100e61b0100421c0100b41c0100d61d0100f21d01000c1c0100ca1c01002a1b0100ec190100201f01000c1f01008e1f01007e1f01000a1a0100d01b0100e01a0100bc1c0100681d0100221d0100d01c0100c41c0100ea58010090560100f8580100fe57010058580100a8580100765901009259010024580100b45801007457010076560100825a0100725a0100dc5a0100ce5a010096560100e85701003657010028590100f4580100ba580100ae580100f8640100f061010002650100c4630100266401009a64010090650100ac650100f4630100b064010020630100d8610100a2660100926601003267010016670100ae630100d2620100326501004485ffff
         values:
         - iColor: 9
           icon: Canvas Icon
@@ -186,8 +174,6 @@ MonoBehaviour:
           icon: Terrain Icon
         - iColor: 0
           icon: 
-        - iColor: 0
-          icon: AudioReverbZone Icon
         - iColor: 4
           icon: ParticleSystem Icon
         - iColor: 7
@@ -196,6 +182,46 @@ MonoBehaviour:
           icon: MeshCollider Icon
         - iColor: 7
           icon: 
+        - iColor: 9
+          icon: Canvas Icon
+        - iColor: 0
+          icon: cs Script Icon
+        - iColor: 0
+          icon: StandaloneInputModule Icon
+        - iColor: 0
+          icon: Settings Icon
+        - iColor: 0
+          icon: AvatarMask On Icon
+        - iColor: 0
+          icon: AudioSource Icon
+        - iColor: 0
+          icon: Canvas Icon
+        - iColor: 0
+          icon: DirectionalLight Icon
+        - iColor: 0
+          icon: Terrain Icon
+        - iColor: 0
+          icon: AvatarMask On Icon
+        - iColor: 7
+          icon: SphereCollider Icon
+        - iColor: 0
+          icon: DirectionalLight Icon
+        - iColor: 0
+          icon: StandaloneInputModule Icon
+        - iColor: 5
+          icon: 
+        - iColor: 9
+          icon: AudioReverbZone Icon
+        - iColor: 8
+          icon: AvatarMask On Icon
+        - iColor: 2
+          icon: Terrain Icon
+        - iColor: 0
+          icon: 
+        - iColor: 4
+          icon: ParticleSystem Icon
+        - iColor: 8
+          icon: MeshCollider Icon
     - goDatasByGlobalId:
         keys: []
         values: []
@@ -236,8 +262,16 @@ MonoBehaviour:
         - iColor: 7
           icon: MeshCollider Icon
       goDatasByInstanceId:
-        keys: ca97ffff1097ffff
+        keys: e00d01008e0c010046560100f4540100ac6101005a600100
         values:
+        - iColor: 2
+          icon: Terrain Icon
+        - iColor: 7
+          icon: MeshCollider Icon
+        - iColor: 2
+          icon: Terrain Icon
+        - iColor: 7
+          icon: MeshCollider Icon
         - iColor: 2
           icon: Terrain Icon
         - iColor: 7
