@@ -45,7 +45,7 @@ public class MonsterUnderwaterMovement : MonoBehaviour
     private Vector3 moveDirection;
     private Vector3 desiredVelocity;
     [ShowInInspector] private bool hasReachedDestination = false;
-    [SerializeField] private bool isActive = false;
+    public bool isActive = false;
 
     // FIX: Add pathfinding state tracking
     private bool isPathCalculating = false;

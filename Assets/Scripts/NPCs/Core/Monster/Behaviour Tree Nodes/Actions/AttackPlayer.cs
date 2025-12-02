@@ -24,6 +24,11 @@ public class AttackPlayer : EnemyAction
 
         while (controller.attack.isAttacking)
         {
+            if (!controller.attack.playerInAttackRange)
+            {
+                return TaskStatus.Failure;
+            }
+
             return TaskStatus.Running;
         }
 

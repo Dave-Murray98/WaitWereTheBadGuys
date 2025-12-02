@@ -16,6 +16,7 @@ public class MonsterAttack : MonoBehaviour
     [Header("Attack State")]
     public bool playerInAttackRange = false;
     public bool isAttacking = false;
+    // public bool didAttack = false; // True if attack was successful, and will trigger monster to pause (cooldown) after attack
 
     [Header("Attack Parameters")]
     [Tooltip("The force applied to the enemy when it charges to attack")]
@@ -46,6 +47,7 @@ public class MonsterAttack : MonoBehaviour
     public IEnumerator AttackCoroutine()
     {
         isAttacking = true;
+        // didAttack = false;
 
         // Calculate attack direction and store initial velocity
         attackDirection = (controller.player.transform.position - transform.position).normalized;
@@ -134,6 +136,8 @@ public class MonsterAttack : MonoBehaviour
     private void OnAttackFinished()
     {
         isAttacking = false;
+        //if true, monster will pause afterwards via behaviour tree
+        //didAttack = managedToAttack;
         controller.ActivateMovement();
         DebugLog("Attack sequence complete - movement reactivated");
     }
@@ -152,6 +156,7 @@ public class MonsterAttack : MonoBehaviour
         if (other.CompareTag("Player")) // More specific check
         {
             playerInAttackRange = false;
+            OnAttackFinished();
             DebugLog("Player left attack range");
         }
     }
