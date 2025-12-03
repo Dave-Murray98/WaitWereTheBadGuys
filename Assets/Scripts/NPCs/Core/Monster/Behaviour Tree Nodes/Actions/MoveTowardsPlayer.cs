@@ -18,8 +18,8 @@ public class MoveTowardsPlayer : EnemyAction
 
     public override TaskStatus OnUpdate()
     {
-        if (controller.movement.HasReachedDestination())
-            return TaskStatus.Success;
+        // if (controller.movement.HasReachedDestination())
+        //     return TaskStatus.Success;
 
         timer += Time.deltaTime;
         if (timer >= pathfindingUpdateFrequency)
