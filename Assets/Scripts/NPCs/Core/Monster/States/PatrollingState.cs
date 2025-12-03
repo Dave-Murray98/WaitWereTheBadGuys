@@ -10,7 +10,7 @@ public class PatrollingState : EnemyState
         base.Enter();
         patrollingBehaviourTree.enabled = true;
 
-        Debug.Log("PATROLLING STATE ENTERED");
+        sm.DebugLog("PATROLLING STATE ENTERED");
     }
 
     public override void Exit()

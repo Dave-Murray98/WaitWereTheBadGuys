@@ -13,7 +13,7 @@ public class PursuingState : EnemyState
 
         pusuitTimer = 0f;
 
-        Debug.Log("PURSUING STATE ENTERED");
+        sm.DebugLog("PURSUING STATE ENTERED");
     }
 
 
@@ -27,7 +27,7 @@ public class PursuingState : EnemyState
     {
         base.UpdateLogic();
 
-        Debug.Log($"Pursuit timer = {pusuitTimer}");
+        sm.DebugLog($"Pursuit timer = {pusuitTimer}");
 
         if (controller.GetDistanceToTarget() <= controller.maxEngageDistance)
         {
@@ -41,7 +41,7 @@ public class PursuingState : EnemyState
             if (pusuitTimer >= controller.maxPursuitTime)
             {
                 stateMachine.ChangeState(((EnemyStateMachine)stateMachine).patrolState);
-                Debug.Log("Pursuit timer exceeded, changing state to patrol");
+                sm.DebugLog("Pursuit timer exceeded, changing state to patrol");
             }
 
             if (controller.hearing.HasHeardRecentNoise)
@@ -57,7 +57,7 @@ public class PursuingState : EnemyState
 
     private void OnPlayerSeen()
     {
-        Debug.Log("PLAYER SEEN, RESETTING PUSUIT TIMER");
+        sm.DebugLog("PLAYER SEEN, RESETTING PUSUIT TIMER");
         pusuitTimer = 0f;
     }
 

@@ -8,7 +8,7 @@ public class DeathState : EnemyState
     {
         base.Enter();
 
-        Debug.Log("DEATH STATE ENTERED");
+        sm.DebugLog("DEATH STATE ENTERED");
 
         deathBehaviourTree.enabled = true;
     }

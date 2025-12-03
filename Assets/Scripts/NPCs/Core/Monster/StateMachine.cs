@@ -8,7 +8,7 @@ public class StateMachine : MonoBehaviour
     public UnityEvent<State> OnStateChanged;
 
     [Header("Debug")]
-    [SerializeField] protected bool enableDebugLog = false;
+    [SerializeField] public bool enableDebugLog = false;
 
     protected virtual void Awake()
     {
@@ -55,7 +55,7 @@ public class StateMachine : MonoBehaviour
         return currentState;
     }
 
-    protected void DebugLog(string message)
+    public virtual void DebugLog(string message)
     {
         if (enableDebugLog)
             Debug.Log("[EnemyStateMachine]" + message);

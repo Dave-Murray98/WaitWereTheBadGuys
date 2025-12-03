@@ -13,7 +13,7 @@ public class EngagingState : EnemyState
         engagingPlayerBehaviourTree.enabled = true;
         distanceCheckTimer = 0f;
 
-        Debug.Log("ENGAGING STATE ENTERED");
+        sm.DebugLog("ENGAGING STATE ENTERED");
     }
 
     public override void Exit()
@@ -33,7 +33,7 @@ public class EngagingState : EnemyState
             distanceCheckTimer = 0f;
             if (controller.GetDistanceToTarget() > controller.maxEngageDistance)
             {
-                Debug.Log("Too far from player, changing state to pursue");
+                sm.DebugLog("Too far from player, changing state to pursue");
                 stateMachine.ChangeState(((EnemyStateMachine)stateMachine).pursueState);
             }
         }

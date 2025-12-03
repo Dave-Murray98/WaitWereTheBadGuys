@@ -13,7 +13,7 @@ public class InvestigatingNoiseState : EnemyState
 
         investigationTimer = 0f;
 
-        Debug.Log("INVESTIGATING NOISE STATE ENTERED");
+        sm.DebugLog("INVESTIGATING NOISE STATE ENTERED");
     }
 
     public override void Exit()
