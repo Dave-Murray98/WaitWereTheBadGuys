@@ -17,7 +17,7 @@ public class MonsterSaveData
     public Quaternion rotation = Quaternion.identity;
 
     [Header("State Data")]
-    public string currentStateName = "PatrollingState";
+    public string currentStateName = "Patrolling";
 
     [Header("Metadata")]
     public string saveTimestamp;
@@ -170,11 +170,11 @@ public class MonsterSaveData
     {
         return stateName switch
         {
-            "PatrollingState" => stateMachine.patrolState,
-            "EngagingState" => stateMachine.engageState,
-            "PursuingState" => stateMachine.pursueState,
-            "InvestigatingNoiseState" => stateMachine.investigateState,
-            "DeathState" => stateMachine.deathState,
+            "Patrolling" => stateMachine.patrolState,
+            "Engaging" => stateMachine.engageState,
+            "Pursuing" => stateMachine.pursueState,
+            "Investigating Noise" => stateMachine.investigateState,
+            "Death" => stateMachine.deathState,
             _ => null
         };
     }
