@@ -21,6 +21,7 @@ public class NPCPathfindingUtilities : MonoBehaviour
     [SerializeField] private int batchSize = 5;
 
     [Header("Debug Visualization")]
+    [SerializeField] private bool enableDebugLogs = false;
     [SerializeField] private bool showDebugSpheres = true;
     [SerializeField] private Color debugSphereColor = Color.cyan;
     [SerializeField] private Color validPositionColor = Color.green;
@@ -85,7 +86,7 @@ public class NPCPathfindingUtilities : MonoBehaviour
 
         if (closestVolume == null)
         {
-            Debug.LogWarning("No NavVolume found");
+            DebugLogWarning("No NavVolume found");
             return Vector3.zero;
         }
 
@@ -97,7 +98,7 @@ public class NPCPathfindingUtilities : MonoBehaviour
 
         if (validPosition == Vector3.zero)
         {
-            Debug.LogWarning("Failed to find random valid position, falling back to region center");
+            DebugLogWarning("Failed to find random valid position, falling back to region center");
             // Fallback to your original method if needed
             int randomIndex = UnityEngine.Random.Range(0, closestVolume.Data.Regions.Count);
             validPosition = closestVolume.Data.Regions[randomIndex].Bounds.center;
@@ -123,7 +124,7 @@ public class NPCPathfindingUtilities : MonoBehaviour
 
         if (validPosition == Vector3.zero)
         {
-            Debug.LogWarning($"No valid positions found within radius {radius} of point {point}");
+            DebugLogWarning($"No valid positions found within radius {radius} of point {point}");
 
             // Fallback: try to find any valid position nearby using the original method
             NavVolume closestVolume = GetClosestVolume(point);
@@ -225,7 +226,7 @@ public class NPCPathfindingUtilities : MonoBehaviour
                         }
                     }
 
-                    Debug.Log($"Found valid position {validPosition} from {candidates.Length} candidates");
+                    DebugLog($"Found valid position {validPosition} from {candidates.Length} candidates");
                     return validPosition;
                 }
             }
@@ -250,12 +251,12 @@ public class NPCPathfindingUtilities : MonoBehaviour
 
             if (validPosition != Vector3.zero)
             {
-                Debug.Log($"Found valid position {validPosition} from {candidates.Length} candidates");
+                DebugLog($"Found valid position {validPosition} from {candidates.Length} candidates");
                 return validPosition;
             }
         }
 
-        Debug.LogWarning($"Failed to find valid position within bounds {bounds} after {maxRandomAttempts} attempts");
+        DebugLogWarning($"Failed to find valid position within bounds {bounds} after {maxRandomAttempts} attempts");
         return Vector3.zero; // Failed to find valid position
     }
 
@@ -299,7 +300,7 @@ public class NPCPathfindingUtilities : MonoBehaviour
     {
         if (navVolumes == null || navVolumes.Length == 0)
         {
-            Debug.LogWarning("No NavVolumes assigned to NPCPathfindingUtilities");
+            DebugLogWarning("No NavVolumes assigned to NPCPathfindingUtilities");
             return null;
         }
 
@@ -323,7 +324,7 @@ public class NPCPathfindingUtilities : MonoBehaviour
     public void FindVolumes()
     {
         navVolumes = FindObjectsByType<NavVolume>(FindObjectsSortMode.None);
-        Debug.Log($"Found {navVolumes.Length} NavVolumes");
+        DebugLog($"Found {navVolumes.Length} NavVolumes");
     }
 
     private void OnDrawGizmos()
@@ -398,8 +399,24 @@ public class NPCPathfindingUtilities : MonoBehaviour
                 return validPosition;
         }
 
-        Debug.LogWarning($"Could not find valid position near {targetPosition}");
+        DebugLogWarning($"Could not find valid position near {targetPosition}");
         return targetPosition; // Return original as fallback
+    }
+
+    #endregion
+
+    #region Debug Methods
+
+    private void DebugLog(string message)
+    {
+        if (enableDebugLogs)
+            Debug.Log("[NPCPathfindingUtilities]" + message);
+    }
+
+    private void DebugLogWarning(string message)
+    {
+        if (enableDebugLogs)
+            Debug.LogWarning("[NPCPathfindingUtilities]" + message);
     }
 
     #endregion
