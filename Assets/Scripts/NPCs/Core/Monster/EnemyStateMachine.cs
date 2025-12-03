@@ -34,6 +34,7 @@ public class EnemyStateMachine : StateMachine
     public UnderwaterMonsterController controller;
 
 
+
     protected override void Awake()
     {
         base.Awake();
@@ -52,12 +53,12 @@ public class EnemyStateMachine : StateMachine
 
     protected override State GetInitialState()
     {
+        DebugLog("Getting initial state");
         return patrolState;
     }
 
     protected virtual void InitializeStates()
     {
-
         patrolState = new PatrollingState(this);
         engageState = new EngagingState(this);
         pursueState = new PursuingState(this);
@@ -71,6 +72,10 @@ public class EnemyStateMachine : StateMachine
         if (newState == null)
             return;
 
+        DebugLog("Forcing change to" + newState);
+
         ChangeState(newState);
     }
+
+
 }

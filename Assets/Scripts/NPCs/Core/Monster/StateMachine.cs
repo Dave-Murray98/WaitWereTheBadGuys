@@ -7,6 +7,9 @@ public class StateMachine : MonoBehaviour
     [ShowInInspector] public State currentState;
     public UnityEvent<State> OnStateChanged;
 
+    [Header("Debug")]
+    [SerializeField] protected bool enableDebugLog = false;
+
     protected virtual void Awake()
     {
         OnStateChanged = new UnityEvent<State>();
@@ -15,6 +18,7 @@ public class StateMachine : MonoBehaviour
     public virtual void Start()
     {
         currentState = GetInitialState();
+        DebugLog("Initial state set to" + currentState.name);
         if (currentState != null)
             currentState.Enter();
     }
@@ -49,6 +53,12 @@ public class StateMachine : MonoBehaviour
     public State GetCurrentState()
     {
         return currentState;
+    }
+
+    protected void DebugLog(string message)
+    {
+        if (enableDebugLog)
+            Debug.Log("[EnemyStateMachine]" + message);
     }
 
 }
